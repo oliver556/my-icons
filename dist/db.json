@@ -2,7 +2,7 @@
   {
     "name": "Myicon",
     "sort": "other",
-    "course": "https://gitee.com/Siriling/my-icon"
+    "course": "https://gitee.com/oliver556/my-icon"
   },
   {
     "name": "QQ",
@@ -10,7 +10,15 @@
     "course": ""
   },
   {
-    "name": "WeChat",
+    "name": "WeChat_A",
+    "sort": "other",
+    "course": ""
+  },{
+    "name": "WeChat_B",
+    "sort": "other",
+    "course": ""
+  },{
+    "name": "WeChat_C",
     "sort": "other",
     "course": ""
   },
@@ -38,11 +46,6 @@
     "name": "V2ray_B",
     "sort": "other",
     "course": ""
-  },
-  {
-    "name": "Author",
-    "sort": "other",
-    "course": "https://gitee.com/Siriling/my-icon"
   },
   {
     "name": "BookStore",
@@ -320,9 +323,39 @@
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489780&idx=1&sn=c0a7ee05a5854f23a594b8b4064fdb25&chksm=ea42cfb9dd3546afa805280c8545ba9eca0638ce3dd6106a9c6197dbd689f40da7a291c34a4f&token=1059416760&lang=zh_CN#rd"
   },
   {
-    "name": "Halo",
+    "name": "Halo_A",
     "sort": "docker",
-    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489825&idx=1&sn=c324a2e40b85152edd176b58f5059412&chksm=ea42ce6cdd35477abd520afc60b64c4cbaa5882039a790990caa8e68da39b1f3e97a52795e17&token=1059416760&lang=zh_CN#rd"
+    "course": ""
+  },
+  {
+    "name": "Halo_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Halo_C",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Halo_D",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Halo_E",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Halo_F",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Halo_G",
+    "sort": "docker",
+    "course": ""
   },
   {
     "name": "Mariadb",
@@ -760,9 +793,24 @@
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247513924&idx=1&sn=9b2bd9baaeca9d32f3f6e8141946398c&chksm=ea416009dd36e91fa8a58e576c8b4c5bc7d6b93b8f5b11fb9983949b3bcb5859c9c14a121f70&token=1059416760&lang=zh_CN#rd"
   },
   {
-    "name": "VSCode",
+    "name": "VSCode_A",
     "sort": "docker",
-    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247514676&idx=1&sn=6c21d083562fc3756c793f23ae49ab4a&chksm=ea416d79dd36e46f1348fc474240d2d13e7100842194b3fa6438ebdb666647c5528aa1c7883b&token=1059416760&lang=zh_CN#rd"
+    "course": ""
+  },
+  {
+    "name": "VSCode_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "VSCode_C",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "VSCode_D",
+    "sort": "docker",
+    "course": ""
   },
   {
     "name": "Tldraw",
@@ -1290,9 +1338,14 @@
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247486420&idx=1&sn=deef69e5d1aca5df2036e713582425b3&chksm=ea42dc99dd35558f9beaac65ae1c56047b6bdd0b41e1c059c5a359d8e2ffd27fd9a2aa6aac43&token=1059416760&lang=zh_CN#rd"
   },
   {
-    "name": "Macos",
+    "name": "Macos_A",
     "sort": "vms",
-    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247487156&idx=1&sn=42461ab3331cf0254691dfba3d94f8a3&chksm=ea42d9f9dd3550ef2ce6a122338138d54b2e9fe58b4f7c54f5ab4d4d089fb7a3649293bc3810&token=1059416760&lang=zh_CN#rd"
+    "course": ""
+  },
+  {
+    "name": "Macos_B",
+    "sort": "vms",
+    "course": ""
   },
   {
     "name": "Shumeipan",
@@ -1382,6 +1435,223 @@
   {
     "name": "aaPanel",
     "sort": "vms",
+    "course": ""
+  },
+  {
+    "name": "IYUU_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "IYUU_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Calibre_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Calibre_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "MoviePilot_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "MoviePilot_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "123_Pan_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "123_Pan_B",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "163_music_A",
+    "sort": "other",
+    "course": ""
+  },{
+    "name": "163_music_B",
+    "sort": "other",
+    "course": ""
+  },{
+    "name": "189_Cloud_A",
+    "sort": "other",
+    "course": ""
+  },{
+    "name": "AliCloud_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "AliCloud_A",
+    "sort": "uncategorized",
+    "course": ""
+  },
+  {
+    "name": "Apache_A",
+    "sort": "project",
+    "course": ""
+  },
+  {
+    "name": "Clash_A",
+    "sort": "router",
+    "course": ""
+  },
+  {
+    "name": "Clash_B",
+    "sort": "router",
+    "course": ""
+  },
+  {
+    "name": "Docker_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Docker_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Docker_C",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Docker_D",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Docker_E",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Docker_F",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Firefox_A",
+    "sort": "project",
+    "course": ""
+  },
+  {
+    "name": "Firefox_B",
+    "sort": "project",
+    "course": ""
+  },
+  {
+    "name": "Github_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Github_B",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Github_C",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Github_D",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Kubernetes_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Kubernetes_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Linux_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Netflix_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Tieba_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Time_machine_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Unlockmusic_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Unlockmusic_B",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Vertex_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Vmware_A",
+    "sort": "vms",
+    "course": ""
+  },
+  {
+    "name": "Vmware_B",
+    "sort": "vms",
+    "course": ""
+  },
+  {
+    "name": "Wikijs_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Wikijs_B",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Youtube_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Youtube_B",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Youtube_C",
+    "sort": "other",
     "course": ""
   }
 ]

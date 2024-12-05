@@ -5,7 +5,7 @@
       <h4 class="head_txt">
         提供在线图标链接，用于个人NAS设备显示使用，禁止用于商业用途
       </h4>
-      <h4 class="head_txt">开源项目，By Siriling</h4>
+      <!--<h4 class="head_txt">开源项目，By Siriling</h4>-->
       <div class="use">
         <el-image class="use_img" :src="require('../assets/docker.png')" />
         <div class="use_txt">Docker容器</div>
@@ -21,6 +21,9 @@
         <el-divider direction="vertical" />
         <el-image class="use_img" :src="require('../assets/other.png')" />
         <div class="use_txt">其他</div>
+				<el-divider direction="vertical" />
+				<el-image class="use_img" :src="require('../assets/uncategorized.png')" />
+        <div class="use_txt">未分类</div>
       </div>
       <el-input
         v-model="data.search"
@@ -44,6 +47,7 @@
             <el-option label="虚拟机" value="3" />
             <el-option label="项目" value="4" />
             <el-option label="其他" value="5" />
+            <el-option label="未分类" value="6" />
           </el-select>
         </template>
       </el-input>
@@ -83,24 +87,28 @@
       </el-space>
     </div>
     <div class="foot">
-      <div class="foot_txt">© 2023.4.18 | By Siriling</div>
+      <div class="foot_txt">© 2024.12.05 | By Jamison Lee</div>
       <div class="foot_url">
-        <el-popover placement="top" :width="150">
-          <template #reference>
-            <el-image class="foot_img" :src="require('../assets/wechat.png')" />
-          </template>
-          <el-image class="qrcode_img" :src="require('../assets/qrcode.png')" />
-        </el-popover>
+				<!--微信-->
+        <!--<el-popover placement="top" :width="150">-->
+        <!--  <template #reference>-->
+        <!--    <el-image class="foot_img" :src="require('../assets/wechat.png')" />-->
+        <!--  </template>-->
+        <!--  <el-image class="qrcode_img" :src="require('../assets/qrcode.png')" />-->
+        <!--</el-popover>-->
 
-        <el-image
-          class="foot_img"
-          :src="require('../assets/gitee.png')"
-          @click="openUrl('https://gitee.com/Siriling/my-icon')"
-        />
+				<!--Gitee-->
+        <!--<el-image-->
+        <!--  class="foot_img"-->
+        <!--  :src="require('../assets/gitee.png')"-->
+        <!--  @click="openUrl('https://gitee.com/Siriling/my-icon')"-->
+        <!--/>-->
+				
+				<!-- GitHub -->
         <el-image
           class="foot_img"
           :src="require('../assets/github.png')"
-          @click="openUrl('https://github.com/Siriling/my-icons')"
+          @click="openUrl('https://github.com/oliver556/my-icons')"
         />
       </div>
     </div>
@@ -170,6 +178,9 @@ export default defineComponent({
       } else if (value == 5) {
         data.selectlabel = "其他";
         filteredData = tempdata.filter((item) => item.sort == "other");
+      } else if (value == 6) {
+        data.selectlabel = "未分类";
+        filteredData = tempdata.filter((item) => item.sort == "uncategorized");
       } else {
         data.selectlabel = "全部";
         filteredData = tempdata;
@@ -193,6 +204,8 @@ export default defineComponent({
         filteredData = tempdata.filter((item) => item.sort == "project");
       } else if (sort == 5) {
         filteredData = tempdata.filter((item) => item.sort == "other");
+      } if (sort == 6) {
+        filteredData = tempdata.filter((item) => item.sort == "uncategorized");
       } else {
         filteredData = tempdata;
       }
@@ -210,7 +223,7 @@ export default defineComponent({
       //获取图片url
       let currenturl = window.location.href;
       let iconurl = data.publicPath + "icon/" + url;
-      let iconurlCdn = "https://cdn.jsdelivr.net/gh/Siriling/my-icons@main/dist/" + "icon/" + url;
+      let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@main/dist/" + "icon/" + url;
       let fullurl = currenturl.substr(0, currenturl.length - 2) + iconurl;
       await toClipboard(value1.value ? iconurlCdn : fullurl);
       ElMessage({
@@ -242,7 +255,7 @@ export default defineComponent({
   height: 100%;
 }
 .head {
-  padding: 50px;
+  padding: 20px 50px 50px;
   background-color: #f5f7fc;
 }
 
