@@ -1653,5 +1653,20 @@
     "name": "Youtube_C",
     "sort": "other",
     "course": ""
+  },
+  {
+    "name": "Pve_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Pve_B",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Pve_C",
+    "sort": "other",
+    "course": ""
   }
 ]
