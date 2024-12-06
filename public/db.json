@@ -2020,5 +2020,20 @@
     "name": "Whisparr_B",
     "sort": "uncategorized",
     "course": ""
+  },
+  {
+    "name": "Last_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Last_B",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Last_C",
+    "sort": "other",
+    "course": ""
   }
 ]
