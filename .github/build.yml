@@ -6,12 +6,14 @@ on:
       - main # 监听 `main` 分支上的推送事件，可以根据需求修改
 
 jobs:
-  build:
+  # 任务 ID
+  build-and-deploy:
+    # 运行环境
     runs-on: ubuntu-latest
 
     steps:
       # Step 1: 检出代码
-      - name: Checkout code
+      - name: Checkout # 官方 action，将代码拉取到虚拟机
         uses: actions/checkout@v3
 
       # Step 2: 设置 Node.js 环境
@@ -21,20 +23,14 @@ jobs:
           node-version: 18 # 确保使用与项目兼容的 Node.js 版本
 
       # Step 3: 安装依赖
-      - name: Install dependencies
-        run: npm ci
-
-      # Step 4: 构建项目
-      - name: Build project
-        run: npm run build
-
-      # Step 5: 部署构建结果到仓库
-      - name: Deploy to Repository
+      - name: Install and Build # 安装依赖、打包，如果提前已打包好无需这一步
         run: |
-          mkdir output
-          mv dist/* output/
-          git config --global user.name "${{ secrets.GIT_USER_NAME }}"
-          git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
-          git add output
-          git commit -m "Automated build and deployment"
-          git push origin main
+          npm install
+          npm run build
+
+      # Step 4: 部署构建结果到仓库
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages # 部署后提交到那个分支
+          folder: dist # 这里填打包好的目录名称
