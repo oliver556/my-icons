@@ -553,6 +553,11 @@
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490675&idx=1&sn=ed5fe0761d2205ebdd388a8a2539c145&chksm=ea42cb3edd3542283e19a1c95bdedc2fc17bdd7e13368a6c9f99e01aa54a41a89dd995ae9795&token=1059416760&lang=zh_CN#rd"
   },
   {
+    "name": "Nextcloud_B",
+    "sort": "docker",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490675&idx=1&sn=ed5fe0761d2205ebdd388a8a2539c145&chksm=ea42cb3edd3542283e19a1c95bdedc2fc17bdd7e13368a6c9f99e01aa54a41a89dd995ae9795&token=1059416760&lang=zh_CN#rd"
+  },
+  {
     "name": "Reader_A",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490738&idx=1&sn=5725bd8045463cacf5e162b2c9842a61&chksm=ea42cbffdd3542e924464a972eae457ca49c25f1af03440bd13ecbc0be428c9f3e130c4f43f1&token=1059416760&lang=zh_CN#rd"
@@ -684,6 +689,11 @@
   },
   {
     "name": "Mt-photos_A",
+    "sort": "docker",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247493003&idx=1&sn=84df2654a3c0527f12887f44dd2b0b77&chksm=ea4132c6dd36bbd0a2426bdb765b9e15be891f921a3f64a8ca547c9e9447c87f7b1ed884e2fe&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Mt-photos_B",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247493003&idx=1&sn=84df2654a3c0527f12887f44dd2b0b77&chksm=ea4132c6dd36bbd0a2426bdb765b9e15be891f921a3f64a8ca547c9e9447c87f7b1ed884e2fe&token=1059416760&lang=zh_CN#rd"
   },
@@ -1309,6 +1319,11 @@
   },
   {
     "name": "Transmission_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Transmission_C",
     "sort": "docker",
     "course": ""
   },
@@ -2033,6 +2048,26 @@
   },
   {
     "name": "Last_C",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "1Panel_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "115_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Auto-Symlink_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Zconnect_A",
     "sort": "other",
     "course": ""
   }
