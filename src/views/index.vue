@@ -69,21 +69,24 @@
         <el-switch class="cdn" v-model="value1" active-text="CDN"/>
       </div>
       <el-space wrap>
-        <div
-          v-for="(item, index) in data.icondata"
-          :key="index"
-          class="card"
-          @click="handleClick(item.name + '.png')"
-        >
-          <el-image
-            lazy
-            class="card_img"
-            :src="data.publicPath + 'icon/' + item.name + '.png'"
-          />
-          <div class="card_txt" @click="openUrl(item.course)">
-            {{ item.name }}
-          </div>
-        </div>
+				
+					<div
+						v-for="(item, index) in data.icondata"
+						:key="index"
+						class="card"
+						@click="handleClick(item.name + '.png')"
+					>
+						<el-tooltip class="item" effect="dark" :content=item.name placement="top">
+							<el-image
+								lazy
+								class="card_img"
+								:src="data.publicPath + 'icon/' + item.name + '.png'"
+							/>
+						</el-tooltip>
+						<div class="card_txt" @click="openUrl(item.course)">
+							{{ item.name }}
+						</div>
+					</div>
       </el-space>
     </div>
     <div class="foot">
@@ -282,6 +285,7 @@ export default defineComponent({
   font-size: 16px;
   margin-left: 10px;
   margin-right: 20px;
+	cursor: pointer;
 }
 .el-divider {
   margin-left: 10px;
@@ -341,10 +345,11 @@ export default defineComponent({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90px;
-  width: 90px;
+  height: 120px;
+  width: 120px;
   border-radius: 10px;
-  border: 1px solid #f5f7fc;
+  //border: 1px solid #f5f7fc;
+  border: 1px solid rgba(42, 42, 42, 0.42);
 }
 .card:hover {
   // border: 1px solid #f5f7fc;
