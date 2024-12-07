@@ -1803,12 +1803,12 @@
   },
   {
     "name": "Firefox_A",
-    "sort": "project",
+    "sort": "other",
     "course": ""
   },
   {
     "name": "Firefox_B",
-    "sort": "project",
+    "sort": "other",
     "course": ""
   },
   {
@@ -2032,17 +2032,27 @@
     "course": ""
   },
   {
-    "name": "Last_A",
+    "name": "Lastfm_A",
     "sort": "other",
     "course": ""
   },
   {
-    "name": "Last_B",
+    "name": "Lastfm_B",
     "sort": "other",
     "course": ""
   },
   {
-    "name": "Last_C",
+    "name": "Lastfm_C",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Lastfm_D",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Lastfm_E",
     "sort": "other",
     "course": ""
   },
@@ -2073,6 +2083,16 @@
   },
   {
     "name": "QQ-Music_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Translate_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Gmail_A",
     "sort": "other",
     "course": ""
   }
