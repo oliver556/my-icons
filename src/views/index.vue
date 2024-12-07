@@ -69,15 +69,22 @@
         <el-switch class="cdn" v-model="value1" active-text="CDN"/>
       </div>
       <el-space wrap>
-				
 					<div
 						v-for="(item, index) in data.icondata"
 						:key="index"
 						class="card"
-						@click="handleClick(item.name + '.png')"
+						@click="handleClick(item.name + (item.type === 'svg' ? '.svg' : '.png'))"
 					>
-						<el-tooltip class="item" effect="dark" :content=item.name placement="top">
+						<el-tooltip class="item" effect="dark" :content=getItemContent(item) placement="top">
 							<el-image
+								v-if="item.type === 'svg'"
+								lazy
+								class="card_img"
+								alt="SVG Image"
+								:src="data.publicPath + 'icon/' + item.name + '.svg'"
+							/>
+							<el-image
+								v-else
 								lazy
 								class="card_img"
 								:src="data.publicPath + 'icon/' + item.name + '.png'"
@@ -89,6 +96,7 @@
 					</div>
       </el-space>
     </div>
+		
     <div class="foot">
       <div class="foot_txt">© 2024.12.05 | By Jamison Lee</div>
       <div class="foot_url">
@@ -123,7 +131,7 @@ import { defineComponent, reactive, onMounted } from "vue";
 import { Search } from "@element-plus/icons-vue";
 import clipboard3 from "vue-clipboard3";
 import { ElMessage } from "element-plus";
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 export default defineComponent({
   setup() {
@@ -137,13 +145,13 @@ export default defineComponent({
       publicPath: process.env.BASE_URL,
     });
 
-    //加载数据
+    // 加载数据
     onMounted(async () => {
       let arr = await readLocalFile();
       data.icondata = arr;
     });
 
-    //读取本地的图片
+    // 读取本地的图片
     function readLocalFile() {
       return new Promise((resolve, reject) => {
         fetch(data.publicPath + "db.json?"+ new Date().getTime() )
@@ -162,7 +170,7 @@ export default defineComponent({
       });
     }
 
-    //选择,获取分类数据
+    // 选择,获取分类数据
     async function handleSelect(value) {
       let filteredData;
       let tempdata = (await readLocalFile()) as any;
@@ -191,7 +199,7 @@ export default defineComponent({
       data.icondata = filteredData;
     }
 
-    //搜索
+    // 搜索
     async function handleSearch() {
       let keyword = data.search;
       let filteredData;
@@ -221,13 +229,19 @@ export default defineComponent({
       data.icondata = arr;
     }
 
-    //按钮
+    // 按钮
     async function handleClick(url) {
-      //获取图片url
+      // 获取图片 url
       let currenturl = window.location.href;
       let iconurl = data.publicPath + "icon/" + url;
-      let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@main/dist/" + "icon/" + url;
-      let fullurl = currenturl.substr(0, currenturl.length - 2) + iconurl;
+      let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@main/dist/" + "icon/" + url; // CDN Url
+      let fullurl = currenturl.substr(0, currenturl.length - 2) + iconurl; // 本地 Url
+			
+			console.log('图片文件全称(url): ', url);
+			console.log('当前环境路径(本地) currenturl: ', currenturl);
+			console.log('图片文件路径(iconurl): ', iconurl);
+			console.log('CDN 拼接后的路径(iconurlCdn): ', iconurlCdn);
+			console.log('当前环境拼接后的路径(fullurl): ', fullurl);
       await toClipboard(value1.value ? iconurlCdn : fullurl);
       ElMessage({
         message: "图标链接复制成功",
@@ -235,10 +249,14 @@ export default defineComponent({
       });
     }
 
-    //打开url
+    // 打开url
     function openUrl(url) {
       window.open(url, "_blank");
     }
+		
+		function getItemContent(item: { name: any; type: string; }) {
+			return `${item.name}${item.type === 'svg' ? '.svg' : '.png'}`;
+		}
 
     return {
       data,
@@ -247,6 +265,7 @@ export default defineComponent({
       handleSearch,
       handleSelect,
       openUrl,
+			getItemContent,
       //图标
       Search,
     };
