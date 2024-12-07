@@ -53,8 +53,20 @@
     "course": ""
   },
   {
+    "name": "BookStore_svg_A",
+    "sort": "project",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "BlogProject_A",
     "sort": "project",
+    "course": ""
+  },
+  {
+    "name": "BlogProject_svg_A",
+    "sort": "project",
+    "type": "svg",
     "course": ""
   },
   {
@@ -63,13 +75,37 @@
     "course": ""
   },
   {
+    "name": "MovieProject_svg_A",
+    "sort": "project",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Subscribe_A",
     "sort": "project",
     "course": ""
   },
   {
+    "name": "Subscribe_svg_A",
+    "sort": "project",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "URL_A",
     "sort": "project",
+    "course": ""
+  },
+  {
+    "name": "URL_svg_A",
+    "sort": "project",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Watchtower_svg_A",
+    "sort": "docker",
+    "type": "svg",
     "course": ""
   },
   {
@@ -118,6 +154,12 @@
     "course": ""
   },
   {
+    "name": "AriaNg_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Bazarr_A",
     "sort": "docker",
     "course": ""
@@ -148,6 +190,12 @@
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247485659&idx=1&sn=f7fec6f2c622045e502c065ac93b0d8d&chksm=ea42df96dd355680cb4b84e436beeb644be585e70fb41ba88efad08cf0f390873b1c562a54b4&token=1059416760&lang=zh_CN#rd"
   },
   {
+    "name": "Filebrowser_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247485659&idx=1&sn=f7fec6f2c622045e502c065ac93b0d8d&chksm=ea42df96dd355680cb4b84e436beeb644be585e70fb41ba88efad08cf0f390873b1c562a54b4&token=1059416760&lang=zh_CN#rd"
+  },
+  {
     "name": "Baidunetdisk_A",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247485920&idx=1&sn=5d8dabdbf6bc87be619e7b8aba667c73&chksm=ea42deaddd3557bb7b182447cd8f876550b71118fc1ffb004d54a2e303e42e464604fb5ae051&token=1059416760&lang=zh_CN#rd"
@@ -171,6 +219,24 @@
     "name": "Speedtest_C",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247486145&idx=1&sn=120e0740dda4a70a3ad574916fa00922&chksm=ea42dd8cdd35549a29af6d34bf2e787bae791b615059095e5b15df33667689eee483b25e53fd&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Speedtest_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247486145&idx=1&sn=120e0740dda4a70a3ad574916fa00922&chksm=ea42dd8cdd35549a29af6d34bf2e787bae791b615059095e5b15df33667689eee483b25e53fd&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Speedtest_svg_B",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247486145&idx=1&sn=120e0740dda4a70a3ad574916fa00922&chksm=ea42dd8cdd35549a29af6d34bf2e787bae791b615059095e5b15df33667689eee483b25e53fd&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Stirling-PDF_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
   },
   {
     "name": "Ubooquity_A",
@@ -248,6 +314,12 @@
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247488000&idx=1&sn=c6700f7ddac1a26f0270a3208fc0f686&chksm=ea42c54ddd354c5b13b13c5b44baa02616d423e4e4c231c4bbdf33bae6beb2af5a817d5db464&token=1059416760&lang=zh_CN#rd"
   },
   {
+    "name": "Jellyfin_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247488000&idx=1&sn=c6700f7ddac1a26f0270a3208fc0f686&chksm=ea42c54ddd354c5b13b13c5b44baa02616d423e4e4c231c4bbdf33bae6beb2af5a817d5db464&token=1059416760&lang=zh_CN#rd"
+  },
+  {
     "name": "Lanraragi_A",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247488152&idx=1&sn=ad3c5d2b77cdff9840a77477468ca507&chksm=ea42c5d5dd354cc34acac433236c52c6d0781900326ddd4b795b3e8a589628e73fedbbf98b92&token=1059416760&lang=zh_CN#rd"
@@ -288,6 +360,12 @@
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489204&idx=1&sn=d8a5fe5d8c6394da323ed72cfc1c307d&chksm=ea42c1f9dd3548ef83ce07cb4b943d36440a3dfa8b695bade9c90809d3f31b7d46ae759d8ea2&token=1059416760&lang=zh_CN#rd"
   },
   {
+    "name": "Jackett_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489204&idx=1&sn=d8a5fe5d8c6394da323ed72cfc1c307d&chksm=ea42c1f9dd3548ef83ce07cb4b943d36440a3dfa8b695bade9c90809d3f31b7d46ae759d8ea2&token=1059416760&lang=zh_CN#rd"
+  },
+  {
     "name": "qBittorrent_A",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489208&idx=1&sn=d759da898aa5f05fad4063615b799c0a&chksm=ea42c1f5dd3548e37f232a5d576aa08d647d04e762b41a2cb6aca1a32c0752227fcd553f9ab0&token=1059416760&lang=zh_CN#rd"
@@ -305,6 +383,18 @@
   {
     "name": "qBittorrent_D",
     "sort": "docker",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489208&idx=1&sn=d759da898aa5f05fad4063615b799c0a&chksm=ea42c1f5dd3548e37f232a5d576aa08d647d04e762b41a2cb6aca1a32c0752227fcd553f9ab0&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "qBittorrent_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489208&idx=1&sn=d759da898aa5f05fad4063615b799c0a&chksm=ea42c1f5dd3548e37f232a5d576aa08d647d04e762b41a2cb6aca1a32c0752227fcd553f9ab0&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "qBittorrent_svg_B",
+    "sort": "docker",
+    "type": "svg",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489208&idx=1&sn=d759da898aa5f05fad4063615b799c0a&chksm=ea42c1f5dd3548e37f232a5d576aa08d647d04e762b41a2cb6aca1a32c0752227fcd553f9ab0&token=1059416760&lang=zh_CN#rd"
   },
   {
@@ -336,6 +426,11 @@
     "name": "Yesplaymusic_B",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489780&idx=1&sn=c0a7ee05a5854f23a594b8b4064fdb25&chksm=ea42cfb9dd3546afa805280c8545ba9eca0638ce3dd6106a9c6197dbd689f40da7a291c34a4f&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Music-Tag-Web_A",
+    "sort": "docker",
+    "course": ""
   },
   {
     "name": "Halo_A",
@@ -420,6 +515,12 @@
   {
     "name": "Navidrome_C",
     "sort": "docker",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489928&idx=1&sn=63bf5efa922c054216f38baf72d52498&chksm=ea42cec5dd3547d32865ca7f26f7de0c9ccf5df636416526a567eea1f36c64dc750304c9ff22&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Navidrome_svg_A",
+    "sort": "docker",
+    "type": "svg",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247489928&idx=1&sn=63bf5efa922c054216f38baf72d52498&chksm=ea42cec5dd3547d32865ca7f26f7de0c9ccf5df636416526a567eea1f36c64dc750304c9ff22&token=1059416760&lang=zh_CN#rd"
   },
   {
@@ -548,6 +649,12 @@
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490622&idx=1&sn=248a08b503ac058347dd8d3a39f072bd&chksm=ea42cb73dd3542650962e153efdc1b3c9e8d46e5c79b90d12b50dc771d746f79d3b554c14c7b&token=1059416760&lang=zh_CN#rd"
   },
   {
+    "name": "UptimeKuma_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490622&idx=1&sn=248a08b503ac058347dd8d3a39f072bd&chksm=ea42cb73dd3542650962e153efdc1b3c9e8d46e5c79b90d12b50dc771d746f79d3b554c14c7b&token=1059416760&lang=zh_CN#rd"
+  },
+  {
     "name": "Nextcloud_A",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490675&idx=1&sn=ed5fe0761d2205ebdd388a8a2539c145&chksm=ea42cb3edd3542283e19a1c95bdedc2fc17bdd7e13368a6c9f99e01aa54a41a89dd995ae9795&token=1059416760&lang=zh_CN#rd"
@@ -610,6 +717,12 @@
   {
     "name": "SunPanel_F",
     "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "SunPanel_svg_A",
+    "sort": "docker",
+    "type": "svg",
     "course": ""
   },
   {
@@ -685,6 +798,18 @@
   {
     "name": "Bitwarden_B",
     "sort": "docker",
+    "course": "https://blog.viplee.cc/archives/docker-compose-bitwarden"
+  },
+  {
+    "name": "Bitwarden_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://blog.viplee.cc/archives/docker-compose-bitwarden"
+  },
+  {
+    "name": "Bitwarden_svg_B",
+    "sort": "docker",
+    "type": "svg",
     "course": "https://blog.viplee.cc/archives/docker-compose-bitwarden"
   },
   {
@@ -1188,6 +1313,38 @@
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247517507&idx=1&sn=1e07fd4d9aac98245e31cc9602e793b3&chksm=ea41520edd36db184dd1c5cdc49de15f8cf1e9f0baedaf1bff3c6a198f31c9e2bf0411132651&token=1059416760&lang=zh_CN#rd"
   },
   {
+    "name": "Cloudflare_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247517507&idx=1&sn=1e07fd4d9aac98245e31cc9602e793b3&chksm=ea41520edd36db184dd1c5cdc49de15f8cf1e9f0baedaf1bff3c6a198f31c9e2bf0411132651&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Blog_Favicon_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "GitLab_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "GitLab_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "GitLab_C",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "GitLab_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Alist_A",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247517538&idx=1&sn=8a4fb5b28e1767d3c511b0253d0c96f3&chksm=ea41522fdd36db39b6c3656ae97453d0555e8d107abf8b0f57d6f580df70b1dfebbdc0225367&token=1059416760&lang=zh_CN#rd"
@@ -1200,6 +1357,12 @@
   {
     "name": "Alist_C",
     "sort": "docker",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247517538&idx=1&sn=8a4fb5b28e1767d3c511b0253d0c96f3&chksm=ea41522fdd36db39b6c3656ae97453d0555e8d107abf8b0f57d6f580df70b1dfebbdc0225367&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Alist_svg_A",
+    "sort": "docker",
+    "type": "svg",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247517538&idx=1&sn=8a4fb5b28e1767d3c511b0253d0c96f3&chksm=ea41522fdd36db39b6c3656ae97453d0555e8d107abf8b0f57d6f580df70b1dfebbdc0225367&token=1059416760&lang=zh_CN#rd"
   },
   {
@@ -1263,6 +1426,12 @@
     "course": ""
   },
   {
+    "name": "MySQL_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "V2rayA_A",
     "sort": "docker",
     "course": ""
@@ -1298,6 +1467,18 @@
     "course": ""
   },
   {
+    "name": "Lucky_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Nezha_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Syncthing_A",
     "sort": "docker",
     "course": ""
@@ -1310,6 +1491,12 @@
   {
     "name": "Syncthing_C",
     "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Syncthing_svg_A",
+    "sort": "docker",
+    "type": "svg",
     "course": ""
   },
   {
@@ -1333,8 +1520,20 @@
     "course": ""
   },
   {
+    "name": "Umami_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Radarr_A",
     "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Radarr_svg_A",
+    "sort": "docker",
+    "type": "svg",
     "course": ""
   },
   {
@@ -1418,6 +1617,12 @@
     "course": ""
   },
   {
+    "name": "Portainer_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Homebox_A",
     "sort": "docker",
     "course": ""
@@ -1440,6 +1645,12 @@
   {
     "name": "ServerStatus_A",
     "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "ServerStatus_svg_A",
+    "sort": "docker",
+    "type": "svg",
     "course": ""
   },
   {
@@ -1470,6 +1681,12 @@
   {
     "name": "HomeAssistant_A",
     "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "HomeAssistant_svg_A",
+    "sort": "docker",
+    "type": "svg",
     "course": ""
   },
   {
@@ -1505,6 +1722,17 @@
   {
     "name": "ChatGPT_B",
     "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "ChatGPT_C",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "ChatGPT_svg_A",
+    "sort": "docker",
+    "type": "svg",
     "course": ""
   },
   {
@@ -1571,6 +1799,18 @@
     "name": "OpenWRT_D",
     "sort": "router",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247507082&idx=1&sn=39bfdbe3af107387054060cacb00deb9&chksm=ea410bc7dd3682d1b6229e2421b555cde3cf455e82dbe5b91c623df65e28dbce03a7fb3407eb&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "OpenWRT_svg_A",
+    "sort": "router",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247507082&idx=1&sn=39bfdbe3af107387054060cacb00deb9&chksm=ea410bc7dd3682d1b6229e2421b555cde3cf455e82dbe5b91c623df65e28dbce03a7fb3407eb&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Router_svg_A",
+    "sort": "router",
+    "type": "svg",
+    "course": ""
   },
   {
     "name": "Windows10_A",
@@ -1772,6 +2012,12 @@
     "course": ""
   },
   {
+    "name": "Clash_svg_A",
+    "sort": "router",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Docker_A",
     "sort": "docker",
     "course": ""
@@ -1847,6 +2093,12 @@
     "course": ""
   },
   {
+    "name": "Love_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Netflix_A",
     "sort": "other",
     "course": ""
@@ -1882,6 +2134,12 @@
     "course": ""
   },
   {
+    "name": "Vertex_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Vmware_A",
     "sort": "vms",
     "course": ""
@@ -1898,6 +2156,11 @@
   },
   {
     "name": "Wikijs_B",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Wikijs_C",
     "sort": "other",
     "course": ""
   },
@@ -1929,6 +2192,12 @@
   {
     "name": "Pve_C",
     "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Pve_svg_A",
+    "sort": "other",
+    "type": "svg",
     "course": ""
   },
   {
@@ -2077,8 +2346,14 @@
     "course": ""
   },
   {
-    "name": "iconfont_A",
+    "name": "Iconfont_A",
     "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Iconfont_svg_A",
+    "sort": "other",
+    "type": "svg",
     "course": ""
   },
   {
@@ -2094,6 +2369,12 @@
   {
     "name": "Gmail_A",
     "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Gmail_svg_A",
+    "sort": "other",
+    "type": "svg",
     "course": ""
   }
 ]
