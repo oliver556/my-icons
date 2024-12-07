@@ -38,6 +38,18 @@
     "course": ""
   },
   {
+    "name": "Jingdong_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Jingdong_svg_B",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "V2ray_A",
     "sort": "other",
     "course": ""
@@ -203,6 +215,18 @@
   {
     "name": "Baidunetdisk_B",
     "sort": "docker",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247485920&idx=1&sn=5d8dabdbf6bc87be619e7b8aba667c73&chksm=ea42deaddd3557bb7b182447cd8f876550b71118fc1ffb004d54a2e303e42e464604fb5ae051&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Baidunetdisk_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247485920&idx=1&sn=5d8dabdbf6bc87be619e7b8aba667c73&chksm=ea42deaddd3557bb7b182447cd8f876550b71118fc1ffb004d54a2e303e42e464604fb5ae051&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Baidunetdisk_svg_B",
+    "sort": "docker",
+    "type": "svg",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247485920&idx=1&sn=5d8dabdbf6bc87be619e7b8aba667c73&chksm=ea42deaddd3557bb7b182447cd8f876550b71118fc1ffb004d54a2e303e42e464604fb5ae051&token=1059416760&lang=zh_CN#rd"
   },
   {
@@ -571,6 +595,30 @@
   {
     "name": "Bilibili_E",
     "sort": "docker",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490008&idx=1&sn=20ff7f96bc67e99333ad0d77c519498f&chksm=ea42ce95dd354783c3e8a9e58e5da0f6c428190686a701ab4ce353534a9b2da091feaebc7705&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Bilibili_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490008&idx=1&sn=20ff7f96bc67e99333ad0d77c519498f&chksm=ea42ce95dd354783c3e8a9e58e5da0f6c428190686a701ab4ce353534a9b2da091feaebc7705&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Bilibili_svg_B",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490008&idx=1&sn=20ff7f96bc67e99333ad0d77c519498f&chksm=ea42ce95dd354783c3e8a9e58e5da0f6c428190686a701ab4ce353534a9b2da091feaebc7705&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Bilibili_svg_C",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490008&idx=1&sn=20ff7f96bc67e99333ad0d77c519498f&chksm=ea42ce95dd354783c3e8a9e58e5da0f6c428190686a701ab4ce353534a9b2da091feaebc7705&token=1059416760&lang=zh_CN#rd"
+  },
+  {
+    "name": "Bilibili_svg_D",
+    "sort": "docker",
+    "type": "svg",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247490008&idx=1&sn=20ff7f96bc67e99333ad0d77c519498f&chksm=ea42ce95dd354783c3e8a9e58e5da0f6c428190686a701ab4ce353534a9b2da091feaebc7705&token=1059416760&lang=zh_CN#rd"
   },
   {
@@ -1113,6 +1161,12 @@
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247516438&idx=1&sn=e78ded18de498da89d9fcd049fb448e9&chksm=ea41565bdd36df4d141d27af231c9a955a76a5df0a172f81412dd75c958b433270dae777d701&token=1059416760&lang=zh_CN#rd"
   },
   {
+    "name": "Tomcat_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247516438&idx=1&sn=e78ded18de498da89d9fcd049fb448e9&chksm=ea41565bdd36df4d141d27af231c9a955a76a5df0a172f81412dd75c958b433270dae777d701&token=1059416760&lang=zh_CN#rd"
+  },
+  {
     "name": "Aliyunpan_A",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247516640&idx=1&sn=2128f2af4f210ab5e483f62584370145&chksm=ea4156addd36dfbb4d70e3f238ce0b2bbade77a0507e5f079cf258b84f87431324ad0fa8aea7&token=1059416760&lang=zh_CN#rd"
@@ -1345,6 +1399,12 @@
     "course": ""
   },
   {
+    "name": "Gitlab_svg_B",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Alist_A",
     "sort": "docker",
     "course": "https://mp.weixin.qq.com/s?__biz=MzI2MjkzMDk3OA==&mid=2247517538&idx=1&sn=8a4fb5b28e1767d3c511b0253d0c96f3&chksm=ea41522fdd36db39b6c3656ae97453d0555e8d107abf8b0f57d6f580df70b1dfebbdc0225367&token=1059416760&lang=zh_CN#rd"
@@ -1427,6 +1487,12 @@
   },
   {
     "name": "MySQL_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "MySQL_svg_B",
     "sort": "docker",
     "type": "svg",
     "course": ""
@@ -2048,6 +2114,12 @@
     "course": ""
   },
   {
+    "name": "Docker_svg_A",
+    "sort": "docker",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Firefox_A",
     "sort": "other",
     "course": ""
@@ -2078,6 +2150,24 @@
     "course": ""
   },
   {
+    "name": "Github_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Github_on_dark_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Gitee_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
     "name": "Kubernetes_A",
     "sort": "docker",
     "course": ""
@@ -2085,6 +2175,12 @@
   {
     "name": "Kubernetes_B",
     "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Kubernetes_svg_A",
+    "sort": "docker",
+    "type": "svg",
     "course": ""
   },
   {
@@ -2203,6 +2299,12 @@
   {
     "name": "Google_A",
     "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Google_svg_A",
+    "sort": "other",
+    "type": "svg",
     "course": ""
   },
   {
@@ -2373,6 +2475,126 @@
   },
   {
     "name": "Gmail_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "StackOverflow_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Alipay_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Android_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Android_svg_B",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "CSS3_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "HTML5_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Java_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "NPM_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "PHP_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Python_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "SonarQube_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "SonarQube_on_dark_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Taobao_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Taobao_svg_B",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Vue_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Youtube_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Youtube_on_dark_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "ZLibrary_svg_A",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "ZLibrary_svg_B",
+    "sort": "other",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "ZLibrary_svg_C",
     "sort": "other",
     "type": "svg",
     "course": ""
