@@ -2042,7 +2042,7 @@
     "course": ""
   },{
     "name": "AliCloud_A",
-    "sort": "other",
+    "sort": "uncategorized",
     "course": ""
   },
   {
@@ -2597,6 +2597,16 @@
     "name": "ZLibrary_svg_C",
     "sort": "other",
     "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "Sub_Store_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Oracle_A",
+    "sort": "other",
     "course": ""
   }
 ]
