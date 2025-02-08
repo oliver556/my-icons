@@ -2608,5 +2608,10 @@
     "name": "Oracle_A",
     "sort": "other",
     "course": ""
+  },
+  {
+    "name": "Gitea_A",
+    "sort": "other",
+    "course": ""
   }
 ]
