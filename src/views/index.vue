@@ -46,8 +46,9 @@
             <el-option label="路由器" value="2" />
             <el-option label="虚拟机" value="3" />
             <el-option label="项目" value="4" />
-            <el-option label="其他" value="5" />
-            <el-option label="未分类" value="6" />
+            <el-option label="技术栈" value="5" />
+            <el-option label="其他" value="98" />
+            <el-option label="未分类" value="99" />
           </el-select>
         </template>
       </el-input>
@@ -187,9 +188,12 @@ export default defineComponent({
         data.selectlabel = "项目";
         filteredData = tempdata.filter((item) => item.sort == "project");
       } else if (value == 5) {
+        data.selectlabel = "技术栈";
+        filteredData = tempdata.filter((item) => item.sort == "technology");
+      } else if (value == 98) {
         data.selectlabel = "其他";
         filteredData = tempdata.filter((item) => item.sort == "other");
-      } else if (value == 6) {
+      } else if (value == 99) {
         data.selectlabel = "未分类";
         filteredData = tempdata.filter((item) => item.sort == "uncategorized");
       } else {
@@ -214,8 +218,10 @@ export default defineComponent({
       } else if (sort == 4) {
         filteredData = tempdata.filter((item) => item.sort == "project");
       } else if (sort == 5) {
+        filteredData = tempdata.filter((item) => item.sort == "technology");
+      } else if (sort == 98) {
         filteredData = tempdata.filter((item) => item.sort == "other");
-      } if (sort == 6) {
+      } if (sort == 99) {
         filteredData = tempdata.filter((item) => item.sort == "uncategorized");
       } else {
         filteredData = tempdata;
@@ -417,7 +423,6 @@ export default defineComponent({
   width: 18px;
   height: 18px;
   margin: 0 15px;
-  // opacity: 0.6;
 }
 .cdn{
   padding-left: 25px;

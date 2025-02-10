@@ -2564,12 +2564,6 @@
     "course": ""
   },
   {
-    "name": "Vue_svg_A",
-    "sort": "other",
-    "type": "svg",
-    "course": ""
-  },
-  {
     "name": "Youtube_svg_A",
     "sort": "other",
     "type": "svg",
@@ -2612,6 +2606,32 @@
   {
     "name": "Gitea_A",
     "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Tissue_A",
+    "sort": "other",
+    "course": ""
+  },
+  {
+    "name": "Vue_svg_A",
+    "sort": "technology",
+    "type": "svg",
+    "course": ""
+  },
+  {
+    "name": "HTML_A",
+    "sort": "technology",
+    "course": ""
+  },
+  {
+    "name": "JavaScript_A",
+    "sort": "technology",
+    "course": ""
+  },
+  {
+    "name": "CSS_A",
+    "sort": "technology",
     "course": ""
   }
 ]
