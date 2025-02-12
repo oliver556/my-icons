@@ -2633,5 +2633,11 @@
     "name": "CSS_A",
     "sort": "technology",
     "course": ""
+  },
+  {
+    "name": "Readeck_A",
+    "sort": "technology",
+    "type": "svg",
+    "course": ""
   }
 ]
