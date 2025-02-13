@@ -2639,5 +2639,95 @@
     "sort": "technology",
     "type": "svg",
     "course": ""
+  },
+  {
+    "name": "Symedia_A_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_A_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_A_C",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_A_D",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_B_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_B_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_B_C",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_B_D",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_C_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_C_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_C_C",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_C_D",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_D_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_D_B",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_D_C",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_D_D",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_E_A",
+    "sort": "docker",
+    "course": ""
+  },
+  {
+    "name": "Symedia_E_B",
+    "sort": "docker",
+    "course": ""
   }
 ]
