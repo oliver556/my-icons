@@ -4,7 +4,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'index',
-    component: () => import( '../views/改版1.vue'),
+    component: () => import( '../views/index.vue'),
     meta: {
       title: "My Icon",
     },
