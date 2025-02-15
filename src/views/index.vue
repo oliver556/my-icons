@@ -310,7 +310,8 @@ export default defineComponent({
 		async function copyIconUrl(url: string) {
 			let currenturl = window.location.href;
 			let iconurl = data.publicPath + "icon/" + url;
-			let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@main/dist/" + "icon/" + url; // CDN Url
+			// let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@main/dist/" + "icon/" + url; // CDN Url
+			let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@gh-pages/" + "icon/" + url; // CDN Url
 			// let iconurlCdn = "https://github.viplee.top/https://raw.githubusercontent.com/oliver556/my-icons/refs/heads/main/dist/icon/" + url; // 套 CF
 				
 				// 备用 CDN Url
