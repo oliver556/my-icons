@@ -110,7 +110,7 @@
 								fit="contain"
 							/>
 						</el-tooltip>
-						<div class="card_content_txt" @click="openUrl(item.course)">
+						<div class="card_content_txt" @click="openUrl(item.course)" :class="item.course !== '' ? 'card_content_course' : ''">
 							{{ item.name }}
 						</div>
 					</div>
@@ -312,6 +312,15 @@ export default defineComponent({
 			let currenturl = window.location.href;
 			let iconurl = data.publicPath + "icon/" + url;
 			let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@main/dist/" + "icon/" + url; // CDN Url
+			
+			// 备用 CDN Url
+			// fastly.jsdelivr.net
+			// gcore.jsdelivr.net
+			// testingcf.jsdelivr.net
+			
+			// 自建 CF 加速转发
+			// https://github.viplee.top/https://raw.githubusercontent.com/oliver556/my-icons/refs/heads/main/dist/icon/ + url
+			// https://github.viplee.top/https://raw.githubusercontent.com/oliver556/my-icons/refs/heads/main/dist/icon/CMS/Halo_E.png
 			let fullurl = currenturl.substr(0, currenturl.length - 2) + iconurl; // 本地 Url
 			
 			console.log('图片文件全称(url): ', url);
@@ -631,7 +640,12 @@ html, body {
 						text-align: center;
 						font-size: 0.7rem;
 						color: #333;
+						font-weight: bold;
 					}
+				}
+				
+				.card_content_course {
+					color: #79C576;
 				}
 				
 				&_img {
