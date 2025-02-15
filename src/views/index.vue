@@ -308,7 +308,6 @@ export default defineComponent({
 		 * @Description 复制图标链接
 		 */
 		async function copyIconUrl(url: string) {
-			debugger
 			let currenturl = window.location.href;
 			let iconurl = data.publicPath + "icon/" + url;
 			let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@main/dist/" + "icon/" + url; // CDN Url
