@@ -272,6 +272,7 @@ export default defineComponent({
 				'Analytics': 'Analytics - 数据分析平台',
 				'Automation': 'Automation - 自动化工具链',
 				// 'Bookmarks': 'Bookmarks - 书签管理系统',
+				"Cloud Protection Services": "Cloud Protection Services - 云防护服务",
 				'CMS': 'CMS - 内容管理系统（CMS）',
 				'Document Management': 'Document Management - 文档协同平台',
 				'Database Management': 'Database Management - 数据库运维套件',
