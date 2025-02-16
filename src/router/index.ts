@@ -6,7 +6,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'index',
     component: () => import( '../views/index.vue'),
     meta: {
-      title: "My Icon",
+      title: "Icon 图标库",
     },
   }
 ]

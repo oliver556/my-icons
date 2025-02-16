@@ -279,6 +279,7 @@ export default defineComponent({
 				'Downloader': 'Downloader - 下载任务管理器',
 				'Feed Readers': 'Feed Readers - 信息流订阅器',
 				'File Transfer': 'File Transfer - 文件传输中间件',
+				'Google': 'Google - 谷歌（技术规范保留原文）',
 				// 'Financial Management': 'Financial Management - 财务管理系统',
 				// 'Games': 'Games - 游戏服务器',
 				'Internet of Things (IoT)': 'Internet of Things (IoT) - 物联网（IoT）管理平台',
@@ -296,10 +297,12 @@ export default defineComponent({
 				// 'Software Development': 'Software Development - 软件开发工具链',
 				'Synology NAS': 'Synology NAS - 群晖 NAS 管理套件',
 				'Status & Uptime pages': 'Status & Uptime pages - 服务状态监控页',
+				'Streaming Service Platform': 'Streaming Service Platform - 流媒体服务平台',
 				// 'Social Networking and Forum Software': 'Social Networking and Forum Software - 社交化论坛系统',
 				'Self-hosting Solutions & OS': 'Self-hosting Solutions & OS - 自托管解决方案与操作系统',
 				// 'URL Shorteners': 'URL Shorteners - 短链生成器',
-				'VPS': 'VPS - 虚拟专用服务器（VPS）'
+				'VPS': 'VPS - 虚拟专用服务器（VPS）',
+				'Uncategorized': 'Uncategorized - 未分类项目'
 			};
 			return titles[category] || category;
 		};
