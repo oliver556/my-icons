@@ -539,6 +539,49 @@
     }
   ],
 
+  "Google": [
+    {
+      "name": "Chrome",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Gmail",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Google",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Google Harddisk",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Google Maps",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Google Photo",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Google Play",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Translate",
+      "type": "png",
+      "course": ""
+    }
+  ],
+
   "Internet of Things (IoT)": [
     {
       "name": "Gladys Assistant",
@@ -1372,6 +1415,11 @@
 
   "Router & VPN": [
     {
+      "name": "Clash",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Dockovpn",
       "type": "png",
       "course": ""
@@ -1455,6 +1503,16 @@
       "course": ""
     },
     {
+      "name": "Centos_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Centos_B",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "DietPi",
       "type": "png",
       "course": ""
@@ -1466,6 +1524,11 @@
     },
     {
       "name": "iStoreOS",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Linux",
       "type": "png",
       "course": ""
     },
@@ -1621,6 +1684,39 @@
     }
   ],
 
+  "Streaming Service Platform": [
+    {
+      "name": "Bilibili",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Netflix_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Netflix_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "QQ Music",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Tencent Video",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Youtube",
+      "type": "png",
+      "course": ""
+    }
+  ],
+
   "Synology NAS": [
     {
       "name": "Active Backup for Business",
@@ -1689,6 +1785,14 @@
     },
     {
       "name": "Video Station",
+      "type": "png",
+      "course": ""
+    }
+  ],
+
+  "Uncategorized": [
+    {
+      "name": "Myicon",
       "type": "png",
       "course": ""
     }
