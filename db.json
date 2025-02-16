@@ -21,6 +21,11 @@
       "course": ""
     },
     {
+      "name": "DeepSeek",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "FastGPT",
       "type": "png",
       "course": ""
@@ -37,6 +42,11 @@
     },
     {
       "name": "Stable Diffusion",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Tongyi Qianwen",
       "type": "png",
       "course": ""
     }
@@ -325,6 +335,11 @@
     },
     {
       "name": "Komga",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Notion",
       "type": "png",
       "course": ""
     },
@@ -1691,6 +1706,11 @@
       "course": ""
     },
     {
+      "name": "Lastfm",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Netflix_A",
       "type": "png",
       "course": ""
@@ -1792,6 +1812,11 @@
 
   "Uncategorized": [
     {
+      "name": "Iconfont",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Myicon",
       "type": "png",
       "course": ""
@@ -1835,7 +1860,12 @@
       "course": ""
     },
     {
-      "name": "HetZner",
+      "name": "HetZner_A",
+      "type": "png",
+      "course": "https://www.hetzner.com"
+    },
+    {
+      "name": "HetZner_B",
       "type": "png",
       "course": "https://www.hetzner.com"
     },
@@ -1855,7 +1885,22 @@
       "course": ""
     },
     {
-      "name": "NetCup",
+      "name": "NetCup_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "NetCup_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Oracle_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Oracle_B",
       "type": "png",
       "course": ""
     },
