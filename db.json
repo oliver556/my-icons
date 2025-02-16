@@ -138,6 +138,14 @@
     }
   ],
 
+  "Cloud Protection Services": [
+    {
+      "name": "Cloudflare",
+      "type": "png",
+      "course": ""
+    }
+  ],
+
   "CMS": [
     {
       "name": "Halo_A",
@@ -272,6 +280,21 @@
     },
     {
       "name": "Blocky",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "CloudDNS_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "CloudDNS_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "DDNS",
       "type": "png",
       "course": ""
     },
@@ -1505,6 +1528,11 @@
       "course": ""
     },
     {
+      "name": "V2rayA",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Zerotier",
       "type": "png",
       "course": ""
@@ -1820,10 +1848,35 @@
       "name": "Myicon",
       "type": "png",
       "course": ""
+    },
+    {
+      "name": "Speedtest_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Speedtest_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Speedtest_C",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Speedtest_D",
+      "type": "png",
+      "course": ""
     }
   ],
 
   "VPS": [
+    {
+      "name": "Akamai",
+      "type": "png",
+      "course": ""
+    },
     {
       "name": "Aliyun",
       "type": "png",
@@ -1941,6 +1994,11 @@
     },
     {
       "name": "Vultr",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "YxVM",
       "type": "png",
       "course": ""
     }
