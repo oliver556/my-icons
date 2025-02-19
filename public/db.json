@@ -1533,6 +1533,11 @@
       "course": ""
     },
     {
+      "name": "yacd",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Zerotier",
       "type": "png",
       "course": ""
@@ -1839,6 +1844,16 @@
   ],
 
   "Uncategorized": [
+    {
+      "name": "115_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "115_B",
+      "type": "png",
+      "course": ""
+    },
     {
       "name": "Iconfont",
       "type": "png",
