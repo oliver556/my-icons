@@ -1561,7 +1561,17 @@
       "course": ""
     },
     {
+      "name": "Debian",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "DietPi",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "ESXI",
       "type": "png",
       "course": ""
     },
@@ -1591,7 +1601,12 @@
       "course": ""
     },
     {
-      "name": "Synology",
+      "name": "Synology_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Synology_B",
       "type": "png",
       "course": ""
     },
@@ -1612,6 +1627,11 @@
     },
     {
       "name": "TrueNAS_D",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Ubuntu",
       "type": "png",
       "course": ""
     },
@@ -1641,6 +1661,11 @@
       "course": ""
     },
     {
+      "name": "QTS",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Windows",
       "type": "png",
       "course": ""
@@ -1657,6 +1682,11 @@
     },
     {
       "name": "Windows11_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Zspace",
       "type": "png",
       "course": ""
     }
@@ -1703,6 +1733,14 @@
   "Software Containers": [
     {
       "name": "Docker",
+      "type": "png",
+      "course": ""
+    },{
+      "name": "DockerCopilot_A",
+      "type": "png",
+      "course": ""
+    },{
+      "name": "DockerCopilot_B",
       "type": "png",
       "course": ""
     },
