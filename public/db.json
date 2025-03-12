@@ -1898,7 +1898,12 @@
       "course": ""
     },
     {
-      "name": "hdhive",
+      "name": "hdhive_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "hdhive_B",
       "type": "png",
       "course": ""
     },
