@@ -828,7 +828,112 @@
       "course": ""
     },
     {
-      "name": "Symedia",
+      "name": "Symedia_A_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_A_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_A_C",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_A_D",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_B_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_B_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_B_C",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_B_D",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_Bot_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_Bot_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_Bot_C",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_Bot_D",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_C_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_C_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_C_C",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_C_D",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_D_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_D_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_D_C",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_D_D",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_E_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia_E_B",
       "type": "png",
       "course": ""
     },

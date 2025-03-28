@@ -21,15 +21,16 @@
 			<!--	<li>使用方法：单击图标，然后将图标下载到您的设备，然后将其上传到您的仪表板。</li>-->
 			<!--	<li>我做了什么：我给它们添加了边框，并重新设计了像素，使它们具有一致的风格和高清晰度（图标来自互联网，版权属于原作者。如果它侵犯了您的权利，请告诉我，我会立即删除它们）。</li>-->
 			<!--</ul>-->
-			<div class="icon-head_switch">
-				<el-switch
-					v-model="cdnValue"
-					inline-prompt
-					active-text="CDN"
-					inactive-text="域名"
-					style="--el-switch-on-color: #6366f1; --el-switch-off-color: #ccc"
-				/>
-			</div>
+			
+			<!--<div class="icon-head_switch">-->
+			<!--	<el-switch-->
+			<!--		v-model="cdnValue"-->
+			<!--		inline-prompt-->
+			<!--		active-text="CDN"-->
+			<!--		inactive-text="域名"-->
+			<!--		style="&#45;&#45;el-switch-on-color: #6366f1; &#45;&#45;el-switch-off-color: #ccc"-->
+			<!--	/>-->
+			<!--</div>-->
 		</div>
 		
 		<!-- 搜索部分 -->
@@ -140,7 +141,7 @@ import clipboard3 from "vue-clipboard3";
 export default defineComponent({
 	setup() {
 		const {toClipboard} = clipboard3();
-		const cdnValue = ref(false);
+		const cdnValue = ref(true);
 		// 搜索数据
 		const data = reactive({
 			search: "", // 搜索框的值
