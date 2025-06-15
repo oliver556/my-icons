@@ -833,27 +833,47 @@
       "course": ""
     },
     {
-      "name": "Redia_A",
+      "name": "Redia_A_A",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Redia_B",
+      "name": "Redia_A_B",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Redia_C",
+      "name": "Redia_B_A",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Redia_D",
+      "name": "Redia_B_B",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Redia_E",
+      "name": "Redia_C_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Redia_C_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Redia_D_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Redia_D_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Redia_E_A",
       "type": "png",
       "course": ""
     },
