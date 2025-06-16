@@ -374,11 +374,14 @@ export default defineComponent({
 /* 颜色变量 */
 $primary-color: #6366f1;
 $secondary-color: #4f46e5;
+$primary-1-color: #0d0f8c;
+$secondary-2-color: #1d169c;
 $bg-color: #f8fafc;
 $text-dark: #1e293b;
 $text-light: #64748b;
 $white: #fff;
 $bg: #F7F9FD;
+$bg1: #000000;
 $--g0: #1c2226;
 $--g1: #4f5d69;
 $--g4: #bcc9d2;
@@ -419,6 +422,7 @@ html, body {
 		position: relative;
 		padding: 2rem 1.5rem;
 		background: linear-gradient(135deg, $primary-color, $secondary-color);
+		//background: linear-gradient(135deg, $primary-1-color, $secondary-2-color);
 		//background-color: $dark-bg;
 		color: white;
 		//box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
