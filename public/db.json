@@ -630,6 +630,19 @@
     }
   ],
 
+  "Instant Messaging": [
+    {
+      "name": "Telegram_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Telegram_B",
+      "type": "png",
+      "course": ""
+    }
+  ],
+
   "Internet of Things (IoT)": [
     {
       "name": "Gladys Assistant",

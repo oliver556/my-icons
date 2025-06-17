@@ -304,6 +304,7 @@ export default defineComponent({
 				'Self-hosting Solutions & OS': 'Self-hosting Solutions & OS - 自托管解决方案与操作系统',
 				// 'URL Shorteners': 'URL Shorteners - 短链生成器',
 				'VPS': 'VPS - 虚拟专用服务器（VPS）',
+				'Instant Messaging': 'Instant Messaging - 即时通讯',
 				'Uncategorized': 'Uncategorized - 未分类项目'
 			};
 			return titles[category] || category;
