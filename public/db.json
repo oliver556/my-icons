@@ -1121,6 +1121,51 @@
       "course": ""
     },
     {
+      "name": "Telexfer_A_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Telexfer_A_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Telexfer_A_C",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Telexfer_B_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Telexfer_B_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Telexfer_B_C",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Telexfer_C_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Telexfer_C_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Telexfer_C_C",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Tissue_A",
       "type": "png",
       "course": ""
