@@ -212,7 +212,7 @@ export default defineComponent({
 		 */
 		const fetchData = async () => {
 			try {
-				const response = await fetch('db.json');
+				const response = await fetch('/db.json');
 				if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 				const jsonData = await response.json();
 				
