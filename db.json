@@ -2443,6 +2443,16 @@
   ],
   "Z_ALL": [
     {
+      "name": "115_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "115_B",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "163.music",
       "type": "png",
       "course": ""
@@ -2454,6 +2464,11 @@
     },
     {
       "name": "Apifox",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Aria2pro",
       "type": "png",
       "course": ""
     },
@@ -2498,7 +2513,32 @@
       "course": ""
     },
     {
+      "name": "Duplicati",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Edge",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Emby_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Emby_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Fastemby_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Fastemby_B",
       "type": "png",
       "course": ""
     },
@@ -2514,6 +2554,11 @@
     },
     {
       "name": "Gotab",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Homeassistant",
       "type": "png",
       "course": ""
     },
@@ -2543,6 +2588,11 @@
       "course": ""
     },
     {
+      "name": "Mdcng",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Migu.video",
       "type": "png",
       "course": ""
@@ -2554,6 +2604,16 @@
     },
     {
       "name": "Moviepilot_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Mtphotos",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Navidrome",
       "type": "png",
       "course": ""
     },
@@ -2578,6 +2638,11 @@
       "course": ""
     },
     {
+      "name": "Portainer",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Pve_A",
       "type": "png",
       "course": ""
@@ -2594,6 +2659,11 @@
     },
     {
       "name": "QQ",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Qbittorrent",
       "type": "png",
       "course": ""
     },
@@ -2619,6 +2689,11 @@
     },
     {
       "name": "Tencent.video",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Transmission",
       "type": "png",
       "course": ""
     },
