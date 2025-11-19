@@ -2488,6 +2488,11 @@
       "course": ""
     },
     {
+      "name": "Calibreweb",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Chrome",
       "type": "png",
       "course": ""
@@ -2548,6 +2553,11 @@
       "course": ""
     },
     {
+      "name": "Gitea",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Github",
       "type": "png",
       "course": ""
@@ -2584,6 +2594,11 @@
     },
     {
       "name": "Leetcode",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Lucky",
       "type": "png",
       "course": ""
     },
@@ -2668,6 +2683,11 @@
       "course": ""
     },
     {
+      "name": "Readeck",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Sina",
       "type": "png",
       "course": ""
@@ -2689,6 +2709,11 @@
     },
     {
       "name": "Tencent.video",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Tissue",
       "type": "png",
       "course": ""
     },
