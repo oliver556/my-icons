@@ -2493,12 +2493,27 @@
       "course": ""
     },
     {
+      "name": "Btschool",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "CCTV",
       "type": "png",
       "course": ""
     },
     {
       "name": "Calibreweb",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Carpt",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Chdbits",
       "type": "png",
       "course": ""
     },
@@ -2583,6 +2598,11 @@
       "course": ""
     },
     {
+      "name": "Hdarea",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Hhclub",
       "type": "png",
       "course": ""
@@ -2599,6 +2619,11 @@
     },
     {
       "name": "IQIYI.video",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Icc2022",
       "type": "png",
       "course": ""
     },
@@ -2663,12 +2688,22 @@
       "course": ""
     },
     {
+      "name": "Musicbrainz",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Navidrome",
       "type": "png",
       "course": ""
     },
     {
       "name": "Netflix",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Nicept",
       "type": "png",
       "course": ""
     },
@@ -2689,6 +2724,21 @@
     },
     {
       "name": "Portainer",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Ptcafe",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Pthome",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Pttime",
       "type": "png",
       "course": ""
     },
@@ -2714,6 +2764,11 @@
     },
     {
       "name": "Qbittorrent",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Qingwa",
       "type": "png",
       "course": ""
     },
@@ -2764,6 +2819,11 @@
     },
     {
       "name": "Wechat",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Yemapt",
       "type": "png",
       "course": ""
     },
