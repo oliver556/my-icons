@@ -2513,6 +2513,16 @@
       "course": ""
     },
     {
+      "name": "Casa.os",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Cent.os",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Chdbits",
       "type": "png",
       "course": ""
@@ -2524,6 +2534,16 @@
     },
     {
       "name": "Clouddrive2",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Cloudflare",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Debian",
       "type": "png",
       "course": ""
     },
@@ -2574,6 +2594,11 @@
     },
     {
       "name": "Firefox",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Fn.os",
       "type": "png",
       "course": ""
     },
@@ -2648,12 +2673,27 @@
       "course": ""
     },
     {
+      "name": "Lastfm",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Leetcode",
       "type": "png",
       "course": ""
     },
     {
+      "name": "Linux",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Lucky",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Mac.os",
       "type": "png",
       "course": ""
     },
@@ -2813,6 +2853,11 @@
       "course": ""
     },
     {
+      "name": "Ubuntu",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Vultr",
       "type": "png",
       "course": ""
@@ -2823,12 +2868,32 @@
       "course": ""
     },
     {
+      "name": "Windows",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Windows10",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Windows11",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Yemapt",
       "type": "png",
       "course": ""
     },
     {
       "name": "Youku",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Z.os",
       "type": "png",
       "course": ""
     },
