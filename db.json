@@ -2748,6 +2748,16 @@
       "course": ""
     },
     {
+      "name": "Netcup_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Netcup_B",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Netflix",
       "type": "png",
       "course": ""
@@ -2909,6 +2919,11 @@
     },
     {
       "name": "Youku",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Yxvm",
       "type": "png",
       "course": ""
     },
