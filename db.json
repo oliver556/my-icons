@@ -2813,6 +2813,11 @@
       "course": ""
     },
     {
+      "name": "Notion",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Npm",
       "type": "png",
       "course": ""
@@ -2994,6 +2999,11 @@
     },
     {
       "name": "Youku",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Youtube",
       "type": "png",
       "course": ""
     },
