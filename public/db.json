@@ -2468,6 +2468,11 @@
       "course": ""
     },
     {
+      "name": "Aliyun",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Apifox",
       "type": "png",
       "course": ""
@@ -2549,6 +2554,11 @@
     },
     {
       "name": "Disney",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Docker",
       "type": "png",
       "course": ""
     },
@@ -2834,6 +2844,11 @@
     },
     {
       "name": "Telegram_B",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Tencent.cloud",
       "type": "png",
       "course": ""
     },
