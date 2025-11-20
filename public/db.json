@@ -2548,6 +2548,11 @@
       "course": ""
     },
     {
+      "name": "Chatgpt",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Chdbits",
       "type": "png",
       "course": ""
@@ -2568,7 +2573,17 @@
       "course": ""
     },
     {
+      "name": "Cursor",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Debian",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Deepseek",
       "type": "png",
       "course": ""
     },
@@ -2974,6 +2989,11 @@
     },
     {
       "name": "Tissue",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Tongyi",
       "type": "png",
       "course": ""
     },
