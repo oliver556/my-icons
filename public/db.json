@@ -2838,6 +2838,11 @@
       "course": ""
     },
     {
+      "name": "Outlook",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Portainer",
       "type": "png",
       "course": ""
@@ -2973,6 +2978,11 @@
       "course": ""
     },
     {
+      "name": "Xiaohongshu",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Yacd",
       "type": "png",
       "course": ""
@@ -2999,6 +3009,11 @@
     },
     {
       "name": "Zashboard",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "default",
       "type": "png",
       "course": ""
     },
