@@ -2488,6 +2488,11 @@
       "course": ""
     },
     {
+      "name": "Bandwagonhost",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Bilibili",
       "type": "png",
       "course": ""
@@ -2638,6 +2643,16 @@
       "course": ""
     },
     {
+      "name": "Hetzner_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Hetzner_B",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Hhclub",
       "type": "png",
       "course": ""
@@ -2779,6 +2794,16 @@
     },
     {
       "name": "Openlist",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Oracle_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Oracle_B",
       "type": "png",
       "course": ""
     },
