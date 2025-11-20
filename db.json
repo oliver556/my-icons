@@ -2718,6 +2718,11 @@
       "course": ""
     },
     {
+      "name": "Iyuu",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Juejin",
       "type": "png",
       "course": ""
@@ -2789,6 +2794,11 @@
     },
     {
       "name": "Musicbrainz",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Musictag",
       "type": "png",
       "course": ""
     },
