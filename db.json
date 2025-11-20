@@ -2463,6 +2463,11 @@
       "course": ""
     },
     {
+      "name": "1Panel",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Acfun",
       "type": "png",
       "course": ""
@@ -2639,6 +2644,16 @@
     },
     {
       "name": "Gotab",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Halo_A",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Halo_B",
       "type": "png",
       "course": ""
     },
