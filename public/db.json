@@ -2473,6 +2473,11 @@
       "course": ""
     },
     {
+      "name": "Aliyun.drive",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Aliyun",
       "type": "png",
       "course": ""
@@ -2748,6 +2753,11 @@
       "course": ""
     },
     {
+      "name": "Mdcx",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Migu.video",
       "type": "png",
       "course": ""
@@ -2888,7 +2898,17 @@
       "course": ""
     },
     {
+      "name": "Stirlingpdf",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Substore",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Sunpanel",
       "type": "png",
       "course": ""
     },
