@@ -2673,6 +2673,11 @@
       "course": ""
     },
     {
+      "name": "Google",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Gotab",
       "type": "png",
       "course": ""
@@ -2763,6 +2768,11 @@
       "course": ""
     },
     {
+      "name": "Librespeed",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Linux",
       "type": "png",
       "course": ""
@@ -2848,6 +2858,11 @@
       "course": ""
     },
     {
+      "name": "Nginx",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Nicept",
       "type": "png",
       "course": ""
@@ -2884,6 +2899,11 @@
     },
     {
       "name": "Outlook",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Plex",
       "type": "png",
       "course": ""
     },
@@ -3008,6 +3028,11 @@
       "course": ""
     },
     {
+      "name": "Unraid",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Uptimekuma",
       "type": "png",
       "course": ""
@@ -3024,6 +3049,11 @@
     },
     {
       "name": "Wechat",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Wikijs",
       "type": "png",
       "course": ""
     },
