@@ -2993,6 +2993,11 @@
       "course": ""
     },
     {
+      "name": "Symedia",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Telegram",
       "type": "png",
       "course": ""
@@ -3049,6 +3054,11 @@
     },
     {
       "name": "Vultr",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "WebStorm",
       "type": "png",
       "course": ""
     },
