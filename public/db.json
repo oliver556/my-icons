@@ -2468,6 +2468,11 @@
       "course": ""
     },
     {
+      "name": "3xui",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Acfun",
       "type": "png",
       "course": ""
@@ -2664,6 +2669,11 @@
     },
     {
       "name": "Github",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Gitlab",
       "type": "png",
       "course": ""
     },
@@ -3008,7 +3018,17 @@
       "course": ""
     },
     {
+      "name": "Umami",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Uptimekuma",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Vertex",
       "type": "png",
       "course": ""
     },
