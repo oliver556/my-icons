@@ -2628,22 +2628,12 @@
       "course": ""
     },
     {
-      "name": "Emby_A",
+      "name": "Emby",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Emby_B",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Fastemby_A",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Fastemby_B",
+      "name": "Fastemby",
       "type": "png",
       "course": ""
     },
@@ -2808,12 +2798,7 @@
       "course": ""
     },
     {
-      "name": "Moviepilot_A",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Moviepilot_B",
+      "name": "Moviepilot",
       "type": "png",
       "course": ""
     },
@@ -2928,12 +2913,7 @@
       "course": ""
     },
     {
-      "name": "Pve_A",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Pve_B",
+      "name": "Pve",
       "type": "png",
       "course": ""
     },
@@ -2988,12 +2968,7 @@
       "course": ""
     },
     {
-      "name": "Telegram_A",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Telegram_B",
+      "name": "Telegram",
       "type": "png",
       "course": ""
     },
