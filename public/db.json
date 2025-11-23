@@ -2458,6 +2458,11 @@
       "course": ""
     },
     {
+      "name": "139.drive",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "163.music",
       "type": "png",
       "course": ""
@@ -2884,6 +2889,11 @@
     },
     {
       "name": "Musictag",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Myicon",
       "type": "png",
       "course": ""
     },

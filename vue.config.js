@@ -19,11 +19,11 @@ module.exports = defineConfig({
   }, //修改favicon.ico
   pwa: {
     iconPaths: {
-      favicon32: "favicon.ico",
-      favicon16: "favicon.ico",
-      appleTouchIcon: "favicon.ico",
-      maskIcon: "favicon.ico",
-      msTileImage: "favicon.ico",
+      favicon32: "Myicon.svg",
+      favicon16: "Myicon.svg",
+      appleTouchIcon: "Myicon.svg",
+      maskIcon: "Myicon.svg",
+      msTileImage: "Myicon.svg",
     },
   }
 })
