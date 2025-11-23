@@ -12,25 +12,24 @@
 			<div class="icon-head_stats">
 				共 {{ totalCategories }} 个分类 · {{ totalIcons }} 个图标
 				<span v-if="currentCategories !== totalCategories">
-      · 当前显示 {{ currentCategories }} 个分类 · {{ currentIcons }} 个图标
-    </span>
+      		· 当前显示 {{ currentCategories }} 个分类 · {{ currentIcons }} 个图标
+    		</span>
 			</div>
-			<!--<ul>-->
-			<!--	<li>特点：一致的设计风格，高清图标（尺寸：512x512px）。</li>-->
-			<!--	<li>使用地点：个人仪表板</li>-->
-			<!--	<li>使用方法：单击图标，然后将图标下载到您的设备，然后将其上传到您的仪表板。</li>-->
-			<!--	<li>我做了什么：我给它们添加了边框，并重新设计了像素，使它们具有一致的风格和高清晰度（图标来自互联网，版权属于原作者。如果它侵犯了您的权利，请告诉我，我会立即删除它们）。</li>-->
-			<!--</ul>-->
 			
-			<!--<div class="icon-head_switch">-->
-			<!--	<el-switch-->
-			<!--		v-model="cdnValue"-->
-			<!--		inline-prompt-->
-			<!--		active-text="CDN"-->
-			<!--		inactive-text="域名"-->
-			<!--		style="&#45;&#45;el-switch-on-color: #6366f1; &#45;&#45;el-switch-off-color: #ccc"-->
-			<!--	/>-->
-			<!--</div>-->
+			<!--<div class="icon-head_stats">-->
+			<!--	</div>-->
+			<!--	-->
+			<!--	<div style="text-align: center; margin-bottom: 1rem;">-->
+			<!--		<el-button-->
+			<!--			type="warning"-->
+			<!--			size="small"-->
+			<!--			round-->
+			<!--			:loading="isPurging"-->
+			<!--			@click="purgeAllIcons"-->
+			<!--		>-->
+			<!--			{{ isPurging ? purgeProgress : '🚀 强制刷新 CDN 缓存 (修复旧图)' }}-->
+			<!--		</el-button>-->
+			<!--	</div>-->
 		</div>
 		
 		<!-- 搜索部分 -->
@@ -89,6 +88,13 @@
 						class="card_content"
 						@click="copyIconUrl(category + '/' + item.name + (item.type === 'svg' ? '.svg' : '.png'))"
 					>
+						<div
+							class="card_refresh_btn"
+							@click.stop="purgeSingleIcon(category, item)"
+							title="强制刷新此图标缓存"
+						>
+							🔄
+						</div>
 						<el-tooltip
 							class="item"
 							effect="light"
@@ -142,6 +148,7 @@ export default defineComponent({
 	setup() {
 		const {toClipboard} = clipboard3();
 		const cdnValue = ref(true);
+		
 		// 搜索数据
 		const data = reactive({
 			search: "", // 搜索框的值
@@ -353,6 +360,94 @@ export default defineComponent({
 			await fetchData();
 		});
 		
+		/**
+		 * @Description 暴力刷新所有 CDN 缓存
+		 * 警告：这会向 jsDelivr 发送大量请求，请勿频繁点击
+		 */
+		const isPurging = ref(false); // 控制按钮加载状态
+		const purgeProgress = ref(''); // 显示进度文字
+		
+		const purgeAllIcons = async () => {
+			if (!confirm('确定要强制刷新所有图标的 CDN 缓存吗？\n这一步不需要修改 Sun-Panel 的链接，但需要几分钟生效。')) {
+				return;
+			}
+			
+			isPurging.value = true;
+			const allItems: string[] = [];
+			
+			// 1. 扁平化所有图标数据，拿到完整路径
+			// 遍历 rawData (你的原始数据)
+			for (const category in rawData.value) {
+				const items = rawData.value[category];
+				items.forEach((item: any) => {
+					// 拼接文件名: Category/Name.png
+					const ext = item.type === 'svg' ? '.svg' : '.png';
+					const path = `${category}/${item.name}${ext}`;
+					allItems.push(path);
+				});
+			}
+			
+			const total = allItems.length;
+			let count = 0;
+			
+			// 2. 循环发送 Purge 请求
+			for (const filePath of allItems) {
+				// 构造 Purge URL
+				// 你的 CDN 结构是: .../my-icons@gh-pages/icon/...
+				const purgeUrl = `https://purge.jsdelivr.net/gh/oliver556/my-icons@gh-pages/icon/${filePath}`;
+				
+				try {
+					// mode: 'no-cors' 是关键，允许浏览器向 CDN 发送跨域请求
+					// 虽然拿不到返回结果，但服务器会执行清除操作
+					await fetch(purgeUrl, { mode: 'no-cors' });
+				} catch (e) {
+					console.error(`Purge error: ${filePath}`);
+				}
+				
+				count++;
+				purgeProgress.value = `正在刷新: ${count} / ${total}`;
+				
+				// 关键：限流，每张图停顿 100ms，防止被 CDN 封锁 IP
+				await new Promise(resolve => setTimeout(resolve, 100));
+			}
+			
+			isPurging.value = false;
+			purgeProgress.value = '';
+			ElMessage.success(`指令发送完毕！共刷新 ${total} 个图标。请等待约 5-10 分钟让全球节点生效。`);
+		};
+		
+		/**
+		 * @Description 刷新单张图片的 CDN 缓存
+		 * @param category 分类名
+		 * @param item 图标对象
+		 */
+		const purgeSingleIcon = async (category: string, item: any) => {
+			// 1. 获取文件后缀和路径
+			const ext = item.type === 'svg' ? '.svg' : '.png';
+			const filename = `${item.name}${ext}`;
+			const filePath = `${category}/${filename}`;
+			
+			// 2. 构造 Purge URL
+			const purgeUrl = `https://purge.jsdelivr.net/gh/oliver556/my-icons@gh-pages/icon/${filePath}`;
+			
+			try {
+				// 3. 执行请求
+				await fetch(purgeUrl, { mode: 'no-cors' });
+				
+				// 4. 成功提示
+				// ElMessage.success(`已发送刷新指令: ${filename} \n请等待几分钟后生效。`);
+				ElMessage.success(`已发送刷新指令: \n请等待几分钟后生效。`);
+				
+				// 【可选高阶技巧】如果你想让当前页面的这张图也立刻变，
+				// 你需要在这里修改 img 的 src 加个时间戳，但这需要改动数据结构，
+				// 鉴于你主要是为了 Sun-Panel，这里只做 CDN 清除足够了。
+				
+			} catch (e) {
+				ElMessage.error(`刷新失败: ${filename}`);
+				console.error(e);
+			}
+		};
+		
 		return {
 			data,
 			selectData,
@@ -365,7 +460,11 @@ export default defineComponent({
 			getItemContent,
 			formatCategoryTitle,
 			copyIconUrl,
-			openUrl
+			openUrl,
+			isPurging,
+			purgeProgress,
+			purgeAllIcons,
+			purgeSingleIcon
 		}
 	}
 })
@@ -641,6 +740,7 @@ html, body {
 					align-items: center;
 					justify-content: center;
 					cursor: pointer;
+					position: relative;
 					
 					&:hover {
 						//transform: translateY(-4px);
@@ -652,6 +752,40 @@ html, body {
 						font-size: 0.7rem;
 						color: #333;
 						font-weight: bold;
+					}
+					
+					.card_refresh_btn {
+						position: absolute;
+						top: 5px;
+						right: 5px;
+						width: 24px;
+						height: 24px;
+						line-height: 24px;
+						text-align: center;
+						background: rgba(255, 255, 255, 0.9);
+						border-radius: 50%;
+						font-size: 12px;
+						cursor: pointer;
+						box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+						color: #666;
+						opacity: 0;           // 默认隐藏
+						transform: scale(0.8);
+						transition: all 0.2s ease;
+						z-index: 10;          // 保证在图片上面
+						
+						&:hover {
+							background: #fff;
+							color: $primary-color; // 使用你的主色调
+							transform: scale(1.1) rotate(180deg); // 悬停时稍微放大并旋转一下
+						}
+					}
+					
+					// 当鼠标悬停在卡片整体上时，显示按钮
+					&:hover {
+						.card_refresh_btn {
+							opacity: 1;
+							transform: scale(1);
+						}
 					}
 				}
 				
