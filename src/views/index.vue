@@ -312,7 +312,8 @@ export default defineComponent({
 				// 'URL Shorteners': 'URL Shorteners - 短链生成器',
 				'VPS': 'VPS - 虚拟专用服务器（VPS）',
 				'Instant Messaging': 'Instant Messaging - 即时通讯',
-				'Uncategorized': 'Uncategorized - 未分类项目'
+				'Uncategorized': 'Uncategorized - 未分类项目',
+				'Z_ALL': 'Z_ALL - 1024*1024 矢量无损方形图'
 			};
 			return titles[category] || category;
 		};
