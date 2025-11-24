@@ -2638,6 +2638,11 @@
       "course": ""
     },
     {
+      "name": "Douban",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Douyin",
       "type": "png",
       "course": ""
@@ -2678,6 +2683,16 @@
       "course": ""
     },
     {
+      "name": "Frpc",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Frps",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Gemini",
       "type": "png",
       "course": ""
@@ -2703,27 +2718,32 @@
       "course": ""
     },
     {
+      "name": "Google.drive",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Google.maps",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Google.photos",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Google.play",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Google",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Googledrive",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Googlemaps",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Googlephotos",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Googleplay",
+      "name": "Google.translate",
       "type": "png",
       "course": ""
     },
@@ -2804,6 +2824,11 @@
     },
     {
       "name": "Iyuu",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Jackett",
       "type": "png",
       "course": ""
     },
@@ -2899,6 +2924,11 @@
     },
     {
       "name": "Myicon",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Nastool",
       "type": "png",
       "course": ""
     },
@@ -3043,6 +3073,11 @@
       "course": ""
     },
     {
+      "name": "Shadowrocket",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Sina",
       "type": "png",
       "course": ""
@@ -3183,12 +3218,22 @@
       "course": ""
     },
     {
+      "name": "Xunlei.drive",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Yacd",
       "type": "png",
       "course": ""
     },
     {
       "name": "Yemapt",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Youdao",
       "type": "png",
       "course": ""
     },
