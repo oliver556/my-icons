@@ -2718,6 +2718,11 @@
       "course": ""
     },
     {
+      "name": "Go.tab",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Google.drive",
       "type": "png",
       "course": ""
@@ -2744,11 +2749,6 @@
     },
     {
       "name": "Google.translate",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Gotab",
       "type": "png",
       "course": ""
     },
@@ -2983,7 +2983,7 @@
       "course": ""
     },
     {
-      "name": "Openlist",
+      "name": "Open.list",
       "type": "png",
       "course": ""
     },
@@ -3083,17 +3083,17 @@
       "course": ""
     },
     {
-      "name": "Stirlingpdf",
+      "name": "Stirling.pdf",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Substore",
+      "name": "Sub.store",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Sunpanel",
+      "name": "Sun.panel",
       "type": "png",
       "course": ""
     },
