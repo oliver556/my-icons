@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M.061 0h1024v1024H.061z"/><g transform="translate(162.061 202)"><circle cx="350.245" cy="279.673" r="279.673" stroke="#000" stroke-width="50"/><path fill="#000" fill-rule="nonzero" d="M675.467 202.984H25.007c-13.549 0-24.533 10.983-24.533 24.532v25.024C.196 258.41 0 264.168 0 270.04c0 193.301 156.699 350 350 350 190.374 0 345.257-152.005 349.886-341.283 0-.72.114-1.44.114-2.175v-49.066c0-13.549-10.984-24.532-24.533-24.532"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Umami</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Umami" transform="translate(0.061, 0)">
+            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
+            <g id="编组" transform="translate(162, 202)">
+                <circle id="椭圆形" stroke="#000000" stroke-width="50" cx="350.245327" cy="279.672897" r="279.672897"></circle>
+                <path d="M675.46729,202.983645 L25.0070093,202.983645 C11.4579676,202.983645 0.474299065,213.967313 0.474299065,227.516355 L0.474299065,252.53972 C0.196261682,258.411215 0,264.168224 0,270.03972 C0,463.341121 156.698598,620.03972 350,620.03972 C540.373832,620.03972 695.257009,468.035047 699.885514,278.757009 C699.885514,278.037383 700,277.317757 700,276.581776 L700,227.516355 C700,213.967313 689.016331,202.983645 675.46729,202.983645 Z" id="路径" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

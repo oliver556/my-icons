@@ -1,5 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><defs><linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#1D2A55"/><stop offset="100%" stop-color="#0F4A66"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#a)" d="M0 0h1024v1024H0z"/><text fill="#FFF" font-family="STKaitiSC-Regular, Kaiti SC" font-size="90" letter-spacing="3.75">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Netcup_A</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1D2A55" offset="0%"></stop>
+            <stop stop-color="#0F4A66" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="多版本" transform="translate(-7, -4096)">
+            <g id="Netcup_A" transform="translate(7, 4096)">
+                <rect id="蒙版路径" fill="url(#linearGradient-1)" x="0" y="0" width="1024" height="1024"></rect>
+                <text id="®" font-family="STKaitiSC-Regular, Kaiti SC" font-size="90" font-weight="normal" letter-spacing="3.75" fill="#FFFFFF">
                     <tspan x="899" y="445">®</tspan>
-                </text><text fill="#FFF" font-family="MarkerFelt-Thin, Marker Felt" font-size="280" font-weight="300" letter-spacing="11.667">
+                </text>
+                <text id="netcup" font-family="MarkerFelt-Thin, Marker Felt" font-size="280" font-weight="300" line-spacing="280" letter-spacing="11.6666667" fill="#FFFFFF">
                     <tspan x="103" y="615">netcup</tspan>
-                </text></g></svg>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

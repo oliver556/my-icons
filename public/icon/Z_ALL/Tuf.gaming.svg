@@ -1,3 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M.398 0h1024v1024H.398z"/><text fill="#000" font-family="MarkerFelt-Wide, Marker Felt" font-size="120" font-weight="bold" letter-spacing="10" transform="translate(.398)">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Tuf.gaming</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tuf.gaming" transform="translate(0.3975, 0)">
+            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
+            <text id="TUF-GAMING" font-family="MarkerFelt-Wide, Marker Felt" font-size="120" font-weight="bold" letter-spacing="10" fill="#000000">
                 <tspan x="119.94" y="823">TUF GAMING</tspan>
-            </text><path fill="#040507" d="m806.398 317.93-134 75.07v107l134-73.627z"/><path fill="#DEDBD8" d="M672.398 393v107l54.02-29.672-.02-107.578z"/><path fill="#040507" d="M806.398 182 673.07 257.211 672.398 364l134-73.556z"/><path fill="#DEDBD8" d="M672.398 257v107l53.903-29.579V227.196z"/><path fill="#040507" d="m646.398 270-129 74.166V665l129-73z"/><path fill="#DEDBD8" d="m562.608 318.134-45.21 26.032V665l46.2-25.987z"/><path fill="#040507" d="m357.398 270 127 75v319.343l-127-74.343z"/><path fill="#DEDBD8" d="m431.398 313.68 54 30.32v321l-54-31.25z"/><path fill="#040507" d="m196.398 180 129 72v249l-129-75z"/></g></svg>
+            </text>
+            <g id="编组-13" transform="translate(661.5, 423.5) scale(-1, 1) translate(-661.5, -423.5)translate(517, 182)">
+                <g id="编组-12" transform="translate(0, 135.9296)">
+                    <polygon id="矩形" fill="#040507" points="2.47407307e-16 2.25541511e-12 134 75.070357 134 182.070357 1.53804464e-14 108.44387"></polygon>
+                    <polygon id="矩形" fill="#DEDBD8" points="134 75.070357 134 182.070357 79.9798279 152.398497 80 44.820357"></polygon>
+                </g>
+                <g id="编组-12">
+                    <polygon id="矩形" fill="#040507" points="2.47407307e-16 2.25541511e-12 133.326672 75.2110709 134 182 1.53804464e-14 108.44387"></polygon>
+                    <polygon id="矩形" fill="#DEDBD8" points="134 75 134 182 80.0964379 152.421107 80.0964379 45.1957846"></polygon>
+                </g>
+                <polygon id="矩形" fill="#040507" points="160 88 289 162.166063 289 483 160 410"></polygon>
+                <polygon id="矩形" fill="#DEDBD8" points="243.789107 136.134206 289 162.166063 289 483 242.800174 457.013451"></polygon>
+            </g>
+            <g id="编组-13" transform="translate(196, 180)">
+                <polygon id="矩形" fill="#040507" points="161 90 288 165 288 484.343039 161 410"></polygon>
+                <polygon id="矩形" fill="#DEDBD8" points="235 133.68016 289 164 289 485 235 453.75"></polygon>
+                <polygon id="矩形" fill="#040507" points="9.99154438e-12 -2.802802e-11 129 72 129 321 1.01577913e-11 246"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

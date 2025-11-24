@@ -1,5 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><defs><linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#472B15"/><stop offset="100%" stop-color="#2A1A0C"/></linearGradient><linearGradient id="b" x1="50%" x2="50%" y1="-53.496%" y2="124.831%"><stop offset="0%" stop-color="#FBDB0E"/><stop offset="100%" stop-color="#F3A706"/></linearGradient><radialGradient id="c" cx="50%" cy="32.598%" r="181.245%" fx="50%" fy="32.598%" gradientTransform="matrix(.4615 0 0 1 .27 0)"><stop offset="0%" stop-color="#FFF"/><stop offset="100%" stop-color="#717372"/></radialGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#a)" d="M0 0h1024v1024H0z" transform="translate(.633)"/><text fill="url(#b)" fill-rule="nonzero" font-family="MarkerFelt-Wide, Marker Felt" font-size="170" font-weight="bold" transform="translate(.633)">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Bandwagonhost</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#472B15" offset="0%"></stop>
+            <stop stop-color="#2A1A0C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-53.4960691%" x2="50%" y2="124.830996%" id="linearGradient-2">
+            <stop stop-color="#FBDB0E" offset="0%"></stop>
+            <stop stop-color="#F3A706" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="32.5981954%" fx="50%" fy="32.5981954%" r="181.244573%" gradientTransform="translate(0.5, 0.326), scale(0.4615, 1), translate(-0.5, -0.326)" id="radialGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#717372" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bandwagonhost" transform="translate(0.6332, 0)">
+            <rect id="蒙版" fill="url(#linearGradient-1)" x="0" y="0" width="1024" height="1024"></rect>
+            <text id="Bandwagon" fill="url(#linearGradient-2)" fill-rule="nonzero" font-family="MarkerFelt-Wide, Marker Felt" font-size="170" font-weight="bold">
                 <tspan x="84.96" y="414">Bandwagon</tspan>
-            </text><text fill="url(#c)" fill-rule="nonzero" font-family="MarkerFelt-Wide, Marker Felt" font-size="220" font-weight="bold" transform="translate(.633)">
+            </text>
+            <text id="HOST" fill="url(#radialGradient-3)" fill-rule="nonzero" font-family="MarkerFelt-Wide, Marker Felt" font-size="220" font-weight="bold">
                 <tspan x="252.84" y="777.5">HOST</tspan>
-            </text></g></svg>
+            </text>
+        </g>
+    </g>
+</svg>

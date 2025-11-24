@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M.633 0h1024v1024H.633z"/><path fill="#0078D4" fill-rule="nonzero" d="M192.633 192H496.02v303.253H192.633V192m336.614 0h303.386v303.253H529.247V192M192.633 528.613H496.02V832H192.633V528.613m336.614 0h303.386V832H529.247"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Windows11</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Windows11" transform="translate(0.6332, 0)">
+            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
+            <path d="M192,192 L495.386667,192 L495.386667,495.253333 L192,495.253333 L192,192 Z M528.613333,192 L832,192 L832,495.253333 L528.613333,495.253333 L528.613333,192 Z M192,528.613333 L495.386667,528.613333 L495.386667,832 L192,832 L192,528.613333 Z M528.613333,528.613333 L832,528.613333 L832,832 L528.613333,832" id="形状" fill="#0078D4" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

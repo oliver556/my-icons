@@ -1,3 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1025" height="1024"><defs><linearGradient id="b" x1="50%" x2="47.854%" y1="0%" y2="109.938%"><stop offset="0%" stop-color="#5DA6EE"/><stop offset="100%" stop-color="#317AE3"/></linearGradient><path id="a" d="M0 0h1024v1024H0z"/></defs><g fill="none" fill-rule="evenodd" transform="translate(.189)"><mask id="c" fill="#fff"><use xlink:href="#a"/></mask><use xlink:href="#a" fill="#FFF"/><rect width="637" height="646" x="188.192" y="194.774" fill="url(#b)" mask="url(#c)" rx="88" transform="rotate(-11 506.692 517.774)"/><text fill="#FFF" font-family="Times-Bold, Times" font-size="820" font-weight="bold" letter-spacing="34.167" mask="url(#c)" transform="rotate(1 506.5 598)">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Nicept</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1024" height="1024"></rect>
+        <linearGradient x1="50%" y1="0%" x2="47.854377%" y2="109.938137%" id="linearGradient-3">
+            <stop stop-color="#5DA6EE" offset="0%"></stop>
+            <stop stop-color="#317AE3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Nicept" transform="translate(0.1887, 0)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="蒙版" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <rect id="矩形" fill="url(#linearGradient-3)" mask="url(#mask-2)" transform="translate(506.6919, 517.7739) rotate(-11) translate(-506.6919, -517.7739)" x="188.191899" y="194.773905" width="637" height="646" rx="88"></rect>
+            <text id="N" mask="url(#mask-2)" transform="translate(506.5, 598) rotate(1) translate(-506.5, -598)" font-family="Times-Bold, Times" font-size="820" font-weight="bold" line-spacing="500" letter-spacing="34.1666667" fill="#FFFFFF">
                 <tspan x="219" y="1118">N</tspan>
-            </text></g></svg>
+            </text>
+        </g>
+    </g>
+</svg>

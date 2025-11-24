@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><defs><linearGradient id="a" x1="17.744%" x2="82.214%" y1="83.957%" y2="16.023%"><stop offset="0%" stop-color="#E32929"/><stop offset="100%" stop-color="#FF8D30"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="#252525" d="M.061 0h1024v1024H.061z"/><path fill="url(#a)" fill-rule="nonzero" d="M350 106h37v362h-37zM35 467H0V105h35zm141-123h35v230h-35zm-89-91h35v280H87zm176-1h35v281h-35zm437-146h36v362h-36zM525 231V0h37v231zm125 90h-37V41h37zm-176 0h-37V41h37z" transform="translate(142.061 222)"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Unraid</title>
+    <defs>
+        <linearGradient x1="17.7436282%" y1="83.9574268%" x2="82.2136432%" y2="16.0228254%" id="linearGradient-1">
+            <stop stop-color="#E32929" offset="0%"></stop>
+            <stop stop-color="#FF8D30" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Unraid" transform="translate(0.061, 0)">
+            <rect id="蒙版路径" fill="#252525" x="0" y="0" width="1024" height="1024"></rect>
+            <g id="编组" transform="translate(142, 222)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                <path d="M350,106 L387,106 L387,468 L350,468 L350,106 Z M35,467 L0,467 L0,105 L35,105 L35,467 Z M176,344 L211,344 L211,574 L176,574 L176,344 L176,344 Z M87,253 L122,253 L122,533 L87,533 L87,253 Z M263,252 L298,252 L298,533 L263,533 L263,252 Z M700,106 L736,106 L736,468 L700,468 L700,106 Z M525,231 L525,0 L562,0 L562,231 L525,231 Z M650,321 L613,321 L613,41 L650,41 L650,321 Z M474,321 L437,321 L437,41 L474,41 L474,321 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>
