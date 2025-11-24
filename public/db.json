@@ -2488,12 +2488,12 @@
       "course": ""
     },
     {
-      "name": "Aliyun.drive",
+      "name": "Aliyun.cloud",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Aliyun",
+      "name": "Aliyun.drive",
       "type": "png",
       "course": ""
     },
@@ -2548,7 +2548,7 @@
       "course": ""
     },
     {
-      "name": "Calibreweb",
+      "name": "Calibre.web",
       "type": "png",
       "course": ""
     },
@@ -2558,12 +2558,12 @@
       "course": ""
     },
     {
-      "name": "Casa.os",
+      "name": "Casa.OS",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Cent.os",
+      "name": "Cent.OS",
       "type": "png",
       "course": ""
     },
@@ -2678,7 +2678,7 @@
       "course": ""
     },
     {
-      "name": "Fn.os",
+      "name": "Fn.OS",
       "type": "png",
       "course": ""
     },
@@ -2773,6 +2773,11 @@
       "course": ""
     },
     {
+      "name": "Hdhive",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Hetzner_A",
       "type": "png",
       "course": ""
@@ -2784,11 +2789,6 @@
     },
     {
       "name": "Hhclub",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Hhdhive",
       "type": "png",
       "course": ""
     },
@@ -2813,7 +2813,7 @@
       "course": ""
     },
     {
-      "name": "Istoreos",
+      "name": "Istore.OS",
       "type": "png",
       "course": ""
     },
@@ -2843,7 +2843,7 @@
       "course": ""
     },
     {
-      "name": "Lastfm",
+      "name": "Last.fm",
       "type": "png",
       "course": ""
     },
@@ -2853,7 +2853,7 @@
       "course": ""
     },
     {
-      "name": "Librespeed",
+      "name": "Libre.speed",
       "type": "png",
       "course": ""
     },
@@ -2873,22 +2873,22 @@
       "course": ""
     },
     {
-      "name": "Mac.os",
+      "name": "Mac.OS",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Mdcng",
+      "name": "Mdc.ng",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Mdcx",
+      "name": "Mdc.x",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Metatube",
+      "name": "Meta.tube",
       "type": "png",
       "course": ""
     },
@@ -2898,7 +2898,12 @@
       "course": ""
     },
     {
-      "name": "Moviepilot",
+      "name": "Movie.pilot",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Mt.photos",
       "type": "png",
       "course": ""
     },
@@ -2908,17 +2913,12 @@
       "course": ""
     },
     {
-      "name": "Mtphotos",
+      "name": "Music.tag",
       "type": "png",
       "course": ""
     },
     {
       "name": "Musicbrainz",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Musictag",
       "type": "png",
       "course": ""
     },
@@ -3013,7 +3013,7 @@
       "course": ""
     },
     {
-      "name": "Processon",
+      "name": "Process.on",
       "type": "png",
       "course": ""
     },
@@ -3143,7 +3143,7 @@
       "course": ""
     },
     {
-      "name": "Tufgaming",
+      "name": "Tuf.gaming",
       "type": "png",
       "course": ""
     },
@@ -3153,7 +3153,7 @@
       "course": ""
     },
     {
-      "name": "Uhdwallpaper",
+      "name": "Uhd.wallpaper",
       "type": "png",
       "course": ""
     },
@@ -3168,7 +3168,7 @@
       "course": ""
     },
     {
-      "name": "Uptimekuma",
+      "name": "Uptime.kuma",
       "type": "png",
       "course": ""
     },
@@ -3253,7 +3253,7 @@
       "course": ""
     },
     {
-      "name": "Z.os",
+      "name": "Z.OS",
       "type": "png",
       "course": ""
     },
