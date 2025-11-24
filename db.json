@@ -2543,6 +2543,11 @@
       "course": ""
     },
     {
+      "name": "Bt.digg",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Btschool",
       "type": "png",
       "course": ""
@@ -2698,6 +2703,11 @@
       "course": ""
     },
     {
+      "name": "Forward",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Frpc",
       "type": "png",
       "course": ""
@@ -2844,6 +2854,11 @@
     },
     {
       "name": "Jackett",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Jav.library",
       "type": "png",
       "course": ""
     },
@@ -3273,12 +3288,22 @@
       "course": ""
     },
     {
+      "name": "Z.library",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Zashboard",
       "type": "png",
       "course": ""
     },
     {
       "name": "Zhihu",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Zimuku",
       "type": "png",
       "course": ""
     },
