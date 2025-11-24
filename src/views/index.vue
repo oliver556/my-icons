@@ -105,7 +105,7 @@
 							<el-image
 								v-if="item.type === 'svg'"
 								class="card_img"
-								:src="data.publicPath + 'icon/' + item.name + '.svg'"
+								:src="data.publicPath + 'icon/' + category + '/' + item.name + '.svg'"
 								lazy
 								fit="contain"
 							/>

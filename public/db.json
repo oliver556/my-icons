@@ -2443,38 +2443,33 @@
   ],
   "Z_ALL": [
     {
-      "name": "115_A",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "115_B",
-      "type": "png",
+      "name": "115",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "123.drive",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "139.drive",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "163.music",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "189.drive",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "1Panel",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
@@ -2484,82 +2479,82 @@
     },
     {
       "name": "Acfun",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Aliyun.cloud",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Aliyun.drive",
-      "type": "png",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Aliyun",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Apifox",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Aria2pro",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Asus",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Audiences",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Aws",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Baidu.drive",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Bandwagonhost",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Bilibili",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Bitwarden",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Bt.digg",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Btschool",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "CCTV",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
-      "name": "Calibre.web",
-      "type": "png",
+      "name": "Calibreweb",
+      "type": "svg",
       "course": ""
     },
     {
@@ -2568,228 +2563,233 @@
       "course": ""
     },
     {
-      "name": "Casa.OS",
-      "type": "png",
+      "name": "Casa.os",
+      "type": "svg",
       "course": ""
     },
     {
-      "name": "Cent.OS",
-      "type": "png",
+      "name": "Cent.os",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Chatgpt",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Chdbits",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Chrome",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Clouddrive2",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Cloudflare",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Cnlang",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Cursor",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Debian",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Deepseek",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Default",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Disney",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Dmit",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Docker.copilot",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Docker",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Dockge",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Douban.movie",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Douban",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Douyin",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Dpanel",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Duplicati",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Edge",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Emby",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Fastemby",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Firefox",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
-      "name": "Fn.OS",
-      "type": "png",
+      "name": "Fn.os",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Forward",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Frpc",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Frps",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Gemini",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Gitea",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Github",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Gitlab",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Gmail",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Go.tab",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Google.drive",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Google.maps",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Google.photos",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Google.play",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Google",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Google.translate",
-      "type": "png",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Gotab",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Gying",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Halo_A",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Halo_B",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
@@ -2804,27 +2804,22 @@
     },
     {
       "name": "Hetzner_A",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Hetzner_B",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Hhclub",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
-      "name": "Homeassistant",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "IQIYI.video",
-      "type": "png",
+      "name": "Home.assistant",
+      "type": "svg",
       "course": ""
     },
     {
@@ -2834,37 +2829,47 @@
     },
     {
       "name": "Iconfont",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
-      "name": "Istore.OS",
-      "type": "png",
+      "name": "Ikuai",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Iqiyi.video",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Istoreos",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Itellyou",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Iyuu",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Jackett",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Jav.library",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Juejin",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
@@ -2874,72 +2879,72 @@
     },
     {
       "name": "Last.fm",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Leetcode",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Libre.speed",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Linux",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Lskypro",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Lucky",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Mac.OS",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Mdc.ng",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Mdc.x",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Meta.tube",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Migu.video",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Movie.pilot",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Mt.photos",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Mteam",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
@@ -2949,102 +2954,102 @@
     },
     {
       "name": "Musicbrainz",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Myicon",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Nastool",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Navidrome",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Netcup_A",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Netcup_B",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Netflix",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Nezha",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Nginx",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Nicept",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Notion",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Npm",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Nps",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Open.list",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Oracle_A",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Oracle_B",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Outlook",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Plex",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Portainer",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Process.on",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
@@ -3054,32 +3059,32 @@
     },
     {
       "name": "Pthome",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Pttime",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Pve",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "QQ.music",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "QQ",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Qbittorrent",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
@@ -3089,12 +3094,12 @@
     },
     {
       "name": "Quark.drive",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Readeck",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
@@ -3104,157 +3109,157 @@
     },
     {
       "name": "Shadowrocket",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Sina",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Stirling.pdf",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Sub.store",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Sun.panel",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Symedia",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Tampermonkey",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Telegram",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Tencent.cloud",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Tencent.video",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Tinify",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Tissue",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Tongyi",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Transmission",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Tuf.gaming",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Ubuntu",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Uhd.wallpaper",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Umami",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Unraid",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Uptime.kuma",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Vertex",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Vultr",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "WebStorm",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Wechat",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Wikijs",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Windows",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Windows10",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Windows11",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Xiaohongshu",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Xunlei.drive",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Yacd",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
@@ -3264,17 +3269,17 @@
     },
     {
       "name": "Youdao",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Youku",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Youtube",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
@@ -3283,33 +3288,28 @@
       "course": ""
     },
     {
-      "name": "Z.OS",
-      "type": "png",
+      "name": "Z.library",
+      "type": "svg",
       "course": ""
     },
     {
-      "name": "Z.library",
-      "type": "png",
+      "name": "Z.os",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Zashboard",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Zhihu",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
       "name": "Zimuku",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "ikuai",
-      "type": "png",
+      "type": "svg",
       "course": ""
     },
     {
