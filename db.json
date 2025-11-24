@@ -2518,6 +2518,11 @@
       "course": ""
     },
     {
+      "name": "Aws",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Baidu.drive",
       "type": "png",
       "course": ""
@@ -2628,12 +2633,22 @@
       "course": ""
     },
     {
+      "name": "Docker.copilot",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Docker",
       "type": "png",
       "course": ""
     },
     {
       "name": "Dockge",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Douban.movie",
       "type": "png",
       "course": ""
     },
