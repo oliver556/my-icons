@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1025" height="1024"><defs><radialGradient id="b" cx="7.138%" cy="93.143%" r="161.983%" fx="7.138%" fy="93.143%"><stop offset="0%" stop-color="#FFF"/><stop offset="34.899%" stop-color="#237FB6"/><stop offset="100%" stop-color="#1778B2"/></radialGradient><path id="a" d="M0 0h1024v1024H0z"/></defs><g fill="none" fill-rule="evenodd" transform="translate(.633)"><mask id="c" fill="#fff"><use xlink:href="#a"/></mask><use xlink:href="#a" fill="url(#b)"/><path fill="#FFF" d="M380 254h392v391H550l4-175H380z" mask="url(#c)"/><path fill="#FFF" d="M248 512h264v265H248z" mask="url(#c)"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Clouddrive2</title>
+    <defs>
+        <radialGradient cx="7.13833284%" cy="93.1433386%" fx="7.13833284%" fy="93.1433386%" r="161.982599%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#237FB6" offset="34.8990921%"></stop>
+            <stop stop-color="#1778B2" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-2" x="0" y="0" width="1024" height="1024"></rect>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Clouddrive2" transform="translate(0.6332, 0)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="蒙版路径" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+            <polygon id="矩形" fill="#FFFFFF" mask="url(#mask-3)" points="380 254 772 254 772 645 550 645 554 470 380 470"></polygon>
+            <rect id="矩形" fill="#FFFFFF" mask="url(#mask-3)" x="248" y="512" width="264" height="265"></rect>
+        </g>
+    </g>
+</svg>

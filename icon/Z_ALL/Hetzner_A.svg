@@ -1,3 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M0 0h1024v1024H0z"/><text fill="#C32C35" font-family="MarkerFelt-Thin, Marker Felt" font-size="220" font-weight="300" letter-spacing="9.167">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Hetzner_A</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="多版本" transform="translate(0, -2048)">
+            <g id="Hetzner_A" transform="translate(0, 2048)">
+                <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
+                <text id="HETZNER" font-family="MarkerFelt-Thin, Marker Felt" font-size="220" font-weight="300" letter-spacing="9.16666667" fill="#C32C35">
                     <tspan x="75" y="583">HETZNER</tspan>
-                </text></g></svg>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

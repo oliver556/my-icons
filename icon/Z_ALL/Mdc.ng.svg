@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#000" d="M.633 0h1024v1024H.633z"/><path fill="#FFF" d="m677.633 224 9 28-66 68-12 6-194-2-120 188 120 188h194l12 6 68 68-14 26h-326l-14-8-162-270v-20l162-268 12-10z"/><path fill="#FFA31A" stroke="#FFA31A" stroke-width="1.359" d="m746.25 326.68 105.704 175.509v19.622l-105.705 175.51h-23.34l-67.596-65.608v-19.52l62.126-100.202-64.11-98.167 1.96-23.508 67.614-63.636h23.346Z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mdc.ng</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mdc.ng" transform="translate(0.6332, 0)">
+            <rect id="蒙版" fill="#000000" x="0" y="0" width="1024" height="1024"></rect>
+            <polygon id="多边形" fill="#FFFFFF" points="677 224 686 252 620 320 608 326 414 324 294 512 414 700 608 700 620 706 688 774 674 800 348 800 334 792 172 522 172 502 334 234 346 224"></polygon>
+            <path d="M745.615992,326.679554 L851.320446,502.188837 L851.320446,521.811163 L745.615992,697.320446 L722.275558,697.320446 L654.679554,631.71256 L654.679554,612.193569 L716.805442,511.990524 L652.69659,413.823843 L654.65556,390.3162 L722.269496,326.679554 L745.615992,326.679554 Z" id="多边形" stroke="#FFA31A" stroke-width="1.35910878" fill="#FFA31A"></path>
+        </g>
+    </g>
+</svg>

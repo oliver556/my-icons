@@ -1,3 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#000" d="M.061 0h1024v1024H.061z"/><text fill="#FFF" font-family="FZXINGKS-B--GB1-0, FZXingKaiS" font-size="1000" font-weight="bold" transform="translate(.061)">
-                <tspan x="126.5" y="869.999">N</tspan>
-            </text></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Nezha</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Nezha" transform="translate(0.061, 0)">
+            <rect id="蒙版路径" fill="#000000" x="0" y="0" width="1024" height="1024"></rect>
+            <text id="N" font-family="FZXINGKS-B--GB1-0, FZXingKaiS" font-size="1000" font-weight="bold" line-spacing="900" fill="#FFFFFF">
+                <tspan x="126.5" y="869.99939">N</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -2493,11 +2493,6 @@
       "course": ""
     },
     {
-      "name": "Aliyun",
-      "type": "svg",
-      "course": ""
-    },
-    {
       "name": "Apifox",
       "type": "svg",
       "course": ""
@@ -2563,12 +2558,12 @@
       "course": ""
     },
     {
-      "name": "Casa.os",
+      "name": "Casa.OS",
       "type": "svg",
       "course": ""
     },
     {
-      "name": "Cent.os",
+      "name": "Cent.OS",
       "type": "svg",
       "course": ""
     },
@@ -2693,7 +2688,7 @@
       "course": ""
     },
     {
-      "name": "Fn.os",
+      "name": "Fn.OS",
       "type": "svg",
       "course": ""
     },
@@ -3288,12 +3283,12 @@
       "course": ""
     },
     {
-      "name": "Z.library",
+      "name": "Z.OS",
       "type": "svg",
       "course": ""
     },
     {
-      "name": "Z.os",
+      "name": "Z.library",
       "type": "svg",
       "course": ""
     },
