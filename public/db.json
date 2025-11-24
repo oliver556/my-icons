@@ -2613,6 +2613,11 @@
       "course": ""
     },
     {
+      "name": "Default",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Disney",
       "type": "png",
       "course": ""
@@ -3218,12 +3223,12 @@
       "course": ""
     },
     {
-      "name": "default",
+      "name": "ikuai",
       "type": "png",
       "course": ""
     },
     {
-      "name": "ikuai",
+      "name": "lee",
       "type": "png",
       "course": ""
     }
