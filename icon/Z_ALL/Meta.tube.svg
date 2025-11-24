@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><defs><linearGradient id="a" x1="0%" x2="100%" y1="34.042%" y2="65.958%"><stop offset="0%" stop-color="#AA5CC3"/><stop offset="52.491%" stop-color="#896AC8"/><stop offset="100%" stop-color="#3C8BD4"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="#000B25" d="M.398 0h1024v1024H.398z"/><g transform="translate(204.398 456)"><rect width="616" height="348" x="1" fill="url(#a)" rx="19"/><text fill="#000B25" font-family="PingFangSC-Semibold, PingFang SC" font-size="220" font-weight="500">
+                        <tspan x="31.9" y="276.56">Tube</tspan>
+                    </text></g><text fill="#FFF" font-family="Helvetica-Bold, Helvetica" font-size="250" font-weight="bold" letter-spacing="10" transform="translate(204.398 222.582)">
+                    <tspan x="1" y="243">Meta</tspan>
+                </text></g></svg>
