@@ -2558,6 +2558,16 @@
       "course": ""
     },
     {
+      "name": "Casa.OS",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Cent.OS",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Chatgpt",
       "type": "svg",
       "course": ""
@@ -2674,6 +2684,11 @@
     },
     {
       "name": "Firefox",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Fn.OS",
       "type": "svg",
       "course": ""
     },
@@ -3265,6 +3280,11 @@
     {
       "name": "Yxvm",
       "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Z.OS",
+      "type": "svg",
       "course": ""
     },
     {
