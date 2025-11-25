@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Audiences</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Audiences">
+            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
+            <text id="UDIENCES" fill="#666666" fill-rule="nonzero" font-family="Helvetica-Bold, Helvetica" font-size="130" font-weight="bold">
+                <tspan x="175.61377" y="845">UDIENCES</tspan>
+            </text>
+            <rect id="矩形" fill="#000000" x="713" y="179" width="132" height="87" rx="8"></rect>
+            <text id="HD" fill="#FFFFFF" fill-rule="nonzero" font-family="Arial-Black, Arial Black" font-size="58" font-weight="700" line-spacing="58">
+                <tspan x="731.5" y="255">HD</tspan>
+            </text>
+            <polygon id="三角形" fill="#000000" points="509 177 739.5 706 637.5 706 615 652 404 652 381 706 278 706"></polygon>
+            <polygon id="三角形" fill="#FFFFFF" points="509 266 683 670 660.5 670 509 323 388.5 599 629.065033 598 636.932129 616.00769 380 616.5 356 670 335 670"></polygon>
+            <polygon id="三角形" fill="#000000" points="509 322 629 598 389 598"></polygon>
+            <polygon id="三角形" fill="#FFFFFF" points="509.5 413 576 563 443 563"></polygon>
+        </g>
+    </g>
+</svg>

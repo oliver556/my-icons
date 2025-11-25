@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Dockge</title>
+    <defs>
+        <linearGradient x1="54.8876509%" y1="59.0170435%" x2="98.0046062%" y2="96.3299781%" id="linearGradient-1">
+            <stop stop-color="#74C2FF" offset="0%"></stop>
+            <stop stop-color="#86E6A9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dockge" transform="translate(0.6332, 0)">
+            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
+            <path d="M707.030019,306.76985 C747.175469,347.943823 763.613014,365.330499 812.411433,435.927986 C861.209866,506.525472 903.107867,636.634735 789.075022,725.47293 C774.857938,736.548863 758.605223,747.304639 740.74052,757.430185 C615.315488,828.519911 410.432794,868.543669 272.709142,770.186761 C115.369066,657.820553 127.309014,410.866401 298.505581,260.245136 C469.702148,109.623857 666.884569,265.595877 707.030019,306.76985 Z" id="路径" stroke-opacity="0.51" stroke="#F2F2F2" stroke-width="181.353446" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Gemini</title>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="68.73%" y2="30.395%" id="linearGradient-1">
+            <stop stop-color="#1C7DFF" offset="0%"></stop>
+            <stop stop-color="#1C69FF" offset="52.021%"></stop>
+            <stop stop-color="#F0DCD6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gemini" transform="translate(0.6332, 0)">
+            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
+            <path d="M139,514 C332.65943,484.660455 484.660455,332.65943 514,139 C543.349024,332.654641 695.345359,484.650976 889,514 C695.345359,543.349024 543.349024,695.345359 514,889 C484.660455,695.34057 332.65943,543.339545 139,514 Z" id="编组" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

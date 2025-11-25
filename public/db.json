@@ -3324,5 +3324,817 @@
       "type": "png",
       "course": ""
     }
+  ],
+  "Z_all_svg": [
+    {
+      "name": "115",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "123.drive",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "139.drive",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "163.music",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "189.drive",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "1Panel",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Acfun",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Aliyun.cloud",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Aliyun.drive",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Apifox",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Aria2pro",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Asus",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Audiences",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Aws",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Baidu.drive",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Bandwagonhost",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Bilibili",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Bitwarden",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Bt.digg",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "CCTV",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Calibreweb",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Casa.OS",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Cent.OS",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Chatgpt",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Chdbits",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Clouddrive2",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Cloudflare",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Cnlang",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Cursor",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Debian",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Deepseek",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Default",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Disney",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Dmit",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Docker.copilot",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Docker",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Dockge",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Douban.movie",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Douban",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Douyin",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Dpanel",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Duplicati",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Edge",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Emby",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Fastemby",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Firefox",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Fn.OS",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Forward",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Frpc",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Frps",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Gemini",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Git",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Gitea",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Github",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Gitlab",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Go.tab",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Google.chrome",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Google.drive",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Google.gmail",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Google.maps",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Google.photos",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Google.play",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Google",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Google.translate",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Gotab",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Gying",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Halo_A",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Halo_B",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Hetzner_A",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Hetzner_B",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Hhclub",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Home.assistant",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Iconfont",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Ikuai",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Iqiyi.video",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Istoreos",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Itellyou",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Iyuu",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Jackett",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Jav.library",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Juejin",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Last.fm",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Leetcode",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Libre.speed",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Linux",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Lskypro",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Lucky",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Mac.OS",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Mdc.ng",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Mdc.x",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Meta.tube",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Migu.video",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Movie.pilot",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Mt.photos",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Mteam",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Musicbrainz",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Myicon",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Nastool",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Navidrome",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Netcup_A",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Netcup_B",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Netflix",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Nezha",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Nginx",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Nicept",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Notion",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Npm",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Nps",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Open.list",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Oracle_A",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Oracle_B",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Outlook",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Plex",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Portainer",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Process.on",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Pthome",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Pttime",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Pve",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "QQ.music",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "QQ",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Qbittorrent",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Quark.drive",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Readeck",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Shadowrocket",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Sina",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Stirling.pdf",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Sub.store",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Sun.panel",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Symedia",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Tampermonkey",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Telegram",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Tencent.cloud",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Tencent.video",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Tinify",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Tissue",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Tongyi",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Transmission",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Tuf.gaming",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Ubuntu",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Uhd.wallpaper",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Umami",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Unraid",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Uptime.kuma",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Vertex",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Vultr",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "WebStorm",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Wechat",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Wikijs",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Windows",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Windows10",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Windows11",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Xiaohongshu",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Xunlei.drive",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Yacd",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Youdao",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Youku",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Youtube",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Z.OS",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Z.library",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Zashboard",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Zhihu",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Zimuku",
+      "type": "svg",
+      "course": ""
+    }
   ]
 }

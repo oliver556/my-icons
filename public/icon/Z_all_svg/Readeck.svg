@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Readeck</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Readeck" transform="translate(0.6332, 0)">
+            <rect id="蒙版路径" fill="#064C5C" x="0" y="0" width="1024" height="1024"></rect>
+            <g id="编组" transform="translate(181.5, 118)">
+                <polygon id="矩形1" fill="#46BBD6" points="214.5 0 639.5 179.5 639.5 418 1 120"></polygon>
+                <polygon id="矩形6" fill="#46BBD6" points="216 383 660.25 590 548.25 656.25 570.25 787.25 81.75 558.25"></polygon>
+                <polygon id="矩形4" fill="#064C5C" points="216 220.5 384 299 216 377.5"></polygon>
+                <polygon id="矩形5" fill="#FBCE55" points="369.5 305.5 625 425 466 499.5 210.25 379.75"></polygon>
+                <polygon id="矩形2" fill="#FFFFFF" points="-1.24867889e-13 133.5 216 234 215.5 759.5 -1.24867889e-13 759.5"></polygon>
+                <polygon id="矩形3" fill="#AFACA4" opacity="0.40062314" points="1 120 639.5 418 625 425 1 133.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Juejin</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Juejin" transform="translate(0.6332, 0)">
+            <rect id="蒙版路径" fill="#0984FE" x="0" y="0" width="1024" height="1024"></rect>
+            <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="512.366812 571.122768 698.749435 422.924735 648.323861 381.686047 512.366812 489.935883 376.409763 381.686047 325.984189 422.924735"></polygon>
+            <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="512.366812 388.130637 584.494681 330.139162 512.366812 271.504407 440.238943 330.139162"></polygon>
+            <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="512.366812 672.284735 262.792386 473.827358 212.366812 515.065063 217.472714 518.931621 512.366812 753.471621 698.749435 605.273588 812.366812 515.065063 761.941238 473.827358"></polygon>
+        </g>
+    </g>
+</svg>
