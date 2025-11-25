@@ -714,11 +714,6 @@
       "course": ""
     },
     {
-      "name": "Tissue_A",
-      "type": "png",
-      "course": ""
-    },
-    {
       "name": "aapanel",
       "type": "png",
       "course": ""
@@ -2163,11 +2158,6 @@
       "name": "Youtube",
       "type": "png",
       "course": ""
-    },
-    {
-      "name": "iQIYI",
-      "type": "png",
-      "course": ""
     }
   ],
   "Synology NAS": [
@@ -2260,11 +2250,6 @@
     },
     {
       "name": "Iconfont",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Myicon",
       "type": "png",
       "course": ""
     },
@@ -2568,6 +2553,11 @@
       "course": ""
     },
     {
+      "name": "Clash",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Clouddrive2",
       "type": "png",
       "course": ""
@@ -2754,11 +2744,6 @@
     },
     {
       "name": "Google.translate",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Googledrive",
       "type": "png",
       "course": ""
     },
@@ -3457,6 +3442,11 @@
       "course": ""
     },
     {
+      "name": "Clash",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Clouddrive2",
       "type": "svg",
       "course": ""
@@ -3603,11 +3593,6 @@
     },
     {
       "name": "Gitlab",
-      "type": "svg",
-      "course": ""
-    },
-    {
-      "name": "Go.tab",
       "type": "svg",
       "course": ""
     },
