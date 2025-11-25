@@ -3093,6 +3093,11 @@
       "course": ""
     },
     {
+      "name": "Telexfer",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Tencent.cloud",
       "type": "png",
       "course": ""
@@ -3978,6 +3983,11 @@
     },
     {
       "name": "Telegram",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Telexfer",
       "type": "svg",
       "course": ""
     },
