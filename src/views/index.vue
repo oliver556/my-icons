@@ -288,7 +288,7 @@ export default defineComponent({
 				'Downloader': 'Downloader - 下载任务管理器',
 				'Feed Readers': 'Feed Readers - 信息流订阅器',
 				'File Transfer': 'File Transfer - 文件传输中间件',
-				'Google': 'Google - 谷歌（技术规范保留原文）',
+				// 'Google': 'Google - 谷歌（技术规范保留原文）',
 				// 'Financial Management': 'Financial Management - 财务管理系统',
 				// 'Games': 'Games - 游戏服务器',
 				'Internet of Things (IoT)': 'Internet of Things (IoT) - 物联网（IoT）管理平台',
