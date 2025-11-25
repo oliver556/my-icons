@@ -735,6 +735,7 @@ html, body {
 					// todo
 					//background-color: rgba(30, 128, 255, 0.1);
 					background-color: #f8f9fa;
+					border: 1px solid rgba(0, 0, 0, .1);
 					box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 					transition: all 0.3s ease;
 					padding: 1rem;
