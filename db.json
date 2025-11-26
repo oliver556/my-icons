@@ -3014,6 +3014,11 @@
       "course": ""
     },
     {
+      "name": "Speed.test.ustc",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Speedtest",
       "type": "png",
       "course": ""
@@ -3934,6 +3939,11 @@
     },
     {
       "name": "Speed.do",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Speed.test.ustc",
       "type": "svg",
       "course": ""
     },
