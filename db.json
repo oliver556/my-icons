@@ -2444,6 +2444,11 @@
       "course": ""
     },
     {
+      "name": "Bejson",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Bilibili",
       "type": "png",
       "course": ""
@@ -3369,6 +3374,11 @@
     },
     {
       "name": "Bandwagonhost",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Bejson",
       "type": "svg",
       "course": ""
     },
