@@ -182,11 +182,6 @@
       "course": ""
     },
     {
-      "name": "Hexo",
-      "type": "png",
-      "course": ""
-    },
-    {
       "name": "Hugo_A",
       "type": "png",
       "course": ""
@@ -1733,11 +1728,6 @@
   ],
   "Router & VPN": [
     {
-      "name": "Clash",
-      "type": "png",
-      "course": ""
-    },
-    {
       "name": "Dockovpn",
       "type": "png",
       "course": ""
@@ -1749,21 +1739,6 @@
     },
     {
       "name": "MetaCubeXD",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "OpenWrt_A",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "OpenWrt_B",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "OpenWrt_C",
       "type": "png",
       "course": ""
     },
@@ -1783,52 +1758,12 @@
       "course": ""
     },
     {
-      "name": "Sub Store",
-      "type": "png",
-      "course": ""
-    },
-    {
       "name": "Tailscale_A",
       "type": "png",
       "course": ""
     },
     {
       "name": "Tailscale_B",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "V2rayA",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Zashboard",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Zerotier",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "iKuai_A",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "iKuai_B",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "iKuai_C",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "yacd",
       "type": "png",
       "course": ""
     }
@@ -2729,6 +2664,11 @@
       "course": ""
     },
     {
+      "name": "Hexo",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Hhclub",
       "type": "png",
       "course": ""
@@ -2920,6 +2860,11 @@
     },
     {
       "name": "Open.list",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Openwrt",
       "type": "png",
       "course": ""
     },
@@ -3134,7 +3079,17 @@
       "course": ""
     },
     {
+      "name": "V2raya",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Vertex",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Verysync",
       "type": "png",
       "course": ""
     },
@@ -3215,6 +3170,11 @@
     },
     {
       "name": "Zashboard",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Zerotier",
       "type": "png",
       "course": ""
     },
@@ -3668,6 +3628,11 @@
       "course": ""
     },
     {
+      "name": "Hexo",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Hhclub",
       "type": "svg",
       "course": ""
@@ -3859,6 +3824,11 @@
     },
     {
       "name": "Open.list",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Openwrt",
       "type": "svg",
       "course": ""
     },
@@ -4073,7 +4043,17 @@
       "course": ""
     },
     {
+      "name": "V2raya",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Vertex",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Verysync",
       "type": "svg",
       "course": ""
     },
@@ -4154,6 +4134,11 @@
     },
     {
       "name": "Zashboard",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Zerotier",
       "type": "svg",
       "course": ""
     },
