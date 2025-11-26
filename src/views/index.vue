@@ -281,7 +281,7 @@ export default defineComponent({
 				'Automation': 'Automation - 自动化工具链',
 				// 'Bookmarks': 'Bookmarks - 书签管理系统',
 				// "Cloud Protection Services": "Cloud Protection Services - 云防护服务",
-				'CMS': 'CMS - 内容管理系统（CMS）',
+				// 'CMS': 'CMS - 内容管理系统（CMS）',
 				'Document Management': 'Document Management - 文档协同平台',
 				'Database Management': 'Database Management - 数据库运维套件',
 				'DNS': 'DNS - 域名解析系统（DNS）',
@@ -296,7 +296,7 @@ export default defineComponent({
 				'Media Streaming': 'Media Streaming - 流媒体服务器',
 				'Note-taking & Editors & Wikis': 'Note-taking & Editors & Wikis - 笔记-编辑器-维基三合一平台',
 				'Personal Dashboards': 'Personal Dashboards - 个人数据仪表盘',
-				'Password Managers': 'Password Managers - 密码保险库',
+				// 'Password Managers': 'Password Managers - 密码保险库',
 				'Photo and Video Galleries': 'Photo and Video Galleries - 多媒体资源库',
 				'Project Management & To-do List': 'Project Management & To-do List - 敏捷项目管理套件（含任务看板）',
 				'PT': 'PT - 私有追踪器（Private Tracker）',
@@ -306,13 +306,13 @@ export default defineComponent({
 				// 'Software Development': 'Software Development - 软件开发工具链',
 				'Synology NAS': 'Synology NAS - 群晖 NAS 管理套件',
 				'Status & Uptime pages': 'Status & Uptime pages - 服务状态监控页',
-				'Streaming Service Platform': 'Streaming Service Platform - 流媒体服务平台',
+				// 'Streaming Service Platform': 'Streaming Service Platform - 流媒体服务平台',
 				// 'Social Networking and Forum Software': 'Social Networking and Forum Software - 社交化论坛系统',
 				'Self-hosting Solutions & OS': 'Self-hosting Solutions & OS - 自托管解决方案与操作系统',
 				// 'URL Shorteners': 'URL Shorteners - 短链生成器',
 				'VPS': 'VPS - 虚拟专用服务器（VPS）',
-				'Instant Messaging': 'Instant Messaging - 即时通讯',
-				'Uncategorized': 'Uncategorized - 未分类项目',
+				// 'Instant Messaging': 'Instant Messaging - 即时通讯',
+				// 'Uncategorized': 'Uncategorized - 未分类项目',
 				'Z_all_png': 'Z_all_png - 1024*1024 方形图',
 				'Z_all_png_other': 'Z_all_png_other - 1024*1024 方形图2',
 				'Z_all_svg': 'Z_all_svg - 1024*1024 矢量方形图'
@@ -329,22 +329,20 @@ export default defineComponent({
 			// let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@main/dist/" + "icon/" + url; // CDN Url
 			let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@gh-pages/" + "icon/" + url; // CDN Url
 			// let iconurlCdn = "https://github.viplee.top/https://raw.githubusercontent.com/oliver556/my-icons/refs/heads/main/dist/icon/" + url; // 套 CF
-				
-				// 备用 CDN Url
+			// 备用 CDN Url
 			// fastly.jsdelivr.net
 			// gcore.jsdelivr.net
 			// testingcf.jsdelivr.net
-			
 			// 自建 CF 加速转发
 			// https://github.viplee.top/https://raw.githubusercontent.com/oliver556/my-icons/refs/heads/main/dist/icon/ + url
 			// https://github.viplee.top/https://raw.githubusercontent.com/oliver556/my-icons/refs/heads/main/dist/icon/CMS/Halo_E.png
 			let fullurl = currenturl.substr(0, currenturl.length - 2) + iconurl; // 本地 Url
 			
-			console.log('图片文件全称(url): ', url);
-			console.log('当前环境路径(本地) currenturl: ', currenturl);
-			console.log('图片文件路径(iconurl): ', iconurl);
-			console.log('CDN 拼接后的路径(iconurlCdn): ', iconurlCdn);
-			console.log('当前环境拼接后的路径(fullurl): ', fullurl);
+			// console.log('图片文件全称(url): ', url);
+			// console.log('当前环境路径(本地) currenturl: ', currenturl);
+			// console.log('图片文件路径(iconurl): ', iconurl);
+			// console.log('CDN 拼接后的路径(iconurlCdn): ', iconurlCdn);
+			// console.log('当前环境拼接后的路径(fullurl): ', fullurl);
 			await toClipboard(cdnValue.value ? iconurlCdn : fullurl);
 			ElMessage({
 				message: "图标链接复制成功",
@@ -429,7 +427,7 @@ export default defineComponent({
 			const ext = item.type === 'svg' ? '.svg' : '.png';
 			const filename = `${item.name}${ext}`;
 			const filePath = `${category}/${filename}`;
-			
+			debugger
 			// 2. 构造 Purge URL
 			const purgeUrl = `https://purge.jsdelivr.net/gh/oliver556/my-icons@gh-pages/icon/${filePath}`;
 			

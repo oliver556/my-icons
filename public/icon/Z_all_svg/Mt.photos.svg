@@ -1,32 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Mt.photos</title>
+    <defs>
+        <circle id="path-1" cx="157.210125" cy="101.605384" r="35.15625"></circle>
+        <filter x="-6.4%" y="-6.4%" width="125.6%" height="125.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="157.851311" cy="102.331733" r="35.15625"></circle>
+        <filter x="-6.4%" y="-6.4%" width="125.6%" height="125.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
     <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Mt.photos" transform="translate(0.6332, 0)">
+        <g id="Mt.photos">
             <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
-            <path d="M0,380 C216.030774,379.089699 403.030774,435.089699 561,548 C718.969226,660.910301 832.302559,819.576968 901,1024 L0,1024 L0,380 Z" id="多边形" fill="#18D24A"></path>
-            <rect id="路径" fill="#FFFFFF" x="200" y="604" width="339" height="304" rx="27"></rect>
-            <g id="矩形" transform="translate(275, 633)">
-                <g id="矩形3" transform="translate(176, 0)">
-                    <rect id="矩形外" fill="#A0A0A0" x="0" y="0" width="61" height="244"></rect>
-                    <rect id="矩形内" fill="#FFFFFF" x="16" y="20" width="30" height="48"></rect>
+            <g id="编组-36" transform="translate(112, 112)">
+                <circle id="椭圆形" fill="#53DB1B" cx="400" cy="400" r="400"></circle>
+                <path d="M233.601169,562.753899 L188.063177,500.977448 L564.257736,183.36262 L800,413.315599 C795.878307,505.843662 767.414123,585.001201 699.225201,664.522862 C633.145628,738.348479 557.864678,777.893467 459.913443,795.515477 L233.601169,562.753899 Z" id="阴影" fill-opacity="0.200967002" fill="#000000"></path>
+                <g id="后照片" transform="translate(172.6077, 181.3553)">
+                    <polygon id="矩形" fill="#DEDDE2" transform="translate(203.5527, 159.724) rotate(-3) translate(-203.5527, -159.724)" points="7.45899137 12.067758 399.646491 12.067758 399.646491 307.380258 7.45899137 307.380258"></polygon>
+                    <polygon id="矩形" fill="#BCFCFF" transform="translate(203.5527, 159.724) rotate(-3) translate(-203.5527, -159.724)" points="45.3496164 40.192758 361.755866 40.192758 361.755866 279.255258 45.3496164 279.255258"></polygon>
+                    <g id="太阳">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#F9A825" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M179.829254,211.637956 C187.379847,222.101779 199.431275,242.838567 215.983536,273.848319 L142.103266,284.576804 L42.93343,274.500479 C60.3398885,239.660742 73.2680358,216.794195 81.7178718,205.900839 C98.6864702,184.025268 117.849225,174.774828 126.048888,173.54103 C147.764414,170.27351 169.565203,197.413747 179.829254,211.637956 Z" id="后山" fill="#87C135" transform="translate(129.4585, 228.9237) rotate(-9) translate(-129.4585, -228.9237)"></path>
                 </g>
-                <g id="矩形2" transform="translate(89, 0)">
-                    <rect id="矩形外" fill="#A0A0A0" x="0" y="0" width="61" height="244"></rect>
-                    <rect id="矩形内" fill="#FFFFFF" x="16" y="20" width="30" height="48"></rect>
+                <g id="前照片" transform="translate(450.3792, 444.9855) rotate(12) translate(-450.3792, -444.9855)translate(246.8265, 285.2615)">
+                    <polygon id="矩形" fill="#FFFFFF" transform="translate(203.5527, 159.724) rotate(-3) translate(-203.5527, -159.724)" points="7.45899137 12.067758 399.646491 12.067758 399.646491 307.380258 7.45899137 307.380258"></polygon>
+                    <polygon id="矩形" fill="#2196F3" transform="translate(203.5527, 159.724) rotate(-3) translate(-203.5527, -159.724)" points="45.3496164 40.192758 361.755866 40.192758 361.755866 279.255258 45.3496164 279.255258"></polygon>
+                    <g id="太阳">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#F9A825" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <path d="M182.494682,214.300976 C190.045276,224.764799 202.096703,245.501587 218.648964,276.511339 L142.293783,284.177054 L45.5988583,277.163499 C63.0053168,242.323762 75.933464,219.457215 84.3833001,208.563859 C101.351898,186.688288 120.514653,177.437848 128.714317,176.20405 C150.429842,172.93653 172.230631,200.076768 182.494682,214.300976 Z" id="后山" fill="#87C135" transform="translate(132.1239, 230.0553) rotate(-7) translate(-132.1239, -230.0553)"></path>
+                    <path d="M348.738757,180.173273 C362.29209,206.490379 367.397281,238.723285 364.054329,276.871991 L144.523079,276.871991 C178.882418,222.612925 203.171535,186.979472 217.390428,169.971633 C248.521732,132.734121 274.798247,118.152337 286.19269,118.694339 C310.733386,119.861673 339.385673,162.011976 348.738757,180.173273 Z" id="前山" fill="#ADE65C" transform="translate(254.7848, 197.7759) rotate(-3) translate(-254.7848, -197.7759)"></path>
                 </g>
-                <g id="矩形1">
-                    <rect id="矩形外" fill="#A0A0A0" x="0" y="0" width="61" height="244"></rect>
-                    <rect id="矩形内" fill="#FFFFFF" x="16" y="20" width="30" height="48"></rect>
-                </g>
-            </g>
-            <g id="圆形2" transform="translate(222, 653)">
-                <circle id="圆形红" fill="#EE5561" cx="15" cy="62" r="15"></circle>
-                <circle id="圆形蓝" fill="#559CFF" cx="15" cy="15" r="15"></circle>
-            </g>
-            <g id="圆形1" transform="translate(642, 169)">
-                <circle id="圆形外圈" fill="#18D24A" cx="101" cy="101" r="101"></circle>
-                <circle id="圆形内圈" fill="#FFFFFF" cx="101" cy="101" r="70"></circle>
             </g>
         </g>
     </g>
