@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Symedia_A</title>
+    <defs>
+        <linearGradient x1="-0.0477425123%" y1="50.015395%" x2="99.9527939%" y2="50.015395%" id="linearGradient-1">
+            <stop stop-color="#F5DD94" offset="0%"></stop>
+            <stop stop-color="#DDAE62" offset="57.0792967%"></stop>
+            <stop stop-color="#BE7222" offset="100%"></stop>
+        </linearGradient>
+        <path d="M416.506143,684.033542 C319.762694,607.165681 250.914103,553.151961 202.20471,514.050888 C188.117866,502.226114 185.152329,493.19875 185.152329,491.525058 C185.152329,489.378841 185.805972,481.912421 195.941299,472.301393 C244.949475,433.915776 321.088806,370.977273 352.575059,346.198202 C365.585474,336.444115 374.010478,335.515745 375.733925,335.515745 C377.646913,335.515745 387.239092,337.827682 398.79202,346.198202 C434.745308,372.247679 502.03434,430.066214 516.841744,439.622289 C524.123262,444.321474 531.107415,447.174265 532.601904,447.122161 C534.091415,447.07023 540.848068,444.202574 545.752002,441.227444 C560.686783,432.166775 584.336009,413.327768 598.656262,399.134656 C605.726048,392.127638 605.711152,384.245364 605.559796,383.00776 C605.492185,382.445581 603.463097,375.781731 598.656262,371.505728 C580.94505,355.750416 446.000526,245.391285 395.578664,210.078203 C385.562646,203.063459 377.346868,202.066896 375.733925,202 C374.258954,201.944964 364.956358,202.547633 354.325915,210.078203 C294.810646,252.238619 117.510208,398.376452 77.0573864,431.882016 C73.5635453,435.811442 67.1039245,441.055393 68.1039245,455.055393 C68.8252472,493.518171 68.883327,493.512358 68.2151829,544.137551 C70.4207124,549.857249 74.3842429,555.226034 80.1057746,560.243905 L375.733925,795.544674 C436.681952,747.522297 450.272691,710.35192 416.506143,684.033542 Z" id="path-2"></path>
+        <filter x="-1.6%" y="-1.1%" width="103.2%" height="102.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M348.506143,482.033542 C251.762694,405.165681 182.914103,351.151961 134.20471,312.050888 C120.117866,300.226114 117.152329,291.19875 117.152329,289.525058 C117.152329,287.378841 117.805972,279.912421 127.941299,270.301393 C176.949475,231.915776 253.088806,168.977273 284.575059,144.198202 C297.585474,134.444115 306.010478,133.515745 307.733925,133.515745 C309.646913,133.515745 319.239092,135.827682 330.79202,144.198202 C366.745308,170.247679 434.03434,228.066214 448.841744,237.622289 C456.123262,242.321474 463.107415,245.174265 464.601904,245.122161 C466.091415,245.07023 472.848068,242.202574 477.752002,239.227444 C492.686783,230.166775 516.336009,211.327768 530.656262,197.134656 C537.726048,190.127638 537.711152,182.245364 537.559796,181.00776 C537.492185,180.445581 535.463097,173.781731 530.656262,169.505728 C512.94505,153.750416 378.000526,43.3912845 327.578664,8.07820292 C317.562646,1.06345858 309.346868,0.0668963196 307.733925,0 C306.258954,-0.0550357722 296.956358,0.547633158 286.325915,8.07820292 C226.810646,50.2386192 49.510208,196.376452 9.05738639,229.882016 C5.56354535,233.811442 -0.896075453,239.055393 0.103924547,253.055393 C0.825247246,291.518171 0.883326964,291.512358 0.215182923,342.137551 C2.42071236,347.857249 6.38424292,353.226034 12.1057746,358.243905 L307.733925,593.544674 C368.681952,545.522297 382.272691,508.35192 348.506143,482.033542 Z" id="path-4"></path>
+        <filter x="-1.6%" y="-1.1%" width="103.2%" height="102.9%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.962565104">
+        <g id="Symedia_A">
+            <polyline id="蒙版路径" fill="#090C0B" points="0 0 1023.93898 0 1023.93898 1024 0 1024"></polyline>
+            <g id="编组" transform="translate(205.8961, 109.9446)" fill-rule="nonzero">
+                <g id="路径" transform="translate(336.7983, 498.7723) scale(-1, -1) translate(-336.7983, -498.7723)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use stroke="#E7C276" stroke-width="3" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+                <g id="路径">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use stroke="#E7C276" stroke-width="3" fill="url(#linearGradient-1)" xlink:href="#path-4"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

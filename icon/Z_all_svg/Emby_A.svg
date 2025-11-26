@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Emby_A</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Emby_A" transform="translate(0.3975, 0)">
+            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
+            <path d="M515.130202,154.827503 L666.030669,334.663676 L700.523571,307.566819 L871.074272,515.22148 L689.420021,663.955246 L714.524489,698.273837 L508.862216,868.998849 L357.96175,689.162676 L325.461236,716.433845 L154.910536,508.779183 L334.746709,357.878716 C325.799095,347.960346 316.708705,337.126841 307.47554,325.378203 L515.130202,154.827503 Z" id="轨迹" stroke="#52B54B" stroke-width="0.885139333" fill="#52B54B" transform="translate(512.9924, 511.9132) rotate(-5) translate(-512.9924, -511.9132)"></path>
+            <path d="M547,393.996792 L684.132112,630.5 L409.867888,630.5 L547,393.996792 Z" id="三角形" stroke="#FFFFFF" fill="#FFFFFF" transform="translate(547, 512) rotate(90) translate(-547, -512)"></path>
+        </g>
+    </g>
+</svg>
