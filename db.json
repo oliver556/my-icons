@@ -222,13 +222,6 @@
       "course": ""
     }
   ],
-  "Cloud Protection Services": [
-    {
-      "name": "Cloudflare",
-      "type": "png",
-      "course": ""
-    }
-  ],
   "DNS": [
     {
       "name": "AdGuard Home",
@@ -2230,21 +2223,6 @@
       "name": "Speedtest_D",
       "type": "png",
       "course": ""
-    },
-    {
-      "name": "hdhive_A",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "hdhive_B",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "hdhive_C",
-      "type": "png",
-      "course": ""
     }
   ],
   "VPS": [
@@ -2477,6 +2455,11 @@
     },
     {
       "name": "Bt.digg",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Btschool",
       "type": "png",
       "course": ""
     },
@@ -2756,6 +2739,11 @@
       "course": ""
     },
     {
+      "name": "Immich",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Iqiyi.video",
       "type": "png",
       "course": ""
@@ -2821,6 +2809,11 @@
       "course": ""
     },
     {
+      "name": "M.team",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Mac.OS",
       "type": "png",
       "course": ""
@@ -2852,11 +2845,6 @@
     },
     {
       "name": "Mt.photos",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Mteam",
       "type": "png",
       "course": ""
     },
@@ -3017,6 +3005,16 @@
     },
     {
       "name": "Sina",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Speed.do",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Speedtest",
       "type": "png",
       "course": ""
     },
@@ -3228,11 +3226,6 @@
       "course": ""
     },
     {
-      "name": "Btschool",
-      "type": "png",
-      "course": ""
-    },
-    {
       "name": "Carpt",
       "type": "png",
       "course": ""
@@ -3386,6 +3379,11 @@
     },
     {
       "name": "Bt.digg",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Btschool",
       "type": "svg",
       "course": ""
     },
@@ -3735,6 +3733,11 @@
       "course": ""
     },
     {
+      "name": "M.team",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Mac.OS",
       "type": "svg",
       "course": ""
@@ -3766,11 +3769,6 @@
     },
     {
       "name": "Mt.photos",
-      "type": "svg",
-      "course": ""
-    },
-    {
-      "name": "Mteam",
       "type": "svg",
       "course": ""
     },
@@ -3931,6 +3929,16 @@
     },
     {
       "name": "Sina",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Speed.do",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Speedtest",
       "type": "svg",
       "course": ""
     },
@@ -4126,6 +4134,11 @@
     },
     {
       "name": "Zimuku",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "immich",
       "type": "svg",
       "course": ""
     }
