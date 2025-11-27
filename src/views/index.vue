@@ -3,7 +3,7 @@
 		<!-- 返回顶部 -->
 		<el-backtop target=".app-wrapper" :right="40" :bottom="40" />
 		
-		<!-- 1. Hero 区域 -->
+		<!-- 1. Hero 区域：展示大标题、描述和统计 (随页面滚动划走) -->
 		<section class="hero-section">
 			<h1 class="hero-title">Icon 图标库</h1>
 			<p class="hero-desc">
@@ -14,6 +14,7 @@
 				<span class="divider">·</span>
 				<span class="stat-item">{{ totalIcons }} 个图标</span>
 				
+				<!-- 只有在筛选状态下才显示“当前显示” -->
 				<template v-if="isFiltered">
 					<span class="divider">·</span>
 					<span class="stat-highlight">当前显示 {{ currentIcons }} 个</span>
@@ -21,10 +22,11 @@
 			</div>
 		</section>
 		
-		<!-- 2. Header -->
+		<!-- 2. 顶部悬浮岛 Header (搜索/控制栏) - 自动显隐 -->
+		<!-- 关键修改：增加 ref 用于获取高度，辅助计算 -->
 		<header class="site-header" :class="{ 'header-hidden': isHeaderHidden }" ref="headerRef">
 			<div class="glass-island">
-				<!-- Brand -->
+				<!-- 品牌 Logo (点击刷新页面) -->
 				<div class="brand-section" @click="reloadPage" title="重置页面">
 					<div class="brand-logo">
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -34,12 +36,13 @@
 							<rect x="3" y="14" width="7" height="7"></rect>
 						</svg>
 					</div>
+					<!-- 移动端或小屏时，Header 上也保留一个小标题，方便识别 -->
 					<h1 class="brand-title-small">Icon Hub</h1>
 				</div>
 				
-				<!-- Controls -->
+				<!-- 控制栏 -->
 				<div class="controls-wrapper">
-					<!-- Search -->
+					<!-- 搜索框 (增加防抖) -->
 					<div class="search-group">
 						<i class="search-icon">
 							<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -52,12 +55,13 @@
 							placeholder="搜索图标..."
 							autocomplete="off"
 						/>
+						<!-- 清空按钮 -->
 						<button v-if="searchInput" class="clear-btn" @click="clearSearch">
 							<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 						</button>
 					</div>
 					
-					<!-- Filter -->
+					<!-- 分类筛选下拉 -->
 					<div class="filter-group">
 						<select v-model="selectedCategory" class="modern-select">
 							<option value="">全部分类</option>
@@ -67,7 +71,7 @@
 						</select>
 					</div>
 					
-					<!-- Theme Toggle (新增主题切换按钮) -->
+					<!-- Theme Toggle (主题切换) -->
 					<button
 						class="theme-toggle-btn"
 						@click="cycleTheme"
@@ -97,7 +101,7 @@
 						</svg>
 					</button>
 					
-					<!-- CDN Toggle -->
+					<!-- CDN 切换开关 -->
 					<div class="toggle-group" title="切换 CDN 链接复制">
 						<label class="switch">
 							<input type="checkbox" v-model="cdnValue">
@@ -109,28 +113,29 @@
 			</div>
 		</header>
 		
-		<!-- Main Content -->
+		<!-- 主内容区 -->
 		<main class="content-wrapper">
-			<!-- Loading -->
+			<!-- Loading 状态 -->
 			<div v-if="loading" class="state-container">
 				<div class="spinner"></div>
 				<p>正在加载图标资源...</p>
 			</div>
 			
-			<!-- Empty -->
+			<!-- 空状态 -->
 			<div v-else-if="Object.keys(groupedIcons).length === 0" class="state-container empty-state">
 				<div class="empty-icon">🔭</div>
 				<h3>未找到相关图标</h3>
 				<p>尝试搜索其他关键词或切换分类</p>
 			</div>
 			
-			<!-- List -->
+			<!-- 图标列表 -->
 			<section
 				v-else
 				v-for="(items, categoryName) in groupedIcons"
 				:key="categoryName"
 				class="category-section"
 			>
+				<!-- 分类标题 -->
 				<div class="category-header">
 					<h2 class="category-title">
 						<span class="hash">#</span> {{ formatCategoryTitle(categoryName) }}
@@ -138,6 +143,7 @@
 					<span class="badge">{{ items.length }} Icons</span>
 				</div>
 				
+				<!-- Bento Grid 网格 -->
 				<div class="bento-grid">
 					<div
 						v-for="item in items"
@@ -145,7 +151,7 @@
 						class="bento-card"
 						@click="copyIconUrl(getIconRelativePath(categoryName, item))"
 					>
-						<!-- Visual -->
+						<!-- 1. 卡片主体：图片与名称 -->
 						<div class="card-main">
 							<div class="card-visual">
 								<img
@@ -160,10 +166,10 @@
 							</div>
 						</div>
 						
-						<!-- Actions -->
+						<!-- 2. 操作层 (鼠标移入显示) -->
 						<div class="action-layer">
 							
-							<!-- Zoom -->
+							<!-- 左侧：放大查看 -->
 							<div class="action-btn-wrapper">
 								<button
 									class="icon-btn zoom-btn"
@@ -171,18 +177,20 @@
 								>
 									<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
 								</button>
+								<!-- 悬浮提示 Tooltip -->
 								<span class="tooltip-text">预览</span>
 							</div>
 							
-							<!-- Copy -->
+							<!-- 中间：复制链接 (Copy) -->
 							<div class="action-btn-wrapper">
 								<button class="icon-btn copy-btn primary-action">
 									<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
 								</button>
+								<!-- 悬浮提示 Tooltip -->
 								<span class="tooltip-text">复制链接</span>
 							</div>
 							
-							<!-- Refresh -->
+							<!-- 右侧：刷新缓存 (带 Loading) -->
 							<div class="action-btn-wrapper">
 								<button
 									class="icon-btn refresh-btn"
@@ -190,9 +198,13 @@
 									@click.stop="purgeSingleIcon(categoryName, item)"
 									:disabled="refreshingItems.has(`${categoryName}/${item.name}`)"
 								>
+									<!-- 正常状态图标 -->
 									<svg v-if="!refreshingItems.has(`${categoryName}/${item.name}`)" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+									
+									<!-- Loading 状态图标 -->
 									<svg v-else class="spinner-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
 								</button>
+								<!-- 悬浮提示 Tooltip -->
 								<span class="tooltip-text">
             {{ refreshingItems.has(`${categoryName}/${item.name}`) ? '刷新中...' : '刷新缓存' }}
           </span>
@@ -205,10 +217,12 @@
 			</section>
 		</main>
 		
+		<!-- 页脚 -->
 		<footer class="site-footer">
 			<p>© 2025 Icon Hub - Personal NAS Dashboard</p>
 		</footer>
 		
+		<!-- 图片查看器 -->
 		<el-image-viewer
 			v-if="showViewer"
 			@close="closeViewer"
@@ -219,7 +233,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted, watch } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 import { ElMessage, ElImageViewer, ElBacktop } from "element-plus";
 import useClipboard from "vue-clipboard3";
 
@@ -228,8 +242,8 @@ const { toClipboard } = useClipboard();
 const loading = ref(true);
 
 // 搜索相关的状态
-const searchInput = ref("");
-const searchQuery = ref("");
+const searchInput = ref(""); // 输入框绑定的原始值
+const searchQuery = ref(""); // 用于过滤的实际值 (经过防抖)
 
 const selectedCategory = ref("");
 const rawData = ref<Record<string, any>>({});
@@ -237,15 +251,16 @@ const cdnValue = ref(true);
 const showViewer = ref(false);
 const previewList = ref<string[]>([]);
 const isHeaderHidden = ref(false);
-const headerRef = ref<HTMLElement | null>(null);
+const headerRef = ref<HTMLElement | null>(null); // 获取 Header 元素
 
 // 主题模式: 'auto' | 'light' | 'dark'
 const themeMode = ref<'auto' | 'light' | 'dark'>('auto');
 
+// 记录正在刷新的图标 ID 集合 (避免全局 loading，实现单个图标 loading)
 const refreshingItems = ref(new Set<string>());
 
 let lastScrollPosition = 0;
-let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+let debounceTimer: ReturnType<typeof setTimeout> | null = null; // 防抖定时器
 
 const publicPath = '/';
 
@@ -305,7 +320,7 @@ const themeTitle = computed(() => {
 	return map[themeMode.value];
 });
 
-// --- 数据获取与处理 ---
+// --- 核心逻辑 ---
 
 const fetchData = async () => {
 	try {
@@ -314,6 +329,7 @@ const fetchData = async () => {
 		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 		const jsonData = await response.json();
 		
+		// 排序逻辑
 		const sortedCategories = Object.keys(jsonData).sort((a, b) => {
 			return a.localeCompare(b, undefined, { numeric: true, caseFirst: 'upper' });
 		});
@@ -334,55 +350,65 @@ const fetchData = async () => {
 	}
 };
 
-// --- 滚动与搜索 ---
-
+// 滚动自动隐藏
 const handleScroll = () => {
 	const currentScrollPosition = window.scrollY || document.documentElement.scrollTop;
 	if (currentScrollPosition < 0) return;
 	
+	// 阈值判断：必须滚动超过一定距离才触发隐藏逻辑
 	const HEADER_STICKY_THRESHOLD = 350;
 	
 	if (Math.abs(currentScrollPosition - lastScrollPosition) < 50) return;
 	
 	if (currentScrollPosition > HEADER_STICKY_THRESHOLD) {
 		if (currentScrollPosition > lastScrollPosition) {
+			// 向下滚动 -> 隐藏
 			isHeaderHidden.value = true;
 		} else {
+			// 向上滚动 -> 显示
 			isHeaderHidden.value = false;
 		}
 	} else {
+		// 如果在顶部区域，始终显示
 		isHeaderHidden.value = false;
 	}
 	
 	lastScrollPosition = currentScrollPosition;
 };
 
+// 防抖搜索处理 (解决“重新请求”感觉的问题)
 const handleSearchInput = (e: Event) => {
 	const value = (e.target as HTMLInputElement).value;
 	searchInput.value = value;
 	
+	// 清除上一次的定时器
 	if (debounceTimer) clearTimeout(debounceTimer);
 	
+	// 延迟 300ms 更新实际搜索词
 	debounceTimer = setTimeout(() => {
 		searchQuery.value = value;
 	}, 300);
 };
 
+// 清空搜索
 const clearSearch = () => {
 	searchInput.value = "";
-	searchQuery.value = "";
+	searchQuery.value = ""; // 直接清空，不需要防抖
 };
 
-// --- 计算属性 ---
+// --- 计算属性 (统计数据) ---
 
 const uniqueCategories = computed(() => Object.keys(rawData.value));
 
+// 1. 总统计
 const totalCategories = computed(() => Object.keys(rawData.value).length);
 const totalIcons = computed(() => {
 	return Object.values(rawData.value).reduce((total: number, items: any) => total + items.length, 0);
 });
 
+// 2. 筛选后的数据
 const groupedIcons = computed(() => {
+	// 使用经过防抖的 searchQuery
 	const term = searchQuery.value.toLowerCase().trim();
 	const cat = selectedCategory.value;
 	const result: Record<string, any> = {};
@@ -402,6 +428,7 @@ const groupedIcons = computed(() => {
 	return result;
 });
 
+// 3. 当前显示统计
 const currentIcons = computed(() => {
 	return Object.values(groupedIcons.value).reduce((total: number, items: any) => total + items.length, 0);
 });
@@ -452,24 +479,32 @@ const copyIconUrl = async (relativePath: string) => {
 	}
 };
 
+// 刷新 CDN 缓存 (带 Loading)
 const purgeSingleIcon = async (category: string, item: any) => {
 	const itemId = `${category}/${item.name}`;
+	
+	// 如果已经在刷新中，直接返回
 	if (refreshingItems.value.has(itemId)) return;
 	
 	const path = getIconRelativePath(category, item);
 	const url = `https://purge.jsdelivr.net/gh/oliver556/my-icons@gh-pages/icon/${path}`;
 	
+	// 开始 Loading
 	refreshingItems.value.add(itemId);
 	
 	try {
+		// 使用 Promise.all 确保至少展示 800ms 的 Loading，避免闪烁
 		const minLoadingTime = new Promise(resolve => setTimeout(resolve, 800));
 		const fetchRequest = fetch(url, { mode: 'no-cors' });
+		
 		await Promise.all([fetchRequest, minLoadingTime]);
+		
 		ElMessage.success('已刷新图片CDN缓存，请等待几分钟后生效。');
 	} catch (error) {
 		console.error('Purge error:', error);
 		ElMessage.error('刷新请求发送失败，请稍后重试。');
 	} finally {
+		// 结束 Loading
 		refreshingItems.value.delete(itemId);
 	}
 };
@@ -484,12 +519,6 @@ const closeViewer = () => { showViewer.value = false; };
 
 <style>
 /* --- 1. 全局变量定义 --- */
-/* 核心逻辑：
-   1. 默认 :root 定义亮色变量。
-   2. @media (prefers-color-scheme: dark) 定义暗色变量，但前提是 html 标签没有 data-theme="light"。
-   3. :root[data-theme="dark"] 强制定义暗色变量。
-*/
-
 :root {
 	/* 默认亮色模式变量 */
 	--color-primary: #6366f1;
@@ -841,9 +870,25 @@ input:checked + .slider:before { transform: translateX(14px); }
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.3s ease;
 }
-.card-visual img { width: 100%; height: 100%; object-fit: contain; transition: transform 0.3s; }
-.bento-card:hover .card-visual img { transform: scale(1.1); }
+
+/* 核心优化：图片 Q 弹与圆角过渡 */
+.card-visual img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius: 4px; /* 初始微圆角 */
+	/* 使用贝塞尔曲线实现 Q 弹效果 */
+	transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), border-radius 0.3s ease, filter 0.3s ease;
+}
+
+/* 悬停时的 Q 弹放大 + 大圆角 + 阴影 */
+.bento-card:hover .card-visual img {
+	transform: scale(1.2);
+	border-radius: 12px;
+	filter: drop-shadow(0 8px 12px rgba(var(--color-primary), 0.15));
+}
 
 .card-name {
 	font-size: 0.9rem; font-weight: 500; margin: 0; color: var(--color-text-main);
@@ -854,7 +899,8 @@ input:checked + .slider:before { transform: translateX(14px); }
 .action-layer {
 	position: absolute;
 	inset: 0;
-	background: rgba(255, 255, 255, 0.95);
+	background: rgba(255, 255, 255, 0.9); /* 保持一定透明度 */
+	backdrop-filter: blur(2px); /* 轻微模糊，增加层次感 */
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -865,7 +911,7 @@ input:checked + .slider:before { transform: translateX(14px); }
 	pointer-events: none;
 }
 @media (prefers-color-scheme: dark) {
-	.action-layer { background: rgba(30, 41, 59, 0.95); }
+	.action-layer { background: rgba(30, 41, 59, 0.9); }
 }
 .bento-card:hover .action-layer { opacity: 1; transform: translateY(0); pointer-events: auto; }
 
