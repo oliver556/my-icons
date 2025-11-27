@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Jellyfin</title>
+    <defs>
+        <path d="M512.955924,150 C607.771898,150 912.344029,710.275874 866.290556,803.622571 C820.237083,896.969267 206.448773,897.947744 159.814794,803.622571 C113.180814,709.297397 418.333451,150 512.955924,150 Z M512.955924,293.444714 C451.035287,293.444714 251.534736,659.590771 282.108051,721.626206 C312.681365,783.661642 714.972,782.87886 745.158311,721.626206 C774.570613,660.569247 574.87656,293.444714 512.955924,293.444714 Z M512.998692,434 C544.58588,434 645.742394,619.528924 630.433266,650.613328 C615.124139,681.697731 410.873246,681.893231 395.564118,650.613328 C380.254991,619.333425 481.605291,434 512.998692,434 Z" id="path-1"></path>
+        <linearGradient x1="84.8527835%" y1="79.0726772%" x2="24.5961879%" y2="23.5282257%" id="linearGradient-3">
+            <stop stop-color="#05A2DB" offset="0%"></stop>
+            <stop stop-color="#A259BA" offset="63.8616728%"></stop>
+            <stop stop-color="#A259BA" offset="99.9644886%"></stop>
+        </linearGradient>
+        <filter x="-2.3%" y="-2.3%" width="104.7%" height="104.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Jellyfin">
+            <rect id="蒙版路径" fill="#000000" x="0" y="0" width="1024" height="1024"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="形状结合" stroke="#000000" stroke-width="16.6666667" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-1"></use>
+            <rect id="蒙版路径" fill="url(#linearGradient-3)" filter="url(#filter-4)" mask="url(#mask-2)" x="0" y="0" width="1024" height="1024"></rect>
+        </g>
+    </g>
+</svg>
