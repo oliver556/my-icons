@@ -1,9 +1,10 @@
 <template>
 	<div class="app-wrapper">
-		<!-- 返回顶部 -->
-		<el-backtop target=".app-wrapper" :right="40" :bottom="40" />
 		
-		<!-- 1. Hero 区域：展示大标题、描述和统计 (随页面滚动划走) -->
+		<!-- 返回顶部 -->
+		<el-backtop :right="40" :bottom="40" />
+		
+		<!-- Hero 区域：展示大标题、描述和统计 (随页面滚动划走) -->
 		<section class="hero-section">
 			<h1 class="hero-title">Icon 图标库</h1>
 			<p class="hero-desc">
@@ -22,7 +23,7 @@
 			</div>
 		</section>
 		
-		<!-- 2. 顶部悬浮岛 Header (搜索/控制栏) - 自动显隐 -->
+		<!-- 顶部悬浮岛 Header (搜索/控制栏) - 自动显隐 -->
 		<!-- ref 用于获取高度，辅助计算 -->
 		<header class="site-header" :class="{ 'header-hidden': isHeaderHidden }" ref="headerRef">
 			<div class="glass-island">
@@ -144,7 +145,7 @@
 							 {{ item.type.toUpperCase() }}
 						</span>
 						
-						<!-- 1. 卡片主体：图片与名称 -->
+						<!-- 卡片主体：图片与名称 -->
 						<div class="card-main">
 							<div class="card-visual">
 								<img
@@ -171,7 +172,7 @@
 									<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
 								</button>
 								<!-- 悬浮提示 Tooltip -->
-								<span class="tooltip-text">预览</span>
+								<span class="tooltip-text">预览图片</span>
 							</div>
 							
 							<!-- 中间：复制链接 (Copy) -->
@@ -385,16 +386,15 @@ const clearSearch = () => {
 };
 
 // --- 计算属性 (统计数据) ---
-
 const uniqueCategories = computed(() => Object.keys(rawData.value));
 
-// 1. 总统计
+// 总统计
 const totalCategories = computed(() => Object.keys(rawData.value).length);
 const totalIcons = computed(() => {
 	return Object.values(rawData.value).reduce((total: number, items: any) => total + items.length, 0);
 });
 
-// 2. 筛选后的数据
+// 筛选后的数据
 const groupedIcons = computed(() => {
 	// 使用经过防抖的 searchQuery
 	const term = searchQuery.value.toLowerCase().trim();
@@ -416,7 +416,7 @@ const groupedIcons = computed(() => {
 	return result;
 });
 
-// 3. 当前显示统计
+// 当前显示统计
 const currentIcons = computed(() => {
 	return Object.values(groupedIcons.value).reduce((total: number, items: any) => total + items.length, 0);
 });
@@ -431,9 +431,9 @@ const reloadPage = () => window.location.reload();
 
 const formatCategoryTitle = (category: string) => {
 	const titles: Record<string, string> = {
-		'Z_all_png': 'Z_all_png - 1024【SVG → PNG】',
+		'Z_all_png': 'Z_all_png -【SVG → PNG】',
 		'Z_all_png_other': 'Z_all_png_other【其它图】',
-		'Z_all_svg': 'Z_all_svg - 1024【SVG】'
+		'Z_all_svg': 'Z_all_svg -【SVG】'
 	};
 	return titles[category] || category;
 };

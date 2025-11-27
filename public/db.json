@@ -271,6 +271,11 @@
       "course": ""
     },
     {
+      "name": "Element.plus",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Emby",
       "type": "png",
       "course": ""
@@ -761,6 +766,11 @@
       "course": ""
     },
     {
+      "name": "Qingwa",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Quark.drive",
       "type": "png",
       "course": ""
@@ -961,6 +971,11 @@
       "course": ""
     },
     {
+      "name": "Vue",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Vultr",
       "type": "png",
       "course": ""
@@ -1114,11 +1129,6 @@
     },
     {
       "name": "Ptcafe",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Qingwa",
       "type": "png",
       "course": ""
     },
@@ -1411,6 +1421,11 @@
     },
     {
       "name": "Edge",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Element.plus",
       "type": "svg",
       "course": ""
     },
@@ -1905,12 +1920,22 @@
       "course": ""
     },
     {
+      "name": "Qingwa",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Quark.drive",
       "type": "svg",
       "course": ""
     },
     {
       "name": "Readeck",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Rsshub",
       "type": "svg",
       "course": ""
     },
@@ -2100,6 +2125,11 @@
       "course": ""
     },
     {
+      "name": "Vue",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Vultr",
       "type": "svg",
       "course": ""
@@ -2206,11 +2236,6 @@
     },
     {
       "name": "immich",
-      "type": "svg",
-      "course": ""
-    },
-    {
-      "name": "rsshub",
       "type": "svg",
       "course": ""
     }
