@@ -781,6 +781,11 @@
       "course": ""
     },
     {
+      "name": "Sehuatang",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Shadowrocket",
       "type": "png",
       "course": ""
@@ -1911,6 +1916,11 @@
     },
     {
       "name": "Safeline",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Sehuatang",
       "type": "svg",
       "course": ""
     },
