@@ -776,6 +776,11 @@
       "course": ""
     },
     {
+      "name": "React",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Readeck",
       "type": "png",
       "course": ""
@@ -1926,6 +1931,11 @@
     },
     {
       "name": "Quark.drive",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "React",
       "type": "svg",
       "course": ""
     },
