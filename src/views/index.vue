@@ -95,6 +95,15 @@
 						>
 							🔄
 						</div>
+						
+						<div
+							class="card_zoom_btn"
+							@click.stop="handlePreview(category, item)"
+							title="放大查看图标"
+						>
+							🔍
+						</div>
+						
 						<el-tooltip
 							class="item"
 							effect="light"
@@ -135,13 +144,20 @@
 		<div class="icon-footer">
 			<p>© 2024.12.05 | By Jamison Lee</p>
 		</div>
+		
+		<el-image-viewer
+			v-if="showViewer"
+			@close="closeViewer"
+			:url-list="previewList"
+			:hide-on-click-modal="true"
+		/>
 	
 	</div>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref, reactive, onMounted, computed } from "vue";
-import { ElMessage } from "element-plus";
+import { ElMessage, ElImageViewer } from "element-plus";
 import clipboard3 from "vue-clipboard3";
 
 export default defineComponent({
@@ -376,8 +392,7 @@ export default defineComponent({
 			isPurging.value = true;
 			const allItems: string[] = [];
 			
-			// 1. 扁平化所有图标数据，拿到完整路径
-			// 遍历 rawData (你的原始数据)
+			// 遍历 rawData (原始数据)
 			for (const category in rawData.value) {
 				const items = rawData.value[category];
 				items.forEach((item: any) => {
@@ -391,14 +406,12 @@ export default defineComponent({
 			const total = allItems.length;
 			let count = 0;
 			
-			// 2. 循环发送 Purge 请求
 			for (const filePath of allItems) {
-				// 构造 Purge URL
-				// 你的 CDN 结构是: .../my-icons@gh-pages/icon/...
+				// 构造 Purge URL: .../my-icons@gh-pages/icon/...
 				const purgeUrl = `https://purge.jsdelivr.net/gh/oliver556/my-icons@gh-pages/icon/${filePath}`;
 				
 				try {
-					// mode: 'no-cors' 是关键，允许浏览器向 CDN 发送跨域请求
+					// mode: 'no-cors' 允许浏览器向 CDN 发送跨域请求
 					// 虽然拿不到返回结果，但服务器会执行清除操作
 					await fetch(purgeUrl, { mode: 'no-cors' });
 				} catch (e) {
@@ -449,6 +462,25 @@ export default defineComponent({
 			}
 		};
 		
+		/**
+		 * @Description 图片预览功能
+		 */
+		const showViewer = ref(false);
+		const previewList = ref<string[]>([]);
+		
+		const handlePreview = (category: string, item: any) => {
+			const ext = item.type === 'svg' ? '.svg' : '.png';
+			const url = `${data.publicPath}icon/${category}/${item.name}${ext}`;
+			
+			previewList.value = [url];
+			
+			showViewer.value = true;
+		};
+		
+		const closeViewer = () => {
+			showViewer.value = false;
+		};
+		
 		return {
 			data,
 			selectData,
@@ -465,7 +497,12 @@ export default defineComponent({
 			isPurging,
 			purgeProgress,
 			purgeAllIcons,
-			purgeSingleIcon
+			purgeSingleIcon,
+			showViewer,
+			previewList,
+			handlePreview,
+			closeViewer,
+			ElImageViewer
 		}
 	}
 })
@@ -782,9 +819,35 @@ html, body {
 						}
 					}
 					
+					.card_zoom_btn {
+						position: absolute;
+						top: 5px;
+						left: 5px;
+						width: 24px;
+						height: 24px;
+						line-height: 24px;
+						text-align: center;
+						background: rgba(255, 255, 255, 0.9);
+						border-radius: 50%;
+						font-size: 12px;
+						cursor: pointer;
+						box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+						color: #666;
+						opacity: 0;           // 默认隐藏
+						transform: scale(0.8);
+						transition: all 0.2s ease;
+						z-index: 10;
+						
+						&:hover {
+							background: #fff;
+							color: $secondary-color;
+							transform: scale(1.1);
+						}
+					}
+					
 					// 当鼠标悬停在卡片整体上时，显示按钮
 					&:hover {
-						.card_refresh_btn {
+						.card_refresh_btn, .card_zoom_btn {
 							opacity: 1;
 							transform: scale(1);
 						}
