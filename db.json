@@ -986,6 +986,11 @@
       "course": ""
     },
     {
+      "name": "Wallos",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Watchtower",
       "type": "png",
       "course": ""
@@ -2141,6 +2146,11 @@
     },
     {
       "name": "Vultr",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Wallos",
       "type": "svg",
       "course": ""
     },
