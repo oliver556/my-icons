@@ -292,7 +292,7 @@ const cycleTheme = () => {
 	localStorage.setItem('icon-hub-theme', themeMode.value);
 	applyTheme();
 	
-	ElMessage.success(`已切换模式: ${themeTitle.value}`);
+	ElMessage.success(`${themeTitle.value}`);
 };
 
 // 执行主题切换：通过在 html 标签上设置 data-theme 属性
