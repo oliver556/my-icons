@@ -313,9 +313,9 @@ export default defineComponent({
 				// 'VPS': 'VPS - 虚拟专用服务器（VPS）',
 				// 'Instant Messaging': 'Instant Messaging - 即时通讯',
 				// 'Uncategorized': 'Uncategorized - 未分类项目',
-				'Z_all_png': 'Z_all_png - 1024*1024 方形图',
-				'Z_all_png_other': 'Z_all_png_other - 1024*1024 方形图2',
-				'Z_all_svg': 'Z_all_svg - 1024*1024 矢量方形图'
+				'Z_all_png': 'Z_all_png - 1024 svg 无损压缩方形图',
+				'Z_all_png_other': 'Z_all_png_other - 1024 方形图',
+				'Z_all_svg': 'Z_all_svg - 1024 svg 方形图'
 			};
 			return titles[category] || category;
 		};
