@@ -23,7 +23,7 @@
 		</section>
 		
 		<!-- 2. 顶部悬浮岛 Header (搜索/控制栏) - 自动显隐 -->
-		<!-- 关键修改：增加 ref 用于获取高度，辅助计算 -->
+		<!-- ref 用于获取高度，辅助计算 -->
 		<header class="site-header" :class="{ 'header-hidden': isHeaderHidden }" ref="headerRef">
 			<div class="glass-island">
 				<!-- 品牌 Logo (点击刷新页面) -->
@@ -42,7 +42,7 @@
 				
 				<!-- 控制栏 -->
 				<div class="controls-wrapper">
-					<!-- 搜索框 (增加防抖) -->
+					<!-- 搜索框 -->
 					<div class="search-group">
 						<i class="search-icon">
 							<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -78,27 +78,11 @@
 						:title="themeTitle"
 					>
 						<!-- Auto Icon (System) -->
-						<svg v-if="themeMode === 'auto'" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-							<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-							<line x1="8" y1="21" x2="16" y2="21"></line>
-							<line x1="12" y1="17" x2="12" y2="21"></line>
-						</svg>
+						<svg v-if="themeMode === 'auto'" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
 						<!-- Light Icon (Sun) -->
-						<svg v-if="themeMode === 'light'" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-							<circle cx="12" cy="12" r="5"></circle>
-							<line x1="12" y1="1" x2="12" y2="3"></line>
-							<line x1="12" y1="21" x2="12" y2="23"></line>
-							<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-							<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-							<line x1="1" y1="12" x2="3" y2="12"></line>
-							<line x1="21" y1="12" x2="23" y2="12"></line>
-							<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-							<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-						</svg>
+						<svg v-if="themeMode === 'light'" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
 						<!-- Dark Icon (Moon) -->
-						<svg v-if="themeMode === 'dark'" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-						</svg>
+						<svg v-if="themeMode === 'dark'" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
 					</button>
 					
 					<!-- CDN 切换开关 -->
@@ -151,6 +135,15 @@
 						class="bento-card"
 						@click="copyIconUrl(getIconRelativePath(categoryName, item))"
 					>
+						<!-- 格式标签 (Format Badge) -->
+						<span
+							class="format-badge"
+							:class="item.type"
+							title="文件格式"
+						>
+							 {{ item.type.toUpperCase() }}
+						</span>
+						
 						<!-- 1. 卡片主体：图片与名称 -->
 						<div class="card-main">
 							<div class="card-visual">
@@ -206,8 +199,8 @@
 								</button>
 								<!-- 悬浮提示 Tooltip -->
 								<span class="tooltip-text">
-            {{ refreshingItems.has(`${categoryName}/${item.name}`) ? '刷新中...' : '刷新缓存' }}
-          </span>
+									{{ refreshingItems.has(`${categoryName}/${item.name}`) ? '刷新中...' : '刷新缓存' }}
+								</span>
 							</div>
 						
 						</div>
@@ -350,7 +343,7 @@ const fetchData = async () => {
 	}
 };
 
-// 滚动自动隐藏
+// --- 滚动 & 搜索 ---
 const handleScroll = () => {
 	const currentScrollPosition = window.scrollY || document.documentElement.scrollTop;
 	if (currentScrollPosition < 0) return;
@@ -361,13 +354,8 @@ const handleScroll = () => {
 	if (Math.abs(currentScrollPosition - lastScrollPosition) < 50) return;
 	
 	if (currentScrollPosition > HEADER_STICKY_THRESHOLD) {
-		if (currentScrollPosition > lastScrollPosition) {
-			// 向下滚动 -> 隐藏
-			isHeaderHidden.value = true;
-		} else {
-			// 向上滚动 -> 显示
-			isHeaderHidden.value = false;
-		}
+		// 向下滚动 -> 隐藏
+		isHeaderHidden.value = currentScrollPosition > lastScrollPosition;
 	} else {
 		// 如果在顶部区域，始终显示
 		isHeaderHidden.value = false;
@@ -376,7 +364,7 @@ const handleScroll = () => {
 	lastScrollPosition = currentScrollPosition;
 };
 
-// 防抖搜索处理 (解决“重新请求”感觉的问题)
+// 防抖搜索处理
 const handleSearchInput = (e: Event) => {
 	const value = (e.target as HTMLInputElement).value;
 	searchInput.value = value;
@@ -393,7 +381,7 @@ const handleSearchInput = (e: Event) => {
 // 清空搜索
 const clearSearch = () => {
 	searchInput.value = "";
-	searchQuery.value = ""; // 直接清空，不需要防抖
+	searchQuery.value = "";
 };
 
 // --- 计算属性 (统计数据) ---
@@ -518,7 +506,7 @@ const closeViewer = () => { showViewer.value = false; };
 </script>
 
 <style>
-/* --- 1. 全局变量定义 --- */
+/* --- 全局变量 --- */
 :root {
 	/* 默认亮色模式变量 */
 	--color-primary: #6366f1;
@@ -586,7 +574,7 @@ body {
 	flex-direction: column;
 }
 
-/* --- 2. Hero Section --- */
+/* --- Hero --- */
 .hero-section {
 	text-align: center;
 	padding: 60px 20px 40px;
@@ -624,15 +612,27 @@ body {
 	color: var(--color-text-sub);
 }
 
-.divider { opacity: 0.3; }
-.stat-highlight { color: var(--color-primary); font-weight: 600; }
-
-@keyframes fadeIn {
-	from { opacity: 0; transform: translateY(20px); }
-	to { opacity: 1; transform: translateY(0); }
+.divider {
+	opacity: 0.3;
 }
 
-/* --- 3. 顶部悬浮岛 Header --- */
+.stat-highlight {
+	color: var(--color-primary);
+	font-weight: 600;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* --- Header --- */
 .site-header {
 	position: sticky;
 	top: 16px;
@@ -658,7 +658,6 @@ body {
 	border: 1px solid var(--color-border);
 	border-radius: 20px;
 	box-shadow: var(--shadow-lg);
-	
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -716,7 +715,11 @@ body {
 	display: flex;
 	border-radius: 50%;
 }
-.clear-btn:hover { background: rgba(0, 0, 0, 0.05); color: var(--color-text-main); }
+
+.clear-btn:hover {
+	background: rgba(0, 0, 0, 0.05);
+	color: var(--color-text-main);
+}
 
 .modern-input {
 	width: 100%;
@@ -729,6 +732,7 @@ body {
 	outline: none;
 	transition: all 0.2s;
 }
+
 .modern-input:focus {
 	background: var(--color-card);
 	border-color: var(--color-primary);
@@ -757,9 +761,12 @@ body {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.modern-select:hover { background: var(--color-card); border-color: var(--color-border); }
 
-/* Theme Toggle Button */
+.modern-select:hover {
+	background: var(--color-card);
+	border-color: var(--color-border);
+}
+
 .theme-toggle-btn {
 	width: 34px;
 	height: 34px;
@@ -773,6 +780,7 @@ body {
 	cursor: pointer;
 	transition: all 0.2s;
 }
+
 .theme-toggle-btn:hover {
 	background: var(--color-card);
 	border-color: var(--color-border);
@@ -787,21 +795,61 @@ body {
 	padding-left: 10px;
 	border-left: 1px solid var(--color-border);
 }
-.switch { position: relative; display: inline-block; width: 34px; height: 20px; }
-.switch input { opacity: 0; width: 0; height: 0; }
-.slider {
-	position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0;
-	background-color: var(--color-text-sub); opacity: 0.3; transition: .4s; border-radius: 34px;
-}
-.slider:before {
-	position: absolute; content: ""; height: 16px; width: 16px; left: 2px; bottom: 2px;
-	background-color: white; transition: .4s; border-radius: 50%;
-}
-input:checked + .slider { background-color: var(--color-primary); opacity: 1; }
-input:checked + .slider:before { transform: translateX(14px); }
-.toggle-label { font-size: 0.75rem; font-weight: 600; color: var(--color-text-sub); }
 
-/* --- 4. Main Content --- */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 34px;
+	height: 20px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--color-text-sub);
+	opacity: 0.3;
+	transition: .4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	transition: .4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider {
+	background-color: var(--color-primary);
+	opacity: 1;
+}
+
+input:checked + .slider:before {
+	transform: translateX(14px);
+}
+
+.toggle-label {
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: var(--color-text-sub);
+}
+
+/* --- Content --- */
 .content-wrapper {
 	flex: 1;
 	width: 100%;
@@ -809,25 +857,64 @@ input:checked + .slider:before { transform: translateX(14px); }
 	padding: 40px 20px 80px;
 }
 
-.state-container { text-align: center; padding: 60px 0; color: var(--color-text-sub); }
+.state-container {
+	text-align: center;
+	padding: 60px 0;
+	color: var(--color-text-sub);
+}
+
 .spinner {
-	width: 40px; height: 40px; border: 3px solid var(--color-border);
-	border-top-color: var(--color-primary); border-radius: 50%; margin: 0 auto 20px;
+	width: 40px;
+	height: 40px;
+	border: 3px solid var(--color-border);
+	border-top-color: var(--color-primary);
+	border-radius: 50%;
+	margin: 0 auto 20px;
 	animation: spin 1s linear infinite;
 }
-@keyframes spin { to { transform: rotate(360deg); } }
-.empty-icon { font-size: 3rem; margin-bottom: 10px; }
 
-.category-section { margin-bottom: 40px; }
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.empty-icon {
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+.category-section {
+	margin-bottom: 40px;
+}
+
 .category-header {
-	display: flex; align-items: center; gap: 10px; margin-bottom: 20px; padding-bottom: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
 	border-bottom: 1px solid var(--color-border);
 }
-.category-title { font-size: 1.2rem; margin: 0; color: var(--color-text-main); }
-.category-title .hash { color: var(--color-primary); margin-right: 5px; }
+
+.category-title {
+	font-size: 1.2rem;
+	margin: 0;
+	color: var(--color-text-main);
+}
+
+.category-title .hash {
+	color: var(--color-primary);
+	margin-right: 5px;
+}
+
 .badge {
-	background: var(--color-bg-island); border: 1px solid var(--color-border);
-	color: var(--color-text-sub); font-size: 0.75rem; padding: 2px 8px; border-radius: 10px;
+	background: var(--color-bg-island);
+	border: 1px solid var(--color-border);
+	color: var(--color-text-sub);
+	font-size: 0.75rem;
+	padding: 2px 8px;
+	border-radius: 10px;
 }
 
 .bento-grid {
@@ -850,6 +937,7 @@ input:checked + .slider:before { transform: translateX(14px); }
 	align-items: center;
 	text-align: center;
 }
+
 .bento-card:hover {
 	transform: translateY(-5px);
 	box-shadow: var(--shadow-md);
@@ -873,29 +961,67 @@ input:checked + .slider:before { transform: translateX(14px); }
 	transition: all 0.3s ease;
 }
 
-/* 核心优化：图片 Q 弹与圆角过渡 */
+/* 丝滑的图片放大效果 */
 .card-visual img {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
-	border-radius: 4px; /* 初始微圆角 */
-	/* 使用贝塞尔曲线实现 Q 弹效果 */
+	border-radius: 4px;
 	transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), border-radius 0.3s ease, filter 0.3s ease;
 }
 
-/* 悬停时的 Q 弹放大 + 大圆角 + 阴影 */
 .bento-card:hover .card-visual img {
 	transform: scale(1.2);
 	border-radius: 12px;
-	filter: drop-shadow(0 8px 12px rgba(var(--color-primary), 0.15));
+	filter: drop-shadow(0 8px 12px rgba(99, 102, 241, 0.15));
 }
 
 .card-name {
-	font-size: 0.9rem; font-weight: 500; margin: 0; color: var(--color-text-main);
-	width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+	font-size: 0.9rem;
+	font-weight: 500;
+	margin: 0;
+	color: var(--color-text-main);
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-/* Actions Layer */
+/* 格式标签 Badge */
+.format-badge {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	font-size: 0.65rem;
+	font-weight: 700;
+	padding: 2px 6px;
+	border-radius: 6px;
+	opacity: 0;
+	transform: translateY(-5px);
+	transition: all 0.3s ease;
+	z-index: 20;
+	pointer-events: none;
+}
+
+.bento-card:hover .format-badge {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* 区分颜色 */
+.format-badge.svg {
+	background: rgba(168, 85, 247, 0.1);
+	color: #a855f7;
+	border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.format-badge.png {
+	background: rgba(59, 130, 246, 0.1);
+	color: #3b82f6;
+	border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* Action Layer */
 .action-layer {
 	position: absolute;
 	inset: 0;
@@ -910,10 +1036,18 @@ input:checked + .slider:before { transform: translateX(14px); }
 	transition: all 0.2s ease;
 	pointer-events: none;
 }
+
 @media (prefers-color-scheme: dark) {
-	.action-layer { background: rgba(30, 41, 59, 0.9); }
+	.action-layer {
+		background: rgba(30, 41, 59, 0.9);
+	}
 }
-.bento-card:hover .action-layer { opacity: 1; transform: translateY(0); pointer-events: auto; }
+
+.bento-card:hover .action-layer {
+	opacity: 1;
+	transform: translateY(0);
+	pointer-events: auto;
+}
 
 .action-btn-wrapper {
 	position: relative;
@@ -936,9 +1070,13 @@ input:checked + .slider:before { transform: translateX(14px); }
 	transform: translateY(-5px);
 	transition: all 0.2s ease;
 	z-index: 10;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-.action-btn-wrapper:hover .tooltip-text { opacity: 1; transform: translateY(0); }
+
+.action-btn-wrapper:hover .tooltip-text {
+	opacity: 1;
+	transform: translateY(0);
+}
 
 .icon-btn {
 	width: 38px;
@@ -955,6 +1093,7 @@ input:checked + .slider:before { transform: translateX(14px); }
 	box-shadow: var(--shadow-sm);
 	position: relative;
 }
+
 .icon-btn:hover {
 	background: var(--color-card);
 	color: var(--color-primary);
@@ -963,67 +1102,159 @@ input:checked + .slider:before { transform: translateX(14px); }
 	box-shadow: var(--shadow-md);
 }
 
-.spinner-icon { animation: spin 1s linear infinite; }
+.spinner-icon {
+	animation: spin 1s linear infinite;
+}
 
 .card-glow {
-	position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background: radial-gradient(circle at 50% 0%, var(--color-primary-light) 0%, transparent 60%);
-	opacity: 0; pointer-events: none; transition: opacity 0.3s;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s;
 }
-.bento-card:hover .card-glow { opacity: 1; }
+
+.bento-card:hover .card-glow {
+	opacity: 1;
+}
 
 .site-footer {
-	text-align: center; padding: 40px; color: var(--color-text-sub);
-	font-size: 0.8rem; border-top: 1px solid var(--color-border); margin-top: auto;
+	text-align: center;
+	padding: 40px;
+	color: var(--color-text-sub);
+	font-size: 0.8rem;
+	border-top: 1px solid var(--color-border);
+	margin-top: auto;
 }
 
-/* --- Responsive (Mobile) --- */
+/* --- Mobile --- */
 @media (max-width: 768px) {
-	.hero-title { font-size: 1.8rem; }
-	.hero-stats { font-size: 0.8rem; padding: 6px 12px; flex-wrap: wrap; justify-content: center; }
-	
-	.site-header { top: 0; padding: 0; }
-	.site-header.header-hidden { transform: translateY(-100%); }
-	
-	.glass-island {
-		border-radius: 0; border: none; border-bottom: 1px solid var(--color-border);
-		flex-direction: column; align-items: stretch; gap: 12px; padding: 12px 16px;
+	.hero-title {
+		font-size: 1.8rem;
 	}
 	
-	.brand-title-small { display: block; text-align: center; }
+	.hero-stats {
+		font-size: 0.8rem;
+		padding: 6px 12px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 	
-	.controls-wrapper { flex-wrap: wrap; justify-content: space-between; }
-	.search-group { width: 100%; max-width: none; order: 1; }
+	.site-header {
+		top: 0;
+		padding: 0;
+	}
 	
-	/* Filter and Theme Button on same line in mobile */
-	.filter-group { flex: 1; order: 2; margin-right: 8px; }
-	.theme-toggle-btn { order: 3; }
-	.toggle-group { order: 4; }
+	.site-header.header-hidden {
+		transform: translateY(-100%);
+	}
 	
-	.modern-select { max-width: none; width: 100%; }
+	.glass-island {
+		border-radius: 0;
+		border: none;
+		border-bottom: 1px solid var(--color-border);
+		flex-direction: column;
+		align-items: stretch;
+		gap: 12px;
+		padding: 12px 16px;
+	}
 	
-	.content-wrapper { padding: 20px 16px; }
-	.bento-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-	.bento-card { padding: 12px; min-height: auto; }
+	.brand-title-small {
+		display: block;
+		text-align: center;
+	}
 	
-	.action-layer {
-		position: static; opacity: 1; transform: none; background: transparent;
-		padding: 10px 0 0; margin-top: 4px; border-top: 1px solid var(--color-border);
-		width: 100%; pointer-events: auto;
+	.controls-wrapper {
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 	
-	.tooltip-text { display: none !important; }
+	.search-group {
+		width: 100%;
+		max-width: none;
+		order: 1;
+	}
 	
+	.filter-group {
+		flex: 1;
+		order: 2;
+		margin-right: 8px;
+	}
+	
+	.theme-toggle-btn {
+		order: 3;
+	}
+	
+	.toggle-group {
+		order: 4;
+	}
+	
+	.modern-select {
+		max-width: none;
+		width: 100%;
+	}
+	
+	.content-wrapper {
+		padding: 20px 16px;
+	}
+	
+	.bento-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 12px;
+	}
+	
+	.bento-card {
+		padding: 12px;
+		min-height: auto;
+	}
+	
+	/* 移动端: 按钮常驻, 标签隐藏, 图片默认无圆角变化(节省性能) */
+	.action-layer {
+		position: static;
+		opacity: 1;
+		transform: none;
+		background: transparent;
+		padding: 10px 0 0;
+		margin-top: 4px;
+		border-top: 1px solid var(--color-border);
+		width: 100%;
+		pointer-events: auto;
+		justify-content: space-between;
+	}
+	
+	.tooltip-text {
+		display: none !important;
+	}
+	
+	.format-badge {
+		display: none;
+	}
+	
+	/* 移动端隐藏格式标签，保持清爽 */
 	.icon-btn {
-		width: 32px; height: 32px; background: transparent; border: none; box-shadow: none;
+		width: 32px;
+		height: 32px;
+		background: transparent;
+		border: none;
+		box-shadow: none;
 	}
 	
 	.copy-btn.primary-action {
-		width: 48px; height: 36px; border-radius: 20px;
-		background-color: var(--color-primary); color: #ffffff;
-		box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4); border: none;
+		width: 48px;
+		height: 36px;
+		border-radius: 20px;
+		background-color: var(--color-primary);
+		color: #ffffff;
+		box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
+		border: none;
 	}
-	.copy-btn.primary-action:active { transform: scale(0.95); }
+	
+	.copy-btn.primary-action:active {
+		transform: scale(0.95);
+	}
 }
 </style>
