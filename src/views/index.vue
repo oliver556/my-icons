@@ -1,149 +1,213 @@
 <template>
-	<div class="icon-wrapper">
+	<div class="app-wrapper">
 		<!-- 返回顶部 -->
-		<el-backtop target=".icon-wrapper" :right="100" :bottom="100"/>
+		<el-backtop target=".app-wrapper" :right="40" :bottom="40" />
 		
-		<!-- 头部 -->
-		<div class="icon-head">
-			<h1 class="icon-head_title">Icon 图标库</h1>
-			<h4 class="icon-head_txt">
+		<!-- 1. Hero 区域 -->
+		<section class="hero-section">
+			<h1 class="hero-title">Icon 图标库</h1>
+			<p class="hero-desc">
 				提供在线图标链接，用于个人NAS设备显示使用，禁止用于商业用途
-			</h4>
-			<div class="icon-head_stats">
-				共 {{ totalCategories }} 个分类 · {{ totalIcons }} 个图标
-				<span v-if="currentCategories !== totalCategories">
-      		· 当前显示 {{ currentCategories }} 个分类 · {{ currentIcons }} 个图标
-    		</span>
+			</p>
+			<div class="hero-stats">
+				<span class="stat-item">共 {{ totalCategories }} 个分类</span>
+				<span class="divider">·</span>
+				<span class="stat-item">{{ totalIcons }} 个图标</span>
+				
+				<template v-if="isFiltered">
+					<span class="divider">·</span>
+					<span class="stat-highlight">当前显示 {{ currentIcons }} 个</span>
+				</template>
 			</div>
-			
-			<!--<div class="icon-head_stats">-->
-			<!--	</div>-->
-			<!--	-->
-			<!--	<div style="text-align: center; margin-bottom: 1rem;">-->
-			<!--		<el-button-->
-			<!--			type="warning"-->
-			<!--			size="small"-->
-			<!--			round-->
-			<!--			:loading="isPurging"-->
-			<!--			@click="purgeAllIcons"-->
-			<!--		>-->
-			<!--			{{ isPurging ? purgeProgress : '🚀 强制刷新 CDN 缓存 (修复旧图)' }}-->
-			<!--		</el-button>-->
-			<!--	</div>-->
-		</div>
+		</section>
 		
-		<!-- 搜索部分 -->
-		<div class="icon-search-wrapper">
-			<div class="icon-search-content">
-				<el-input
-					v-model="data.search"
-					class="icon-search"
-					clearable
-					placeholder="搜索图标"
-					size="large"
-				>
-					<!--@keyup.enter="iconSearch"-->
-					<template #prepend>
-						<el-select
-							class="icon-select"
-							v-model="data.selectValue"
-							placeholder="全部"
-							size="large"
-							filterable
-							clearable
-						>
-							<!--@change="selectSearch"-->
-							<el-option
-								v-for="(item, index) in selectData"
-								:key="index"
-								:label="item.label"
-								:value="item.value"
-							></el-option>
-						</el-select>
-					</template>
-				</el-input>
-			</div>
-		</div>
-		
-		<!-- 图片展示 -->
-		<div class="icon-show-wrapper">
-			<!-- 外层分类 -->
-			<div
-				class="icon-show-block"
-				v-for="(items, category) in data.iconData"
-				:key="category"
-			>
-				<!-- 分类标题 -->
-				<div class="icon-show-header">
-					<div class="icon-show-header_title">{{ formatCategoryTitle(category) }}</div>
-					<div class="icon-show-header_num">{{ items.length }} {{ pluralize(items.length) }}</div>
-					<div class="icon-show-header_line"></div>
+		<!-- 2. Header -->
+		<header class="site-header" :class="{ 'header-hidden': isHeaderHidden }" ref="headerRef">
+			<div class="glass-island">
+				<!-- Brand -->
+				<div class="brand-section" @click="reloadPage" title="重置页面">
+					<div class="brand-logo">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<rect x="3" y="3" width="7" height="7"></rect>
+							<rect x="14" y="3" width="7" height="7"></rect>
+							<rect x="14" y="14" width="7" height="7"></rect>
+							<rect x="3" y="14" width="7" height="7"></rect>
+						</svg>
+					</div>
+					<h1 class="brand-title-small">Icon Hub</h1>
 				</div>
 				
-				<div class="card">
-					<!-- 内层当前分类下的项目 -->
+				<!-- Controls -->
+				<div class="controls-wrapper">
+					<!-- Search -->
+					<div class="search-group">
+						<i class="search-icon">
+							<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+						</i>
+						<input
+							type="text"
+							:value="searchInput"
+							@input="handleSearchInput"
+							class="modern-input"
+							placeholder="搜索图标..."
+							autocomplete="off"
+						/>
+						<button v-if="searchInput" class="clear-btn" @click="clearSearch">
+							<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+						</button>
+					</div>
+					
+					<!-- Filter -->
+					<div class="filter-group">
+						<select v-model="selectedCategory" class="modern-select">
+							<option value="">全部分类</option>
+							<option v-for="cat in uniqueCategories" :key="cat" :value="cat">
+								{{ cat }}
+							</option>
+						</select>
+					</div>
+					
+					<!-- Theme Toggle (新增主题切换按钮) -->
+					<button
+						class="theme-toggle-btn"
+						@click="cycleTheme"
+						:title="themeTitle"
+					>
+						<!-- Auto Icon (System) -->
+						<svg v-if="themeMode === 'auto'" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+							<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+							<line x1="8" y1="21" x2="16" y2="21"></line>
+							<line x1="12" y1="17" x2="12" y2="21"></line>
+						</svg>
+						<!-- Light Icon (Sun) -->
+						<svg v-if="themeMode === 'light'" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+							<circle cx="12" cy="12" r="5"></circle>
+							<line x1="12" y1="1" x2="12" y2="3"></line>
+							<line x1="12" y1="21" x2="12" y2="23"></line>
+							<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+							<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+							<line x1="1" y1="12" x2="3" y2="12"></line>
+							<line x1="21" y1="12" x2="23" y2="12"></line>
+							<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+							<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+						</svg>
+						<!-- Dark Icon (Moon) -->
+						<svg v-if="themeMode === 'dark'" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+						</svg>
+					</button>
+					
+					<!-- CDN Toggle -->
+					<div class="toggle-group" title="切换 CDN 链接复制">
+						<label class="switch">
+							<input type="checkbox" v-model="cdnValue">
+							<span class="slider round"></span>
+						</label>
+						<span class="toggle-label">CDN</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Main Content -->
+		<main class="content-wrapper">
+			<!-- Loading -->
+			<div v-if="loading" class="state-container">
+				<div class="spinner"></div>
+				<p>正在加载图标资源...</p>
+			</div>
+			
+			<!-- Empty -->
+			<div v-else-if="Object.keys(groupedIcons).length === 0" class="state-container empty-state">
+				<div class="empty-icon">🔭</div>
+				<h3>未找到相关图标</h3>
+				<p>尝试搜索其他关键词或切换分类</p>
+			</div>
+			
+			<!-- List -->
+			<section
+				v-else
+				v-for="(items, categoryName) in groupedIcons"
+				:key="categoryName"
+				class="category-section"
+			>
+				<div class="category-header">
+					<h2 class="category-title">
+						<span class="hash">#</span> {{ formatCategoryTitle(categoryName) }}
+					</h2>
+					<span class="badge">{{ items.length }} Icons</span>
+				</div>
+				
+				<div class="bento-grid">
 					<div
 						v-for="item in items"
 						:key="item.name"
-						class="card_content"
-						@click="copyIconUrl(category + '/' + item.name + (item.type === 'svg' ? '.svg' : '.png'))"
+						class="bento-card"
+						@click="copyIconUrl(getIconRelativePath(categoryName, item))"
 					>
-						<div
-							class="card_refresh_btn"
-							@click.stop="purgeSingleIcon(category, item)"
-							title="强制刷新此图标缓存"
-						>
-							🔄
+						<!-- Visual -->
+						<div class="card-main">
+							<div class="card-visual">
+								<img
+									:src="getIconPath(categoryName, item)"
+									:alt="item.name"
+									loading="lazy"
+									@error="handleImageError"
+								>
+							</div>
+							<div class="card-info">
+								<h3 class="card-name" :title="item.name">{{ item.name }}</h3>
+							</div>
 						</div>
 						
-						<div
-							class="card_zoom_btn"
-							@click.stop="handlePreview(category, item)"
-							title="放大查看图标"
-						>
-							🔍
-						</div>
+						<!-- Actions -->
+						<div class="action-layer">
+							
+							<!-- Zoom -->
+							<div class="action-btn-wrapper">
+								<button
+									class="icon-btn zoom-btn"
+									@click.stop="handlePreview(categoryName, item)"
+								>
+									<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+								</button>
+								<span class="tooltip-text">预览</span>
+							</div>
+							
+							<!-- Copy -->
+							<div class="action-btn-wrapper">
+								<button class="icon-btn copy-btn primary-action">
+									<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+								</button>
+								<span class="tooltip-text">复制链接</span>
+							</div>
+							
+							<!-- Refresh -->
+							<div class="action-btn-wrapper">
+								<button
+									class="icon-btn refresh-btn"
+									:class="{ 'is-loading': refreshingItems.has(`${categoryName}/${item.name}`) }"
+									@click.stop="purgeSingleIcon(categoryName, item)"
+									:disabled="refreshingItems.has(`${categoryName}/${item.name}`)"
+								>
+									<svg v-if="!refreshingItems.has(`${categoryName}/${item.name}`)" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+									<svg v-else class="spinner-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
+								</button>
+								<span class="tooltip-text">
+            {{ refreshingItems.has(`${categoryName}/${item.name}`) ? '刷新中...' : '刷新缓存' }}
+          </span>
+							</div>
 						
-						<el-tooltip
-							class="item"
-							effect="light"
-							placement="top"
-						>
-							<template #content> {{ getItemContent(item) }}</template>
-							<!--<template #content>-->
-							<el-image
-								v-if="item.type === 'svg'"
-								class="card_img"
-								:src="data.publicPath + 'icon/' + category + '/' + item.name + '.svg'"
-								lazy
-								fit="contain"
-							/>
-							<el-image
-								v-else
-								class="card_img"
-								:src="data.publicPath + 'icon/' + category + '/' + item.name + '.png'"
-								lazy
-								fit="contain"
-							/>
-						</el-tooltip>
-						<div class="card_content_txt" @click="openUrl(item.course)" :class="item.course !== '' ? 'card_content_course' : ''">
-							{{ item.name }}
 						</div>
+						<div class="card-glow"></div>
 					</div>
 				</div>
-			
-			
-			</div>
-			
-			<div v-if="Object.keys(data.iconData).length === 0" class="no-result">
-				暂未收录相对应的图标哦 ~~~
-			</div>
-		</div>
+			</section>
+		</main>
 		
-		<!-- 页脚 -->
-		<div class="icon-footer">
-			<p>© 2024.12.05 | By Jamison Lee</p>
-		</div>
+		<footer class="site-footer">
+			<p>© 2025 Icon Hub - Personal NAS Dashboard</p>
+		</footer>
 		
 		<el-image-viewer
 			v-if="showViewer"
@@ -151,895 +215,769 @@
 			:url-list="previewList"
 			:hide-on-click-modal="true"
 		/>
-	
 	</div>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref, reactive, onMounted, computed } from "vue";
-import { ElMessage, ElImageViewer } from "element-plus";
-import clipboard3 from "vue-clipboard3";
+<script setup lang="ts">
+import { ref, computed, onMounted, onUnmounted, watch } from "vue";
+import { ElMessage, ElImageViewer, ElBacktop } from "element-plus";
+import useClipboard from "vue-clipboard3";
 
-export default defineComponent({
-	setup() {
-		const {toClipboard} = clipboard3();
-		const cdnValue = ref(true);
-		
-		// 搜索数据
-		const data = reactive({
-			search: "", // 搜索框的值
-			selectValue: "", // 下拉框的值
-			publicPath: process.env.BASE_URL,
-			get iconData() { // 改为计算属性
-				return this.search || this.selectValue ? filteredData.value : rawData.value;
-			}
-		})
-		
-		// 下拉框数据
-		const selectData = ref<{ label: string; value: string }[]>([]);		// const selectData = reactive([
-		
-		// 原始数据存储
-		const rawData = ref<any>({}); // 新增：存储原始数据
+// --- 状态定义 ---
+const { toClipboard } = useClipboard();
+const loading = ref(true);
 
-		// 总分类数（所有分类的数量）
-		const totalCategories = computed(() => Object.keys(rawData.value).length);
+// 搜索相关的状态
+const searchInput = ref("");
+const searchQuery = ref("");
 
-		// 总图标数（所有分类下的图标总数）
-		const totalIcons = computed(() => {
-			return Object.values(rawData.value).reduce((total: number, items: any) =>
-				total + items.length, 0
-			);
-		});
+const selectedCategory = ref("");
+const rawData = ref<Record<string, any>>({});
+const cdnValue = ref(true);
+const showViewer = ref(false);
+const previewList = ref<string[]>([]);
+const isHeaderHidden = ref(false);
+const headerRef = ref<HTMLElement | null>(null);
 
-		// 当前显示分类数（过滤后的分类数量）
-		const currentCategories = computed(() => Object.keys(data.iconData).length);
+// 主题模式: 'auto' | 'light' | 'dark'
+const themeMode = ref<'auto' | 'light' | 'dark'>('auto');
 
-		// 当前显示图标数（过滤后的图标总数）
-		const currentIcons = computed(() => {
-			return Object.values(data.iconData).reduce((total: number, items: any) =>
-				total + items.length, 0
-			);
-		});
+const refreshingItems = ref(new Set<string>());
 
-		
-		/**
-		 * @Description 处理单复数形式
-		 */
-		const pluralize = (count: number) => {
-			return count === 1 ? 'Icon' : 'Icons'
-		}
-		
-		// 修改后的计算属性
-		const filteredData = computed(() => {
-			const searchTerm = data.search.toLowerCase();
-			const selectedCategory = data.selectValue;
-			
-			return Object.entries(rawData.value).reduce((acc, [category, items]) => {
-				// 分类过滤
-				if (selectedCategory && category !== selectedCategory) return acc;
-				
-				// 搜索过滤
-				const filteredItems = (items as any[]).filter(item =>
-					item.name.toLowerCase().includes(searchTerm)
-				);
-				
-				if (filteredItems.length > 0) {
-					acc[category] = filteredItems;
-				}
-				return acc;
-			}, {} as Record<string, any>);
-		});
-		
-		/**
-		 * @Description 读取本地图片数据
-		 */
-		const fetchData = async () => {
-			try {
-				const response = await fetch('/db.json');
-				if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-				const jsonData = await response.json();
-				
-				// 对分类键进行排序
-				const sortedCategories = Object.keys(jsonData).sort((a, b) => {
-					return a.localeCompare(b, undefined, {
-						numeric: true,
-						caseFirst: 'upper'
-					});
-				});
-				
-				// 对分类下的子类进行排序
-				const sortedData: Record<string, any> = {};
-				sortedCategories.forEach(category => {
-					sortedData[category] = jsonData[category].sort((a, b) => {
-						return a.name.localeCompare(b.name, undefined, {
-							numeric: true,
-							caseFirst: 'upper'
-						});
-					});
-				});
-				
-				rawData.value = sortedData; // 使用排序后的数据
-				selectData.value = extractAndTransformData(sortedData);
-			} catch (error) {
-				console.error('Error fetching JSON:', error);
-			}
-		};
-		
-		/**
-		 * @Description 提取并转换数据，给下拉框用的数据
-		 */
-		const extractAndTransformData = (data) => {
-			let extractedData: { label: string; value: string }[] = [];
-			
-			for (const key in data) {
-				if (data.hasOwnProperty(key)) {
-					extractedData.push({
-						label: key,
-						value: key
-					});
-				}
-			}
-			return extractedData;
-		}
-		
-		/**
-		 * @Description 文图标显示文字提示
-		 */
-		function getItemContent(item: { name: any; type: string; }) {
-			return `${item.name}${item.type === 'svg' ? '.svg' : '.png'}`;
-		}
-		
-		// 分类标题格式化方法
-		const formatCategoryTitle = (category) => {
-			const titles = {
-				// 'AI': 'AI - 人工智能（AI）',
-				// 'Analytics': 'Analytics - 数据分析平台',
-				// 'Automation': 'Automation - 自动化工具链',
-				// 'Bookmarks': 'Bookmarks - 书签管理系统',
-				// "Cloud Protection Services": "Cloud Protection Services - 云防护服务",
-				// 'CMS': 'CMS - 内容管理系统（CMS）',
-				// 'Document Management': 'Document Management - 文档协同平台',
-				// 'Database Management': 'Database Management - 数据库运维套件',
-				// 'DNS': 'DNS - 域名解析系统（DNS）',
-				// 'Downloader': 'Downloader - 下载任务管理器',
-				// 'Feed Readers': 'Feed Readers - 信息流订阅器',
-				// 'File Transfer': 'File Transfer - 文件传输中间件',
-				// 'Google': 'Google - 谷歌（技术规范保留原文）',
-				// 'Financial Management': 'Financial Management - 财务管理系统',
-				// 'Games': 'Games - 游戏服务器',
-				// 'Internet of Things (IoT)': 'Internet of Things (IoT) - 物联网（IoT）管理平台',
-				// 'Linux Server Operation and Management Panel': 'Linux Server Operation and Management Panel - Linux 服务器运维面板',
-				// 'Media Streaming': 'Media Streaming - 流媒体服务器',
-				// 'Note-taking & Editors & Wikis': 'Note-taking & Editors & Wikis - 笔记-编辑器-维基三合一平台',
-				// 'Personal Dashboards': 'Personal Dashboards - 个人数据仪表盘',
-				// 'Password Managers': 'Password Managers - 密码保险库',
-				// 'Photo and Video Galleries': 'Photo and Video Galleries - 多媒体资源库',
-				// 'Project Management & To-do List': 'Project Management & To-do List - 敏捷项目管理套件（含任务看板）',
-				// 'PT': 'PT - 私有追踪器（Private Tracker）',
-				// 'Remote Access': 'Remote Access - 远程运维通道',
-				// 'Router & VPN': 'Router & VPN - 智能路由与VPN网关',
-				// 'Software Containers': 'Software Containers - 软件容器引擎',
-				// 'Software Development': 'Software Development - 软件开发工具链',
-				// 'Synology NAS': 'Synology NAS - 群晖 NAS 管理套件',
-				// 'Status & Uptime pages': 'Status & Uptime pages - 服务状态监控页',
-				// 'Streaming Service Platform': 'Streaming Service Platform - 流媒体服务平台',
-				// 'Social Networking and Forum Software': 'Social Networking and Forum Software - 社交化论坛系统',
-				// 'Self-hosting Solutions & OS': 'Self-hosting Solutions & OS - 自托管解决方案与操作系统',
-				// 'URL Shorteners': 'URL Shorteners - 短链生成器',
-				// 'VPS': 'VPS - 虚拟专用服务器（VPS）',
-				// 'Instant Messaging': 'Instant Messaging - 即时通讯',
-				// 'Uncategorized': 'Uncategorized - 未分类项目',
-				'Z_all_png': 'Z_all_png - 1024【SVG → PNG】',
-				'Z_all_png_other': 'Z_all_png_other【其它图】',
-				'Z_all_svg': 'Z_all_svg - 1024【SVG】'
-			};
-			return titles[category] || category;
-		};
-		
-		/**
-		 * @Description 复制图标链接
-		 */
-		async function copyIconUrl(url: string) {
-			let currenturl = window.location.href;
-			let iconurl = data.publicPath + "icon/" + url;
-			// let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@main/dist/" + "icon/" + url; // CDN Url
-			let iconurlCdn = "https://cdn.jsdelivr.net/gh/oliver556/my-icons@gh-pages/" + "icon/" + url; // CDN Url
-			// let iconurlCdn = "https://github.viplee.top/https://raw.githubusercontent.com/oliver556/my-icons/refs/heads/main/dist/icon/" + url; // 套 CF
-			// 备用 CDN Url
-			// fastly.jsdelivr.net
-			// gcore.jsdelivr.net
-			// testingcf.jsdelivr.net
-			// 自建 CF 加速转发
-			// https://github.viplee.top/https://raw.githubusercontent.com/oliver556/my-icons/refs/heads/main/dist/icon/ + url
-			// https://github.viplee.top/https://raw.githubusercontent.com/oliver556/my-icons/refs/heads/main/dist/icon/CMS/Halo_E.png
-			let fullurl = currenturl.substr(0, currenturl.length - 2) + iconurl; // 本地 Url
-			
-			// console.log('图片文件全称(url): ', url);
-			// console.log('当前环境路径(本地) currenturl: ', currenturl);
-			// console.log('图片文件路径(iconurl): ', iconurl);
-			// console.log('CDN 拼接后的路径(iconurlCdn): ', iconurlCdn);
-			// console.log('当前环境拼接后的路径(fullurl): ', fullurl);
-			await toClipboard(cdnValue.value ? iconurlCdn : fullurl);
-			ElMessage({
-				message: "图标链接复制成功",
-				type: "success",
-			});
-		}
-		
-		/**
-		 * @Description 打开相关链接
-		 */
-		function openUrl(url: string | URL | undefined) {
-			window.open(url, "_blank");
-		}
-		
-		onMounted(async () => {
-			await fetchData();
-		});
-		
-		/**
-		 * @Description 暴力刷新所有 CDN 缓存
-		 * 警告：这会向 jsDelivr 发送大量请求，请勿频繁点击
-		 */
-		const isPurging = ref(false); // 控制按钮加载状态
-		const purgeProgress = ref(''); // 显示进度文字
-		
-		const purgeAllIcons = async () => {
-			if (!confirm('确定要强制刷新所有图标的 CDN 缓存吗？\n这一步不需要修改 Sun-Panel 的链接，但需要几分钟生效。')) {
-				return;
-			}
-			
-			isPurging.value = true;
-			const allItems: string[] = [];
-			
-			// 遍历 rawData (原始数据)
-			for (const category in rawData.value) {
-				const items = rawData.value[category];
-				items.forEach((item: any) => {
-					// 拼接文件名: Category/Name.png
-					const ext = item.type === 'svg' ? '.svg' : '.png';
-					const path = `${category}/${item.name}${ext}`;
-					allItems.push(path);
-				});
-			}
-			
-			const total = allItems.length;
-			let count = 0;
-			
-			for (const filePath of allItems) {
-				// 构造 Purge URL: .../my-icons@gh-pages/icon/...
-				const purgeUrl = `https://purge.jsdelivr.net/gh/oliver556/my-icons@gh-pages/icon/${filePath}`;
-				
-				try {
-					// mode: 'no-cors' 允许浏览器向 CDN 发送跨域请求
-					// 虽然拿不到返回结果，但服务器会执行清除操作
-					await fetch(purgeUrl, { mode: 'no-cors' });
-				} catch (e) {
-					console.error(`Purge error: ${filePath}`);
-				}
-				
-				count++;
-				purgeProgress.value = `正在刷新: ${count} / ${total}`;
-				
-				// 关键：限流，每张图停顿 100ms，防止被 CDN 封锁 IP
-				await new Promise(resolve => setTimeout(resolve, 100));
-			}
-			
-			isPurging.value = false;
-			purgeProgress.value = '';
-			ElMessage.success(`指令发送完毕！共刷新 ${total} 个图标。请等待约 5-10 分钟让全球节点生效。`);
-		};
-		
-		/**
-		 * @Description 刷新单张图片的 CDN 缓存
-		 * @param category 分类名
-		 * @param item 图标对象
-		 */
-		const purgeSingleIcon = async (category: string, item: any) => {
-			// 1. 获取文件后缀和路径
-			const ext = item.type === 'svg' ? '.svg' : '.png';
-			const filename = `${item.name}${ext}`;
-			const filePath = `${category}/${filename}`;
-			debugger
-			// 2. 构造 Purge URL
-			const purgeUrl = `https://purge.jsdelivr.net/gh/oliver556/my-icons@gh-pages/icon/${filePath}`;
-			
-			try {
-				// 3. 执行请求
-				await fetch(purgeUrl, { mode: 'no-cors' });
-				
-				// 4. 成功提示
-				// ElMessage.success(`已发送刷新指令: ${filename} \n请等待几分钟后生效。`);
-				ElMessage.success(`已发送刷新指令: \n请等待几分钟后生效。`);
-				
-				// 【可选高阶技巧】如果你想让当前页面的这张图也立刻变，
-				// 你需要在这里修改 img 的 src 加个时间戳，但这需要改动数据结构，
-				// 鉴于你主要是为了 Sun-Panel，这里只做 CDN 清除足够了。
-				
-			} catch (e) {
-				ElMessage.error(`刷新失败: ${filename}`);
-				console.error(e);
-			}
-		};
-		
-		/**
-		 * @Description 图片预览功能
-		 */
-		const showViewer = ref(false);
-		const previewList = ref<string[]>([]);
-		
-		const handlePreview = (category: string, item: any) => {
-			const ext = item.type === 'svg' ? '.svg' : '.png';
-			const url = `${data.publicPath}icon/${category}/${item.name}${ext}`;
-			
-			previewList.value = [url];
-			
-			showViewer.value = true;
-		};
-		
-		const closeViewer = () => {
-			showViewer.value = false;
-		};
-		
-		return {
-			data,
-			selectData,
-			cdnValue,
-			totalCategories,
-			totalIcons,
-			currentIcons,
-			currentCategories,
-			pluralize,
-			getItemContent,
-			formatCategoryTitle,
-			copyIconUrl,
-			openUrl,
-			isPurging,
-			purgeProgress,
-			purgeAllIcons,
-			purgeSingleIcon,
-			showViewer,
-			previewList,
-			handlePreview,
-			closeViewer,
-			ElImageViewer
-		}
+let lastScrollPosition = 0;
+let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+
+const publicPath = '/';
+
+// --- 初始化与主题逻辑 ---
+
+onMounted(() => {
+	fetchData();
+	window.addEventListener('scroll', handleScroll);
+	
+	// 1. 读取本地存储的主题设置
+	const savedTheme = localStorage.getItem('icon-hub-theme');
+	if (savedTheme && ['auto', 'light', 'dark'].includes(savedTheme)) {
+		themeMode.value = savedTheme as any;
 	}
-})
+	
+	// 2. 应用主题
+	applyTheme();
+});
+
+onUnmounted(() => {
+	window.removeEventListener('scroll', handleScroll);
+});
+
+// 切换主题模式: Auto -> Light -> Dark -> Auto
+const cycleTheme = () => {
+	if (themeMode.value === 'auto') {
+		themeMode.value = 'light';
+	} else if (themeMode.value === 'light') {
+		themeMode.value = 'dark';
+	} else {
+		themeMode.value = 'auto';
+	}
+	
+	// 保存并应用
+	localStorage.setItem('icon-hub-theme', themeMode.value);
+	applyTheme();
+	
+	ElMessage.success(`已切换模式: ${themeTitle.value}`);
+};
+
+// 执行主题切换：通过在 html 标签上设置 data-theme 属性
+const applyTheme = () => {
+	const root = document.documentElement;
+	if (themeMode.value === 'auto') {
+		root.removeAttribute('data-theme'); // 移除属性，让 CSS @media 生效
+	} else {
+		root.setAttribute('data-theme', themeMode.value); // 强制设置 light 或 dark
+	}
+};
+
+const themeTitle = computed(() => {
+	const map = {
+		'auto': '跟随系统',
+		'light': '明亮模式',
+		'dark': '暗黑模式'
+	};
+	return map[themeMode.value];
+});
+
+// --- 数据获取与处理 ---
+
+const fetchData = async () => {
+	try {
+		loading.value = true;
+		const response = await fetch('db.json');
+		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+		const jsonData = await response.json();
+		
+		const sortedCategories = Object.keys(jsonData).sort((a, b) => {
+			return a.localeCompare(b, undefined, { numeric: true, caseFirst: 'upper' });
+		});
+		
+		const sortedData: Record<string, any> = {};
+		sortedCategories.forEach(category => {
+			sortedData[category] = jsonData[category].sort((a: any, b: any) => {
+				return a.name.localeCompare(b.name, undefined, { numeric: true, caseFirst: 'upper' });
+			});
+		});
+		
+		rawData.value = sortedData;
+	} catch (error) {
+		console.error('Error fetching JSON:', error);
+		ElMessage.error('数据加载失败，请检查 db.json');
+	} finally {
+		loading.value = false;
+	}
+};
+
+// --- 滚动与搜索 ---
+
+const handleScroll = () => {
+	const currentScrollPosition = window.scrollY || document.documentElement.scrollTop;
+	if (currentScrollPosition < 0) return;
+	
+	const HEADER_STICKY_THRESHOLD = 350;
+	
+	if (Math.abs(currentScrollPosition - lastScrollPosition) < 50) return;
+	
+	if (currentScrollPosition > HEADER_STICKY_THRESHOLD) {
+		if (currentScrollPosition > lastScrollPosition) {
+			isHeaderHidden.value = true;
+		} else {
+			isHeaderHidden.value = false;
+		}
+	} else {
+		isHeaderHidden.value = false;
+	}
+	
+	lastScrollPosition = currentScrollPosition;
+};
+
+const handleSearchInput = (e: Event) => {
+	const value = (e.target as HTMLInputElement).value;
+	searchInput.value = value;
+	
+	if (debounceTimer) clearTimeout(debounceTimer);
+	
+	debounceTimer = setTimeout(() => {
+		searchQuery.value = value;
+	}, 300);
+};
+
+const clearSearch = () => {
+	searchInput.value = "";
+	searchQuery.value = "";
+};
+
+// --- 计算属性 ---
+
+const uniqueCategories = computed(() => Object.keys(rawData.value));
+
+const totalCategories = computed(() => Object.keys(rawData.value).length);
+const totalIcons = computed(() => {
+	return Object.values(rawData.value).reduce((total: number, items: any) => total + items.length, 0);
+});
+
+const groupedIcons = computed(() => {
+	const term = searchQuery.value.toLowerCase().trim();
+	const cat = selectedCategory.value;
+	const result: Record<string, any> = {};
+	
+	Object.entries(rawData.value).forEach(([category, items]) => {
+		if (cat && category !== cat) return;
+		
+		const filteredItems = (items as any).filter((item: any) =>
+			item.name.toLowerCase().includes(term)
+		);
+		
+		if (filteredItems.length > 0) {
+			result[category] = filteredItems;
+		}
+	});
+	
+	return result;
+});
+
+const currentIcons = computed(() => {
+	return Object.values(groupedIcons.value).reduce((total: number, items: any) => total + items.length, 0);
+});
+
+const isFiltered = computed(() => {
+	return searchQuery.value !== "" || selectedCategory.value !== "";
+});
+
+// --- 功能函数 ---
+
+const reloadPage = () => window.location.reload();
+
+const formatCategoryTitle = (category: string) => {
+	const titles: Record<string, string> = {
+		'Z_all_png': 'Z_all_png - 1024【SVG → PNG】',
+		'Z_all_png_other': 'Z_all_png_other【其它图】',
+		'Z_all_svg': 'Z_all_svg - 1024【SVG】'
+	};
+	return titles[category] || category;
+};
+
+const getIconRelativePath = (category: string, item: any) => {
+	const ext = item.type === 'svg' ? '.svg' : '.png';
+	return `${category}/${item.name}${ext}`;
+};
+
+const getIconPath = (category: string, item: any) => {
+	return `${publicPath}icon/${getIconRelativePath(category, item)}`;
+};
+
+const handleImageError = (e: Event) => {
+	const target = e.target as HTMLImageElement;
+	target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='%23ccc' d='M16 16l-4-4-4 4V6h8v10zm-4-6l3 3h-6l3-3zM4 22v-2h16v2H4zm2-4h12V4H6v14z'/%3E%3C/svg%3E";
+};
+
+const copyIconUrl = async (relativePath: string) => {
+	try {
+		const baseUrl = window.location.origin + window.location.pathname;
+		const cleanBaseUrl = baseUrl.replace(/\/$/, '');
+		const localUrl = `${cleanBaseUrl}/icon/${relativePath}`;
+		const cdnUrl = `https://cdn.jsdelivr.net/gh/oliver556/my-icons@gh-pages/icon/${relativePath}`;
+		const textToCopy = cdnValue.value ? cdnUrl : localUrl;
+		
+		await toClipboard(textToCopy);
+		ElMessage.success({ message: `链接已复制`, duration: 2000 });
+	} catch (e) {
+		ElMessage.error('复制失败');
+	}
+};
+
+const purgeSingleIcon = async (category: string, item: any) => {
+	const itemId = `${category}/${item.name}`;
+	if (refreshingItems.value.has(itemId)) return;
+	
+	const path = getIconRelativePath(category, item);
+	const url = `https://purge.jsdelivr.net/gh/oliver556/my-icons@gh-pages/icon/${path}`;
+	
+	refreshingItems.value.add(itemId);
+	
+	try {
+		const minLoadingTime = new Promise(resolve => setTimeout(resolve, 800));
+		const fetchRequest = fetch(url, { mode: 'no-cors' });
+		await Promise.all([fetchRequest, minLoadingTime]);
+		ElMessage.success('已刷新图片CDN缓存，请等待几分钟后生效。');
+	} catch (error) {
+		console.error('Purge error:', error);
+		ElMessage.error('刷新请求发送失败，请稍后重试。');
+	} finally {
+		refreshingItems.value.delete(itemId);
+	}
+};
+
+const handlePreview = (category: string, item: any) => {
+	const path = getIconPath(category, item);
+	previewList.value = [path];
+	showViewer.value = true;
+};
+const closeViewer = () => { showViewer.value = false; };
 </script>
 
-<style lang="scss">
-/* 颜色变量 */
-$primary-color: #6366f1;
-$secondary-color: #4f46e5;
-$primary-1-color: #0d0f8c;
-$secondary-2-color: #1d169c;
-$bg-color: #f8fafc;
-$text-dark: #1e293b;
-$text-light: #64748b;
-$white: #fff;
-$bg: #F7F9FD;
-$bg1: #000000;
-$--g0: #1c2226;
-$--g1: #4f5d69;
-$--g4: #bcc9d2;
-$--g5: #e0e6eb;
-$--g6: #ecf0f4;
-$--g7: #f8fafd;
-// 暗黑
-$dark-bg: #1a1a1a;
-$dark-bg-2: #f0f0f0;
-$dark-txt: #d4d4d8;
-$dark-txt-2: #333;
+<style>
+/* --- 1. 全局变量定义 --- */
+/* 核心逻辑：
+   1. 默认 :root 定义亮色变量。
+   2. @media (prefers-color-scheme: dark) 定义暗色变量，但前提是 html 标签没有 data-theme="light"。
+   3. :root[data-theme="dark"] 强制定义暗色变量。
+*/
+
+:root {
+	/* 默认亮色模式变量 */
+	--color-primary: #6366f1;
+	--color-primary-light: rgba(99, 102, 241, 0.1);
+	--color-bg: #f8fafc;
+	--color-bg-island: rgba(255, 255, 255, 0.85);
+	--color-card: #ffffff;
+	--color-text-main: #0f172a;
+	--color-text-sub: #64748b;
+	--color-border: #e2e8f0;
+	--color-tooltip: #1e293b;
+	
+	--shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+	--shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+	--radius-lg: 16px;
+}
+
+/* 自动暗黑 (系统偏好为暗，且未手动设置为亮) */
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+		--color-bg: #0f172a;
+		--color-bg-island: rgba(30, 41, 59, 0.85);
+		--color-card: #1e293b;
+		--color-text-main: #f1f5f9;
+		--color-text-sub: #94a3b8;
+		--color-border: rgba(255, 255, 255, 0.1);
+		--color-tooltip: #f8fafc;
+		
+		--shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+		--shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+	}
+}
+
+/* 强制暗黑 (手动设置为暗) */
+:root[data-theme="dark"] {
+	--color-bg: #0f172a;
+	--color-bg-island: rgba(30, 41, 59, 0.85);
+	--color-card: #1e293b;
+	--color-text-main: #f1f5f9;
+	--color-text-sub: #94a3b8;
+	--color-border: rgba(255, 255, 255, 0.1);
+	--color-tooltip: #f8fafc;
+	
+	--shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+	--shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5);
+}
+
+body {
+	margin: 0;
+	background-color: var(--color-bg);
+	color: var(--color-text-main);
+	font-family: 'Inter', system-ui, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	transition: background-color 0.3s, color 0.3s;
+}
 
 * {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: 'Inter', system-ui, sans-serif;
 }
 
-html, body {
-	overflow-x: hidden; // 禁止横向滚动
-	max-width: 100vw;
+.app-wrapper {
 	min-height: 100vh;
-	//background: $dark-bg;
-}
-
-.icon-wrapper {
-	
 	display: flex;
 	flex-direction: column;
-	min-height: 100%;
-	//height: 100%;
-	overflow: auto; // 防止内容溢出
-	position: relative;
-	
-	// 头部
-	.icon-head {
-		position: relative;
-		padding: 2rem 1.5rem;
-		background: linear-gradient(135deg, $primary-color, $secondary-color);
-		//background: linear-gradient(135deg, $primary-1-color, $secondary-2-color);
-		//background-color: $dark-bg;
-		color: white;
-		//box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-		//border-bottom: 1px solid $dark-txt;
-		
-		&_title {
-			font-size: 2.5rem;
-			font-weight: 700;
-			margin-bottom: 1rem;
-			text-align: center;
-		}
-		
-		&_txt {
-			font-size: 1rem;
-			opacity: 0.9;
-			max-width: 800px;
-			margin: 0 auto;
-			//margin: 0 auto 1rem;
-			text-align: center;
-		}
-		
-		&_switch {
-			flex-shrink: 0;
-			width: auto;
-			position: absolute;
-			top: 2.8rem;
-			right: 1rem;
-			
-			.el-switch {
-				--el-switch-button-size: 20px;
-				--el-switch-height: 26px;
-			}
-		}
-		
-		
-		&_stats {
-			text-align: center;
-			font-size: 0.9rem;
-			color: rgba(255, 255, 255, 0.8);
-			margin-bottom: 1rem;
-			
-			span {
-				display: inline-block;
-				margin-left: 0.5rem;
-				padding-left: 0.5rem;
-				border-left: 1px solid rgba(255, 255, 255, 0.3);
-			}
-			
-			@media (max-width: 768px) {
-				font-size: 0.8rem;
-				span {
-					display: block;
-					border-left: none;
-					margin-left: 0;
-					padding-left: 0;
-					margin-top: 0.3rem;
-				}
-			}
-		}
-	}
-	
-	// 搜索区域
-	.icon-search-wrapper {
-		padding: 1.5rem 1.5rem 0;
-		display: flex;
-		gap: 1rem;
-		align-items: center;
-		max-width: 1200px;
-		margin: 0 auto;
-		width: 100%;
-		
-		//.icon-head_switch {
-		//	flex-shrink: 0;
-		//	width: auto;
-		//
-		//	.el-switch {
-		//		--el-switch-button-size: 20px;
-		//		--el-switch-height: 26px;
-		//	}
-		//}
-		
-		.icon-search-content {
-			flex: 1;
-			min-width: 0;
-			
-			.el-input {
-				//display: flex;
-				
-				.el-input__inner {
-					//background: $dark-bg;
-					//color: $dark-txt;
-				}
-				
-				.el-input__wrapper {
-					//background-color: $dark-bg;
-				}
-				
-				.el-input-group__prepend {
-					//padding: 0;
-					//border: none;
-					background: transparent;
-				}
-				
-				.el-select {
-					//width: auto;
-					//min-width: 100px;
-					
-					.el-input__wrapper {
-						//padding: 0 15px;
-					}
-				}
-				
-				.el-input__wrapper {
-					//border-radius: 8px !important;
-				}
-			}
-		}
-		
-		@media (max-width: 768px) {
-			flex-direction: column;
-			padding: 1rem;
-			
-			.icon-search-wrapper {
-				flex-direction: column-reverse;
-			}
-			
-			.icon-search-content {
-				width: 100%;
-			}
-			
-			.el-select {
-				width: 100% !important;
-			}
-			
-			.el-input {
-				.el-input-group__prepend {
-					padding: 0;
-				}
-			}
-		}
-	}
-	
-	// 图片展示区域
-	.icon-show-wrapper {
-		padding: 2rem 1.5rem;
-		flex: 1;
-		width: 100%;
-		overflow: hidden;
-		min-height: 100%;
-		
-		.icon-show-block {
-			margin-bottom: 2rem;
-			width: 100%;
-			background: $bg;
-			//border-radius: .75rem;
-			padding: 0.5rem 0.5rem 1rem;
-			//border: 1px solid #ccc;
-			border-radius: 20px;
-			
-			.icon-show-header {
-				margin-bottom: 10px;
-				display: flex;
-				align-items: center;
-				width: 100%;
-				flex-wrap: wrap;
-				
-				> :not(:last-child) {
-					margin-right: 10px;
-				}
-				
-				&_title {
-					font-weight: 700;
-					color: $--g0;
-					background-color: $--g6;
-					border-radius: 8px;
-					padding: 6px 10px;
-					margin-bottom: 5px;
-				}
-				
-				&_num {
-					font-size: 15px;
-					color: $--g1;
-					//color: $dark-txt;
-					margin-bottom: 5px;
-				}
-				
-				&_line {
-					height: 1px;
-					flex: 1;
-					min-width: 30%;
-					background: $--g6;
-					margin-bottom: 5px;
-				}
-			}
-			
-			.card {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: flex-start;
-				gap: 10px;
-				width: 100%;
-				
-				&_content {
-					width: 160px;
-					//height: 100px;
-					border-radius: 1.5rem;
-					// todo
-					//background-color: rgba(30, 128, 255, 0.1);
-					background-color: #f8f9fa;
-					border: 1px solid rgba(0, 0, 0, .1);
-					box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-					transition: all 0.3s ease;
-					padding: 1rem;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-					cursor: pointer;
-					position: relative;
-					
-					&:hover {
-						//transform: translateY(-4px);
-						//box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-					}
-					
-					&_txt {
-						text-align: center;
-						font-size: 0.7rem;
-						color: #333;
-						font-weight: bold;
-					}
-					
-					.card_refresh_btn {
-						position: absolute;
-						top: 5px;
-						right: 5px;
-						width: 24px;
-						height: 24px;
-						line-height: 24px;
-						text-align: center;
-						background: rgba(255, 255, 255, 0.9);
-						border-radius: 50%;
-						font-size: 12px;
-						cursor: pointer;
-						box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-						color: #666;
-						opacity: 0;           // 默认隐藏
-						transform: scale(0.8);
-						transition: all 0.2s ease;
-						z-index: 10;          // 保证在图片上面
-						
-						&:hover {
-							background: #fff;
-							color: $primary-color; // 使用你的主色调
-							transform: scale(1.1) rotate(180deg); // 悬停时稍微放大并旋转一下
-						}
-					}
-					
-					.card_zoom_btn {
-						position: absolute;
-						top: 5px;
-						left: 5px;
-						width: 24px;
-						height: 24px;
-						line-height: 24px;
-						text-align: center;
-						background: rgba(255, 255, 255, 0.9);
-						border-radius: 50%;
-						font-size: 12px;
-						cursor: pointer;
-						box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-						color: #666;
-						opacity: 0;           // 默认隐藏
-						transform: scale(0.8);
-						transition: all 0.2s ease;
-						z-index: 10;
-						
-						&:hover {
-							background: #fff;
-							color: $secondary-color;
-							transform: scale(1.1);
-						}
-					}
-					
-					// 当鼠标悬停在卡片整体上时，显示按钮
-					&:hover {
-						.card_refresh_btn, .card_zoom_btn {
-							opacity: 1;
-							transform: scale(1);
-						}
-					}
-				}
-				
-				.card_content_course {
-					color: #79C576;
-				}
-				
-				&_img {
-					width: 64px;
-					height: 64px;
-					margin-bottom: 1rem;
-					object-fit: contain;
-					transition: all 0.3s ease;
-					
-					&:hover {
-						transform: translateY(-4px);
-						border-radius: 13px;
-						box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-					}
-				}
-				
-				&_txt {
-					font-size: 0.9rem;
-					color: $text-light;
-					font-weight: 500;
-					width: 100%;
-					text-align: center;
-					white-space: nowrap;
-					overflow: hidden;
-					text-overflow: ellipsis;
-				}
-			}
-		}
-		
-		.no-result {
-			text-align: center;
-			//color: $--g1;
-			color: $dark-txt;
-			padding: 2rem;
-		}
-		
-		// 移动端适配 图片卡片部分
-		@media (max-width: 768px) {
-			padding: 0 1rem;
-			
-			.card {
-				justify-content: center;
-				gap: 0;
-				
-				&_content {
-					width: calc(21% - 20px);
-					height: auto;
-					aspect-ratio: 1;
-					padding: 0.5rem !important;
-					margin: 5px;
-				}
-				
-				&_img {
-					width: 56px;
-					height: 56px;
-				}
-			}
-			
-			.icon-show-header {
-				&_title {
-					font-size: 0.9rem;
-				}
-				
-				&_num {
-					font-size: 0.8rem;
-				}
-			}
-		}
-		
-		@media (max-width: 480px) {
-			.card {
-				
-				&_content {
-					width: calc(33% - 10px);
-				}
-				
-				&_txt {
-					font-size: 0.8rem;
-				}
-			}
-		}
-	}
 }
 
-// Element Plus 组件样式覆盖
-.el-select-dropdown {
-	.el-select-dropdown__item {
-		//white-space: nowrap;
-		//overflow: hidden;
-		//text-overflow: ellipsis;
-		//padding: 0 20px;
-	}
-}
-
-.icon-footer {
-	margin-top: auto; // 关键：自动顶部边距使页脚始终在底部
-	padding: 1.5rem;
+/* --- 2. Hero Section --- */
+.hero-section {
 	text-align: center;
-	background: rgba($--g6, 0.8);
-	backdrop-filter: blur(5px); // 毛玻璃效果
-	border-top: 1px solid $--g5;
+	padding: 60px 20px 40px;
+	max-width: 800px;
+	margin: 0 auto;
+	animation: fadeIn 0.8s ease-out;
+}
+
+.hero-title {
+	font-size: 2.5rem;
+	font-weight: 800;
+	margin: 0 0 16px;
+	background: linear-gradient(135deg, var(--color-primary), #a855f7);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	letter-spacing: -1px;
+}
+
+.hero-desc {
+	font-size: 1rem;
+	color: var(--color-text-sub);
+	margin: 0 0 24px;
+	line-height: 1.6;
+}
+
+.hero-stats {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: rgba(99, 102, 241, 0.05);
+	padding: 8px 16px;
+	border-radius: 99px;
+	border: 1px solid var(--color-border);
+	font-size: 0.9rem;
+	color: var(--color-text-sub);
+}
+
+.divider { opacity: 0.3; }
+.stat-highlight { color: var(--color-primary); font-weight: 600; }
+
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(20px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- 3. 顶部悬浮岛 Header --- */
+.site-header {
+	position: sticky;
+	top: 16px;
+	z-index: 100;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	pointer-events: none;
+	transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-header.header-hidden {
+	transform: translateY(-200%);
+}
+
+.glass-island {
+	pointer-events: auto;
+	width: 100%;
+	padding: 10px 20px;
+	background: var(--color-bg-island);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	border: 1px solid var(--color-border);
+	border-radius: 20px;
+	box-shadow: var(--shadow-lg);
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.brand-section {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	cursor: pointer;
+}
+
+.brand-logo {
+	width: 36px;
+	height: 36px;
+	color: var(--color-primary);
+	background: var(--color-primary-light);
+	border-radius: 10px;
+	padding: 7px;
+}
+
+.brand-title-small {
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0;
+	display: none;
+}
+
+.search-group {
+	position: relative;
+	width: 100%;
+	max-width: 240px;
+}
+
+.search-icon {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--color-text-sub);
+	display: flex;
+}
+
+.clear-btn {
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	color: var(--color-text-sub);
+	cursor: pointer;
+	padding: 2px;
+	display: flex;
+	border-radius: 50%;
+}
+.clear-btn:hover { background: rgba(0, 0, 0, 0.05); color: var(--color-text-main); }
+
+.modern-input {
+	width: 100%;
+	padding: 8px 30px 8px 34px;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	background: var(--color-bg);
+	color: var(--color-text-main);
+	font-size: 0.9rem;
+	outline: none;
+	transition: all 0.2s;
+}
+.modern-input:focus {
+	background: var(--color-card);
+	border-color: var(--color-primary);
+	box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+.controls-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.modern-select {
+	padding: 8px 12px;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	background: var(--color-bg);
+	color: var(--color-text-main);
+	font-size: 0.9rem;
+	outline: none;
+	cursor: pointer;
+	max-width: 160px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.modern-select:hover { background: var(--color-card); border-color: var(--color-border); }
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+	width: 34px;
+	height: 34px;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	background: var(--color-bg);
+	color: var(--color-text-sub);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.theme-toggle-btn:hover {
+	background: var(--color-card);
+	border-color: var(--color-border);
+	color: var(--color-text-main);
+}
+
+/* Switch */
+.toggle-group {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding-left: 10px;
+	border-left: 1px solid var(--color-border);
+}
+.switch { position: relative; display: inline-block; width: 34px; height: 20px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider {
+	position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0;
+	background-color: var(--color-text-sub); opacity: 0.3; transition: .4s; border-radius: 34px;
+}
+.slider:before {
+	position: absolute; content: ""; height: 16px; width: 16px; left: 2px; bottom: 2px;
+	background-color: white; transition: .4s; border-radius: 50%;
+}
+input:checked + .slider { background-color: var(--color-primary); opacity: 1; }
+input:checked + .slider:before { transform: translateX(14px); }
+.toggle-label { font-size: 0.75rem; font-weight: 600; color: var(--color-text-sub); }
+
+/* --- 4. Main Content --- */
+.content-wrapper {
+	flex: 1;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 20px 80px;
+}
+
+.state-container { text-align: center; padding: 60px 0; color: var(--color-text-sub); }
+.spinner {
+	width: 40px; height: 40px; border: 3px solid var(--color-border);
+	border-top-color: var(--color-primary); border-radius: 50%; margin: 0 auto 20px;
+	animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.empty-icon { font-size: 3rem; margin-bottom: 10px; }
+
+.category-section { margin-bottom: 40px; }
+.category-header {
+	display: flex; align-items: center; gap: 10px; margin-bottom: 20px; padding-bottom: 10px;
+	border-bottom: 1px solid var(--color-border);
+}
+.category-title { font-size: 1.2rem; margin: 0; color: var(--color-text-main); }
+.category-title .hash { color: var(--color-primary); margin-right: 5px; }
+.badge {
+	background: var(--color-bg-island); border: 1px solid var(--color-border);
+	color: var(--color-text-sub); font-size: 0.75rem; padding: 2px 8px; border-radius: 10px;
+}
+
+.bento-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 16px;
+}
+
+.bento-card {
+	position: relative;
+	background: var(--color-card);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-lg);
+	padding: 16px;
+	cursor: pointer;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.bento-card:hover {
+	transform: translateY(-5px);
+	box-shadow: var(--shadow-md);
+	border-color: var(--color-primary);
+}
+
+.card-main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.card-visual {
+	width: 56px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card-visual img { width: 100%; height: 100%; object-fit: contain; transition: transform 0.3s; }
+.bento-card:hover .card-visual img { transform: scale(1.1); }
+
+.card-name {
+	font-size: 0.9rem; font-weight: 500; margin: 0; color: var(--color-text-main);
+	width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+/* Actions Layer */
+.action-layer {
+	position: absolute;
+	inset: 0;
+	background: rgba(255, 255, 255, 0.95);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0 10px;
+	opacity: 0;
+	transform: translateY(10px);
+	transition: all 0.2s ease;
+	pointer-events: none;
+}
+@media (prefers-color-scheme: dark) {
+	.action-layer { background: rgba(30, 41, 59, 0.95); }
+}
+.bento-card:hover .action-layer { opacity: 1; transform: translateY(0); pointer-events: auto; }
+
+.action-btn-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tooltip-text {
+	position: absolute;
+	bottom: -30px;
+	background: var(--color-tooltip);
+	color: var(--color-bg);
+	font-size: 0.75rem;
+	padding: 4px 8px;
+	border-radius: 4px;
+	white-space: nowrap;
+	pointer-events: none;
+	opacity: 0;
+	transform: translateY(-5px);
+	transition: all 0.2s ease;
 	z-index: 10;
-	
-	p {
-		color: $--g1;
-		font-size: 0.9rem;
-		margin: 0;
-		letter-spacing: 0.5px;
-		line-height: 1.5;
-		
-		// 响应式调整
-		@media (max-width: 768px) {
-			font-size: 0.85rem;
-		}
-	}
-	
-	// 动画效果（可选）
-	transition: all 0.3s ease;
-	
-	&:hover {
-		background: rgba($--g6, 0.9);
-	}
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.action-btn-wrapper:hover .tooltip-text { opacity: 1; transform: translateY(0); }
+
+.icon-btn {
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	border: 1px solid var(--color-border);
+	background: var(--color-bg);
+	color: var(--color-text-sub);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.2s;
+	box-shadow: var(--shadow-sm);
+	position: relative;
+}
+.icon-btn:hover {
+	background: var(--color-card);
+	color: var(--color-primary);
+	border-color: var(--color-primary);
+	transform: scale(1.1);
+	box-shadow: var(--shadow-md);
 }
 
-// 响应式断点处理
-@media (max-width: 1200px) {
-	.icon-wrapper {
-		.icon-head {
-			&_title {
-				font-size: 2rem;
-			}
-			
-			//&_txt {
-			//	font-size: 0.8rem;
-			//}
-			
-			&_switch {
-				top: 2.5rem !important;
-				right: 1rem;
-			}
-		}
-	}
+.spinner-icon { animation: spin 1s linear infinite; }
+
+.card-glow {
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	background: radial-gradient(circle at 50% 0%, var(--color-primary-light) 0%, transparent 60%);
+	opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.bento-card:hover .card-glow { opacity: 1; }
+
+.site-footer {
+	text-align: center; padding: 40px; color: var(--color-text-sub);
+	font-size: 0.8rem; border-top: 1px solid var(--color-border); margin-top: auto;
 }
 
+/* --- Responsive (Mobile) --- */
 @media (max-width: 768px) {
-	.card {
-		gap: 0 !important;
+	.hero-title { font-size: 1.8rem; }
+	.hero-stats { font-size: 0.8rem; padding: 6px 12px; flex-wrap: wrap; justify-content: center; }
+	
+	.site-header { top: 0; padding: 0; }
+	.site-header.header-hidden { transform: translateY(-100%); }
+	
+	.glass-island {
+		border-radius: 0; border: none; border-bottom: 1px solid var(--color-border);
+		flex-direction: column; align-items: stretch; gap: 12px; padding: 12px 16px;
 	}
 	
-	.icon-wrapper {
-		.icon-head {
-			&_switch {
-				top: 2.4rem !important;
-				right: 1rem;
-			}
-		}
-	}
-}
-
-@media (max-width: 480px) {
-	.card {
-		gap: 0 !important;
+	.brand-title-small { display: block; text-align: center; }
+	
+	.controls-wrapper { flex-wrap: wrap; justify-content: space-between; }
+	.search-group { width: 100%; max-width: none; order: 1; }
+	
+	/* Filter and Theme Button on same line in mobile */
+	.filter-group { flex: 1; order: 2; margin-right: 8px; }
+	.theme-toggle-btn { order: 3; }
+	.toggle-group { order: 4; }
+	
+	.modern-select { max-width: none; width: 100%; }
+	
+	.content-wrapper { padding: 20px 16px; }
+	.bento-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+	.bento-card { padding: 12px; min-height: auto; }
+	
+	.action-layer {
+		position: static; opacity: 1; transform: none; background: transparent;
+		padding: 10px 0 0; margin-top: 4px; border-top: 1px solid var(--color-border);
+		width: 100%; pointer-events: auto;
+		justify-content: space-between;
 	}
 	
-	.icon-wrapper {
-		.icon-head {
-			padding: 1.5rem 1rem;
-			
-			&_title {
-				font-size: 1.5rem;
-			}
-			
-			&_txt {
-				font-size: 0.9rem;
-				margin: 0 auto;
-				//margin: 0 auto 0.5rem;
-			}
-			
-			&_switch {
-				top: 1.5rem !important;
-				right: 1rem;
-			}
-		}
+	.tooltip-text { display: none !important; }
+	
+	.icon-btn {
+		width: 32px; height: 32px; background: transparent; border: none; box-shadow: none;
 	}
+	
+	.copy-btn.primary-action {
+		width: 48px; height: 36px; border-radius: 20px;
+		background-color: var(--color-primary); color: #ffffff;
+		box-shadow: 0 2px 8px rgba(99, 102, 241, 0.4); border: none;
+	}
+	.copy-btn.primary-action:active { transform: scale(0.95); }
 }
-
 </style>
