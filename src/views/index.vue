@@ -67,7 +67,7 @@
 		
 		<!-- 图片展示 -->
 		<div class="icon-show-wrapper">
-			<!-- 外层循环遍历分类 -->
+			<!-- 外层分类 -->
 			<div
 				class="icon-show-block"
 				v-for="(items, category) in data.iconData"
@@ -81,7 +81,7 @@
 				</div>
 				
 				<div class="card">
-					<!-- 内层循环遍历当前分类下的项目 -->
+					<!-- 内层当前分类下的项目 -->
 					<div
 						v-for="item in items"
 						:key="item.name"
@@ -276,28 +276,28 @@ export default defineComponent({
 		// 分类标题格式化方法
 		const formatCategoryTitle = (category) => {
 			const titles = {
-				'AI': 'AI - 人工智能（AI）',
+				// 'AI': 'AI - 人工智能（AI）',
 				'Analytics': 'Analytics - 数据分析平台',
 				'Automation': 'Automation - 自动化工具链',
 				// 'Bookmarks': 'Bookmarks - 书签管理系统',
 				// "Cloud Protection Services": "Cloud Protection Services - 云防护服务",
 				// 'CMS': 'CMS - 内容管理系统（CMS）',
 				'Document Management': 'Document Management - 文档协同平台',
-				'Database Management': 'Database Management - 数据库运维套件',
+				// 'Database Management': 'Database Management - 数据库运维套件',
 				'DNS': 'DNS - 域名解析系统（DNS）',
 				'Downloader': 'Downloader - 下载任务管理器',
-				'Feed Readers': 'Feed Readers - 信息流订阅器',
+				// 'Feed Readers': 'Feed Readers - 信息流订阅器',
 				'File Transfer': 'File Transfer - 文件传输中间件',
 				// 'Google': 'Google - 谷歌（技术规范保留原文）',
 				// 'Financial Management': 'Financial Management - 财务管理系统',
 				// 'Games': 'Games - 游戏服务器',
 				'Internet of Things (IoT)': 'Internet of Things (IoT) - 物联网（IoT）管理平台',
-				'Linux Server Operation and Management Panel': 'Linux Server Operation and Management Panel - Linux 服务器运维面板',
+				// 'Linux Server Operation and Management Panel': 'Linux Server Operation and Management Panel - Linux 服务器运维面板',
 				'Media Streaming': 'Media Streaming - 流媒体服务器',
 				'Note-taking & Editors & Wikis': 'Note-taking & Editors & Wikis - 笔记-编辑器-维基三合一平台',
 				'Personal Dashboards': 'Personal Dashboards - 个人数据仪表盘',
 				// 'Password Managers': 'Password Managers - 密码保险库',
-				'Photo and Video Galleries': 'Photo and Video Galleries - 多媒体资源库',
+				// 'Photo and Video Galleries': 'Photo and Video Galleries - 多媒体资源库',
 				'Project Management & To-do List': 'Project Management & To-do List - 敏捷项目管理套件（含任务看板）',
 				'PT': 'PT - 私有追踪器（Private Tracker）',
 				'Remote Access': 'Remote Access - 远程运维通道',

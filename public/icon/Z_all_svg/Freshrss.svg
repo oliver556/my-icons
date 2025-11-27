@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Freshrss</title>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Freshrss">
+            <rect id="蒙版路径" fill="#ECF3FC" x="0" y="0" width="1024" height="1024"></rect>
+            <circle id="椭圆形" fill="#0062BE" fill-rule="nonzero" cx="512" cy="512" r="98"></circle>
+            <g id="编组" transform="translate(167, 167)" stroke-width="70">
+                <path d="M0,345 C0,154.461761 154.461761,0 345,0 C535.538239,0 690,154.461761 690,345 C690,535.538239 535.538239,690 345,690" id="路径" stroke="#A6C7EA"></path>
+                <path d="M124.913793,345 C124.913793,223.449744 223.449744,124.913793 345,124.913793 C466.550256,124.913793 565.086207,223.449744 565.086207,345 C565.086207,466.550256 466.550256,565.086207 345,565.086207" id="路径" stroke="#A6C7EA"></path>
+                <path d="M345,0 C535.538239,0 690,154.461761 690,345" id="路径" stroke="#0062BE"></path>
+                <path d="M345,124.913793 C466.550256,124.913793 565.086207,223.449744 565.086207,345" id="路径" stroke="#0062BE"></path>
+            </g>
+        </g>
+    </g>
+</svg>

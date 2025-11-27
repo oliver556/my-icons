@@ -1,36 +1,4 @@
 {
-  "AI": [
-    {
-      "name": "ChatBot UI",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "ChatPad AI",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "FastGPT",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "LlamaGPT",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "LobeChat",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Stable Diffusion",
-      "type": "png",
-      "course": ""
-    }
-  ],
   "Analytics": [
     {
       "name": "GoAccess",
@@ -75,11 +43,6 @@
   ],
   "Automation": [
     {
-      "name": "Prowlarr",
-      "type": "png",
-      "course": ""
-    },
-    {
       "name": "Radarr",
       "type": "png",
       "course": ""
@@ -106,11 +69,6 @@
     }
   ],
   "DNS": [
-    {
-      "name": "AdGuard Home",
-      "type": "png",
-      "course": ""
-    },
     {
       "name": "Blocky",
       "type": "png",
@@ -143,28 +101,6 @@
     },
     {
       "name": "Technitium DNS Server",
-      "type": "png",
-      "course": ""
-    }
-  ],
-  "Database Management": [
-    {
-      "name": "InfluxDB_A",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "InfluxDB_B",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "PostgreSQL",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Teable",
       "type": "png",
       "course": ""
     }
@@ -216,83 +152,9 @@
       "course": ""
     }
   ],
-  "Downloader": [
-    {
-      "name": "Deluge",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Gopeed",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "JDownloader2",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "MeTube",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Nzbget",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "PyLoad",
-      "type": "png",
-      "course": ""
-    }
-  ],
-  "Feed Readers": [
-    {
-      "name": "CommaFeed",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "FreshRSS",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Miniflux",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Rsshub",
-      "type": "png",
-      "course": ""
-    }
-  ],
   "File Transfer": [
     {
-      "name": "Alist",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Chibisafe",
-      "type": "png",
-      "course": ""
-    },
-    {
       "name": "CloudDrive2",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Cloudreve",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Docat",
       "type": "png",
       "course": ""
     },
@@ -354,61 +216,9 @@
       "course": ""
     }
   ],
-  "Linux Server Operation and Management Panel": [
-    {
-      "name": "BT Panel",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "SafeLine",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "aapanel",
-      "type": "png",
-      "course": ""
-    }
-  ],
   "Media Streaming": [
     {
-      "name": "Ampache",
-      "type": "png",
-      "course": ""
-    },
-    {
       "name": "FastEmby_WIKI_1",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Jellfin",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Jellyseerr",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Jellystat",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "MediaCMS",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Music Assistant",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Overseerr",
       "type": "png",
       "course": ""
     },
@@ -419,41 +229,6 @@
     },
     {
       "name": "Symedia_WIKI_1",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Yesplaymusic_A",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Yesplaymusic_B",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "audiobookshelf",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "koel",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "lms",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "polaris",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "swingmusic",
       "type": "png",
       "course": ""
     }
@@ -486,11 +261,6 @@
     },
     {
       "name": "DokuWiki",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Draw.io",
       "type": "png",
       "course": ""
     },
@@ -541,11 +311,6 @@
     },
     {
       "name": "Pepperminty Wiki",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Siyuan",
       "type": "png",
       "course": ""
     },
@@ -759,41 +524,9 @@
       "course": ""
     }
   ],
-  "Photo and Video Galleries": [
-    {
-      "name": "Librephotos",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Lychee",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "PhotoPrism",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "PiGallery 2",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Piwigo",
-      "type": "png",
-      "course": ""
-    }
-  ],
   "Project Management & To-do List": [
     {
       "name": "Dootask",
-      "type": "png",
-      "course": ""
-    },
-    {
-      "name": "Gitee",
       "type": "png",
       "course": ""
     },
@@ -1154,6 +887,16 @@
       "course": ""
     },
     {
+      "name": "Ad.guard",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Alist",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Aliyun.cloud",
       "type": "png",
       "course": ""
@@ -1229,6 +972,11 @@
       "course": ""
     },
     {
+      "name": "Bt.panel",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Btschool",
       "type": "png",
       "course": ""
@@ -1280,6 +1028,11 @@
     },
     {
       "name": "Cloudflare",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Cloudreve",
       "type": "png",
       "course": ""
     },
@@ -1354,6 +1107,11 @@
       "course": ""
     },
     {
+      "name": "Draw.io",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Duplicati",
       "type": "png",
       "course": ""
@@ -1384,6 +1142,11 @@
       "course": ""
     },
     {
+      "name": "Fastemby.wiki",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Firefox",
       "type": "png",
       "course": ""
@@ -1400,6 +1163,11 @@
     },
     {
       "name": "Frds",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Freshrss",
       "type": "png",
       "course": ""
     },
@@ -1425,6 +1193,11 @@
     },
     {
       "name": "Gitea",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Gitee",
       "type": "png",
       "course": ""
     },
@@ -1475,6 +1248,11 @@
     },
     {
       "name": "Google.translate",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Google.voice",
       "type": "png",
       "course": ""
     },
@@ -1539,6 +1317,16 @@
       "course": ""
     },
     {
+      "name": "InfluxDB",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Instagram",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Iqiyi.video",
       "type": "png",
       "course": ""
@@ -1565,6 +1353,11 @@
     },
     {
       "name": "Jav.library",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Jellyfin",
       "type": "png",
       "course": ""
     },
@@ -1774,6 +1567,11 @@
       "course": ""
     },
     {
+      "name": "PostgreSQL",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Process.on",
       "type": "png",
       "course": ""
@@ -1824,12 +1622,27 @@
       "course": ""
     },
     {
+      "name": "Rsshub",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Safeline",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Shadowrocket",
       "type": "png",
       "course": ""
     },
     {
       "name": "Sina",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Siyuan",
       "type": "png",
       "course": ""
     },
@@ -1865,6 +1678,11 @@
     },
     {
       "name": "Symedia",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Symedia.wiki",
       "type": "png",
       "course": ""
     },
@@ -2151,6 +1969,11 @@
       "course": ""
     },
     {
+      "name": "Redia.wiki",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Yemapt",
       "type": "png",
       "course": ""
@@ -2194,6 +2017,16 @@
     },
     {
       "name": "Acfun",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Ad.guard",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Alist",
       "type": "svg",
       "course": ""
     },
@@ -2273,6 +2106,11 @@
       "course": ""
     },
     {
+      "name": "Bt.panel",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Btschool",
       "type": "svg",
       "course": ""
@@ -2324,6 +2162,11 @@
     },
     {
       "name": "Cloudflare",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Cloudreve",
       "type": "svg",
       "course": ""
     },
@@ -2398,6 +2241,11 @@
       "course": ""
     },
     {
+      "name": "Draw.io",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Duplicati",
       "type": "svg",
       "course": ""
@@ -2423,12 +2271,12 @@
       "course": ""
     },
     {
-      "name": "FRDS",
+      "name": "Fastemby",
       "type": "svg",
       "course": ""
     },
     {
-      "name": "Fastemby",
+      "name": "Fastemby.wiki",
       "type": "svg",
       "course": ""
     },
@@ -2444,6 +2292,16 @@
     },
     {
       "name": "Forward",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Frds",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Freshrss",
       "type": "svg",
       "course": ""
     },
@@ -2469,6 +2327,11 @@
     },
     {
       "name": "Gitea",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Gitee",
       "type": "svg",
       "course": ""
     },
@@ -2519,6 +2382,11 @@
     },
     {
       "name": "Google.translate",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Google.voice",
       "type": "svg",
       "course": ""
     },
@@ -2583,6 +2451,16 @@
       "course": ""
     },
     {
+      "name": "InfluxDB",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Instagram",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Iqiyi.video",
       "type": "svg",
       "course": ""
@@ -2609,6 +2487,11 @@
     },
     {
       "name": "Jav.library",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Jellyfin",
       "type": "svg",
       "course": ""
     },
@@ -2818,6 +2701,11 @@
       "course": ""
     },
     {
+      "name": "PostgreSQL",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Process.on",
       "type": "svg",
       "course": ""
@@ -2868,12 +2756,22 @@
       "course": ""
     },
     {
+      "name": "Safeline",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Shadowrocket",
       "type": "svg",
       "course": ""
     },
     {
       "name": "Sina",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Siyuan",
       "type": "svg",
       "course": ""
     },
@@ -2909,6 +2807,11 @@
     },
     {
       "name": "Symedia",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Symedia.wiki",
       "type": "svg",
       "course": ""
     },
@@ -3134,6 +3037,11 @@
     },
     {
       "name": "immich",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "rsshub",
       "type": "svg",
       "course": ""
     }
