@@ -851,6 +851,11 @@
       "course": ""
     },
     {
+      "name": "Spotify",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Stirling.pdf",
       "type": "png",
       "course": ""
@@ -2036,6 +2041,11 @@
     },
     {
       "name": "Speedtest",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Spotify",
       "type": "svg",
       "course": ""
     },
