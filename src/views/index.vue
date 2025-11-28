@@ -388,10 +388,15 @@ const clearSearch = () => {
 // --- 计算属性 (统计数据) ---
 const uniqueCategories = computed(() => Object.keys(rawData.value));
 
-// 总统计
+// 总统计：排除 Z_all_svg 的数量，避免重复计数
 const totalCategories = computed(() => Object.keys(rawData.value).length);
 const totalIcons = computed(() => {
-	return Object.values(rawData.value).reduce((total: number, items: any) => total + items.length, 0);
+	return Object.entries(rawData.value).reduce((total: number, [key, items]) => {
+		if (key === 'Z_all_svg') {
+			return total;
+		}
+		return total + (items as any[]).length;
+	}, 0);
 });
 
 // 筛选后的数据
