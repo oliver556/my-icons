@@ -72,9 +72,34 @@
 						</select>
 					</div>
 					
+					<!-- 新增：刷新/更新按钮 (集成在 Header 中) -->
+					<!-- 逻辑：如果有更新，显示带红点的下载图标；否则显示刷新图标 -->
+					<button
+						class="header-icon-btn update-btn"
+						:class="{ 'has-update': hasUpdate, 'is-spinning': isRefreshing }"
+						@click="handleUpdateAction"
+						:title="updateBtnTitle"
+					>
+						<!-- 有更新时的图标 (Download) -->
+						<svg v-if="hasUpdate" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+							<polyline points="7 10 12 15 17 10"></polyline>
+							<line x1="12" y1="15" x2="12" y2="3"></line>
+						</svg>
+						<!-- 无更新时的图标 (Refresh) -->
+						<svg v-else viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M23 4v6h-6"></path>
+							<path d="M1 20v-6h6"></path>
+							<path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+						</svg>
+						
+						<!-- 红点提示 -->
+						<span v-if="hasUpdate" class="update-dot"></span>
+					</button>
+					
 					<!-- Theme Toggle (主题切换) -->
 					<button
-						class="theme-toggle-btn"
+						class="theme-toggle-btn header-icon-btn"
 						@click="cycleTheme"
 						:title="themeTitle"
 					>
@@ -233,7 +258,7 @@ import useClipboard from "vue-clipboard3";
 
 // --- 状态定义 ---
 const { toClipboard } = useClipboard();
-const loading = ref(true);
+const loading = ref(true); // 全局 Loading，仅用于首次加载
 
 // 搜索相关的状态
 const searchInput = ref(""); // 输入框绑定的原始值
@@ -253,6 +278,12 @@ const themeMode = ref<'auto' | 'light' | 'dark'>('auto');
 // 记录正在刷新的图标 ID 集合 (避免全局 loading，实现单个图标 loading)
 const refreshingItems = ref(new Set<string>());
 
+// 新增：Header 上的刷新按钮独立 Loading 状态 (不影响全局)
+const isRefreshing = ref(false);
+// 智能更新相关状态
+const hasUpdate = ref(false);
+const pendingData = ref<Record<string, any> | null>(null);
+
 let lastScrollPosition = 0;
 let debounceTimer: ReturnType<typeof setTimeout> | null = null; // 防抖定时器
 
@@ -261,10 +292,15 @@ const publicPath = '/';
 // --- 初始化与主题逻辑 ---
 
 onMounted(() => {
+	// 初始化加载
 	fetchData();
+	
+	// 后台检查更新
+	checkForUpdates();
+	
 	window.addEventListener('scroll', handleScroll);
 	
-	// 1. 读取本地存储的主题设置
+	// 读取本地存储的主题设置
 	const savedTheme = localStorage.getItem('icon-hub-theme');
 	if (savedTheme && ['auto', 'light', 'dark'].includes(savedTheme)) {
 		themeMode.value = savedTheme as any;
@@ -314,8 +350,31 @@ const themeTitle = computed(() => {
 	return map[themeMode.value];
 });
 
+// Header 按钮文案
+const updateBtnTitle = computed(() => {
+	return hasUpdate.value
+		? '✨ 检测到新图标，点击立即加载'
+		: '清除浏览器缓存，获取新图标数据';
+});
+
 // --- 核心逻辑 ---
 
+// 辅助函数：对数据进行标准化排序
+const sortData = (data: Record<string, any>) => {
+	const sortedKeys = Object.keys(data).sort((a, b) => {
+		return a.localeCompare(b, undefined, { numeric: true, caseFirst: 'upper' });
+	});
+	
+	const sortedData: Record<string, any> = {};
+	sortedKeys.forEach(key => {
+		sortedData[key] = data[key].sort((a: any, b: any) => {
+			return a.name.localeCompare(b.name, undefined, { numeric: true, caseFirst: 'upper' });
+		});
+	});
+	return sortedData;
+};
+
+// 常规加载数据 (首次)
 const fetchData = async () => {
 	try {
 		loading.value = true;
@@ -323,24 +382,75 @@ const fetchData = async () => {
 		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 		const jsonData = await response.json();
 		
-		// 排序逻辑
-		const sortedCategories = Object.keys(jsonData).sort((a, b) => {
-			return a.localeCompare(b, undefined, { numeric: true, caseFirst: 'upper' });
-		});
-		
-		const sortedData: Record<string, any> = {};
-		sortedCategories.forEach(category => {
-			sortedData[category] = jsonData[category].sort((a: any, b: any) => {
-				return a.name.localeCompare(b.name, undefined, { numeric: true, caseFirst: 'upper' });
-			});
-		});
-		
-		rawData.value = sortedData;
+		rawData.value = sortData(jsonData);
 	} catch (error) {
 		console.error('Error fetching JSON:', error);
 		ElMessage.error('数据加载失败，请检查 db.json');
 	} finally {
 		loading.value = false;
+	}
+};
+
+// 智能检查更新（后台静默执行）
+const checkForUpdates = async () => {
+	try {
+		const response = await fetch(`db.json?t=${new Date().getTime()}`);
+		if (!response.ok) return;
+		const newData = await response.json();
+		
+		const sortedNewData = sortData(newData);
+		const currentDataStr = JSON.stringify(rawData.value);
+		const newDataStr = JSON.stringify(sortedNewData);
+		
+		if (currentDataStr !== newDataStr) {
+			hasUpdate.value = true;
+			pendingData.value = sortedNewData;
+		}
+	} catch (e) {
+		console.error('Check update failed', e);
+	}
+};
+
+// 统一处理 Header 按钮点击
+const handleUpdateAction = () => {
+	if (hasUpdate.value) {
+		applyUpdate();
+	} else {
+		handleRefreshData();
+	}
+};
+
+// 应用更新 (静默替换数据，不展示全局 Loading)
+const applyUpdate = () => {
+	if (pendingData.value) {
+		isRefreshing.value = true;
+		setTimeout(() => {
+			rawData.value = pendingData.value!;
+			hasUpdate.value = false;
+			pendingData.value = null;
+			isRefreshing.value = false;
+			ElMessage.success('图标库已更新到最新版本！');
+		}, 500); // 稍微延迟一点让动画显示一会
+	}
+};
+
+// 手动强制刷新 (静默替换数据，不展示全局 Loading)
+const handleRefreshData = async () => {
+	try {
+		isRefreshing.value = true; // 仅按钮转圈
+		const response = await fetch(`db.json?t=${new Date().getTime()}`);
+		if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+		const jsonData = await response.json();
+		rawData.value = sortData(jsonData);
+		
+		hasUpdate.value = false;
+		pendingData.value = null;
+		
+		ElMessage.success('列表数据已强制刷新！');
+	} catch (error) {
+		ElMessage.error('刷新失败，请稍后再试');
+	} finally {
+		isRefreshing.value = false;
 	}
 };
 
@@ -392,7 +502,7 @@ const uniqueCategories = computed(() => Object.keys(rawData.value));
 const totalCategories = computed(() => Object.keys(rawData.value).length);
 const totalIcons = computed(() => {
 	return Object.entries(rawData.value).reduce((total: number, [key, items]) => {
-		if (key === 'Z_all_svg') {
+		if (key === 'Z_all_png') {
 			return total;
 		}
 		return total + (items as any[]).length;
@@ -774,7 +884,8 @@ body {
 	border-color: var(--color-border);
 }
 
-.theme-toggle-btn {
+/* Header Icon Buttons (Theme & Update) */
+.header-icon-btn {
 	width: 34px;
 	height: 34px;
 	border-radius: 8px;
@@ -786,12 +897,39 @@ body {
 	justify-content: center;
 	cursor: pointer;
 	transition: all 0.2s;
+	position: relative;
 }
 
-.theme-toggle-btn:hover {
+.header-icon-btn:hover {
 	background: var(--color-card);
 	border-color: var(--color-border);
 	color: var(--color-text-main);
+}
+
+/* Update Button Specifics */
+.update-btn.has-update {
+	color: var(--color-primary);
+	background: rgba(99, 102, 241, 0.1);
+	border-color: rgba(99, 102, 241, 0.2);
+}
+
+.update-btn.is-spinning svg {
+	animation: spin 1s linear infinite;
+}
+
+.update-dot {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	width: 6px;
+	height: 6px;
+	background-color: #ef4444; /* Red */
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px var(--color-bg-island);
+}
+
+.theme-toggle-btn {
+	/* Reuse header-icon-btn styles */
 }
 
 /* Switch */
@@ -1190,6 +1328,11 @@ input:checked + .slider:before {
 		flex: 1;
 		order: 2;
 		margin-right: 8px;
+	}
+	
+	/* Update button order on mobile */
+	.update-btn {
+		order: 3;
 	}
 	
 	.theme-toggle-btn {
