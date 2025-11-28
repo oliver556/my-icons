@@ -669,6 +669,10 @@
       "type": "png"
     },
     {
+      "name": "Qnap",
+      "type": "png"
+    },
+    {
       "name": "Quark.drive",
       "type": "png"
     },
@@ -882,6 +886,10 @@
     },
     {
       "name": "Windows11",
+      "type": "png"
+    },
+    {
+      "name": "Windows7",
       "type": "png"
     },
     {
@@ -1669,6 +1677,10 @@
       "type": "svg"
     },
     {
+      "name": "Qnap",
+      "type": "svg"
+    },
+    {
       "name": "Quark.drive",
       "type": "svg"
     },
@@ -1882,6 +1894,10 @@
     },
     {
       "name": "Windows11",
+      "type": "svg"
+    },
+    {
+      "name": "Windows7",
       "type": "svg"
     },
     {
