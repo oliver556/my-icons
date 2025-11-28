@@ -454,14 +454,16 @@ const handleImageError = (e: Event) => {
 
 const copyIconUrl = async (relativePath: string) => {
 	try {
-		const baseUrl = window.location.origin + window.location.pathname;
-		const cleanBaseUrl = baseUrl.replace(/\/$/, '');
-		const localUrl = `${cleanBaseUrl}/icon/${relativePath}`;
+		// const baseUrl = window.location.origin + window.location.pathname;
+		// const cleanBaseUrl = baseUrl.replace(/\/$/, '');
+		// const localUrl = `${cleanBaseUrl}/icon/${relativePath}`;
+		const rawUrl = `https://raw.githubusercontent.com/oliver556/my-icons/gh-pages/icon/${relativePath}`;
 		const cdnUrl = `https://cdn.jsdelivr.net/gh/oliver556/my-icons@gh-pages/icon/${relativePath}`;
-		const textToCopy = cdnValue.value ? cdnUrl : localUrl;
+		const textToCopy = cdnValue.value ? cdnUrl : rawUrl;
 		
 		await toClipboard(textToCopy);
-		ElMessage.success({ message: `链接已复制`, duration: 2000 });
+		// ElMessage.success({ message: `链接已复制`, duration: 2000 });
+		ElMessage.success({ message: `链接已复制 (${cdnValue.value ? 'CDN' : 'Raw'})`, duration: 2000 });
 	} catch (e) {
 		ElMessage.error('复制失败');
 	}
