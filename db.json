@@ -161,6 +161,10 @@
       "type": "png"
     },
     {
+      "name": "Cookiecloud",
+      "type": "png"
+    },
+    {
       "name": "Cursor",
       "type": "png"
     },
@@ -1154,6 +1158,10 @@
     },
     {
       "name": "Cnlang",
+      "type": "svg"
+    },
+    {
+      "name": "Cookiecloud",
       "type": "svg"
     },
     {
