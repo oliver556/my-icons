@@ -445,6 +445,10 @@
       "type": "png"
     },
     {
+      "name": "Kubernetes",
+      "type": "png"
+    },
+    {
       "name": "Kuwo",
       "type": "png"
     },
@@ -502,6 +506,10 @@
     },
     {
       "name": "Meta.tube",
+      "type": "png"
+    },
+    {
+      "name": "Mi.wifi",
       "type": "png"
     },
     {
@@ -922,6 +930,10 @@
     },
     {
       "name": "Zimuku",
+      "type": "png"
+    },
+    {
+      "name": "Zte.wifi",
       "type": "png"
     },
     {
@@ -1429,6 +1441,10 @@
       "type": "svg"
     },
     {
+      "name": "Kubernetes",
+      "type": "svg"
+    },
+    {
       "name": "Kuwo",
       "type": "svg"
     },
@@ -1486,6 +1502,10 @@
     },
     {
       "name": "Meta.tube",
+      "type": "svg"
+    },
+    {
+      "name": "Mi.wifi",
       "type": "svg"
     },
     {
@@ -1906,6 +1926,10 @@
     },
     {
       "name": "Zimuku",
+      "type": "svg"
+    },
+    {
+      "name": "Zte.wifi",
       "type": "svg"
     },
     {
