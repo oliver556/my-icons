@@ -8,7 +8,7 @@
 		<section class="hero-section">
 			<h1 class="hero-title">Icon 图标库</h1>
 			<p class="hero-desc">
-				提供在线图标链接，用于个人NAS设备显示使用，禁止用于商业用途
+				提供在线 1024 图标链接，用于个人NAS设备显示使用，禁止用于商业用途
 			</p>
 			<div class="hero-stats">
 				<span class="stat-item">共 {{ totalCategories }} 个分类</span>

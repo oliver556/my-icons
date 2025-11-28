@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="1025px" viewBox="0 0 1025 1025" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Huaban</title>
+    <defs>
+        <linearGradient x1="78.1611823%" y1="21.6285521%" x2="21.3602484%" y2="78.4179827%" id="linearGradient-1">
+            <stop stop-color="#FF284B" stop-opacity="0.76" offset="0%"></stop>
+            <stop stop-color="#FF284B" stop-opacity="0.24" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="99.9863609%" y1="3.13695198e-06%" x2="1.19166743%" y2="98.4450129%" id="linearGradient-2">
+            <stop stop-color="#FF284B" stop-opacity="0.84" offset="0%"></stop>
+            <stop stop-color="#FF284B" stop-opacity="0.16" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Huaban" transform="translate(0.1302, 0.0565)">
+            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
+            <g id="编组" transform="translate(191.8698, 219.9435)" fill-rule="nonzero">
+                <path d="M0,166.765145 C0,428.147106 211.912522,640.060831 473.23021,640.060831 L640,640.060831 L640,473.29691 C640,211.91338 428.08624,0 166.770119,0 L0,0 L0,166.765145 Z" id="路径" fill-opacity="0.68" fill="url(#linearGradient-1)"></path>
+                <path d="M272.440286,500.048282 C475.199599,500.048282 639.63495,331.37691 639.63495,129.088439 L639.63495,0 L510.227146,0 C307.439631,0 140.004135,164.029459 140.004135,366.288282 L140.004135,500.048282 L272.440286,500.048282 Z" id="路径" fill="url(#linearGradient-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
