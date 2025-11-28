@@ -676,6 +676,11 @@
       "course": ""
     },
     {
+      "name": "Npmjs",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Nps",
       "type": "png",
       "course": ""
@@ -1836,6 +1841,11 @@
     },
     {
       "name": "Npm",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Npmjs",
       "type": "svg",
       "course": ""
     },
