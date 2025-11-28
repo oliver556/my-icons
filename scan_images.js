@@ -38,8 +38,7 @@ function generateJson() {
             const ext = path.extname(f);
             return {
               name: path.basename(f, ext),
-              type: ext.replace('.', ''),
-              course: ""
+              type: ext.replace('.', '')
             };
           });
 
