@@ -301,6 +301,11 @@
       "course": ""
     },
     {
+      "name": "Feishu",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Firefox",
       "type": "png",
       "course": ""
@@ -456,6 +461,11 @@
       "course": ""
     },
     {
+      "name": "Huaban",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Hugo",
       "type": "png",
       "course": ""
@@ -542,6 +552,11 @@
     },
     {
       "name": "Linux",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Lodash.js",
       "type": "png",
       "course": ""
     },
@@ -671,12 +686,12 @@
       "course": ""
     },
     {
-      "name": "Npm",
+      "name": "Npm.js",
       "type": "png",
       "course": ""
     },
     {
-      "name": "Npmjs",
+      "name": "Npm",
       "type": "png",
       "course": ""
     },
@@ -1002,6 +1017,11 @@
     },
     {
       "name": "WebStorm",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Webpack.js",
       "type": "png",
       "course": ""
     },
@@ -1470,6 +1490,11 @@
       "course": ""
     },
     {
+      "name": "Feishu",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Firefox",
       "type": "svg",
       "course": ""
@@ -1625,6 +1650,11 @@
       "course": ""
     },
     {
+      "name": "Huaban",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Hugo",
       "type": "svg",
       "course": ""
@@ -1711,6 +1741,11 @@
     },
     {
       "name": "Linux",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Lodash.js",
       "type": "svg",
       "course": ""
     },
@@ -1840,12 +1875,12 @@
       "course": ""
     },
     {
-      "name": "Npm",
+      "name": "Npm.js",
       "type": "svg",
       "course": ""
     },
     {
-      "name": "Npmjs",
+      "name": "Npm",
       "type": "svg",
       "course": ""
     },
@@ -2171,6 +2206,11 @@
     },
     {
       "name": "WebStorm",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Webpack.js",
       "type": "svg",
       "course": ""
     },
