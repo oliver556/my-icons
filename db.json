@@ -357,6 +357,10 @@
       "type": "png"
     },
     {
+      "name": "Greasy.fork",
+      "type": "png"
+    },
+    {
       "name": "Gying",
       "type": "png"
     },
@@ -522,6 +526,10 @@
     },
     {
       "name": "Migu.video",
+      "type": "png"
+    },
+    {
+      "name": "Mindline",
       "type": "png"
     },
     {
@@ -1365,6 +1373,10 @@
       "type": "svg"
     },
     {
+      "name": "Greasy.fork",
+      "type": "svg"
+    },
+    {
       "name": "Gying",
       "type": "svg"
     },
@@ -1534,6 +1546,10 @@
     },
     {
       "name": "MinIO",
+      "type": "svg"
+    },
+    {
+      "name": "Mindline",
       "type": "svg"
     },
     {
