@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Reddit</title>
+    <defs>
+        <radialGradient cx="51.0507534%" cy="19.9946471%" fx="51.0507534%" fy="19.9946471%" r="101.070579%" id="radialGradient-1">
+            <stop stop-color="#FEFFFF" offset="0%"></stop>
+            <stop stop-color="#FEFFFF" offset="40%"></stop>
+            <stop stop-color="#F9FCFC" offset="51%"></stop>
+            <stop stop-color="#EDF3F5" offset="62%"></stop>
+            <stop stop-color="#DEE9EC" offset="70%"></stop>
+            <stop stop-color="#D8E4E8" offset="72%"></stop>
+            <stop stop-color="#CCD8DF" offset="76%"></stop>
+            <stop stop-color="#C8D5DD" offset="80%"></stop>
+            <stop stop-color="#CCD6DE" offset="83%"></stop>
+            <stop stop-color="#D8DBE2" offset="85%"></stop>
+            <stop stop-color="#EDE3E9" offset="88%"></stop>
+            <stop stop-color="#FFEBEF" offset="90%"></stop>
+        </radialGradient>
+        <radialGradient cx="51.0507534%" cy="-162.093577%" fx="51.0507534%" fy="-162.093577%" r="101.070579%" id="radialGradient-2">
+            <stop stop-color="#FEFFFF" offset="0%"></stop>
+            <stop stop-color="#FEFFFF" offset="40%"></stop>
+            <stop stop-color="#F9FCFC" offset="51%"></stop>
+            <stop stop-color="#EDF3F5" offset="62%"></stop>
+            <stop stop-color="#DEE9EC" offset="70%"></stop>
+            <stop stop-color="#D8E4E8" offset="72%"></stop>
+            <stop stop-color="#CCD8DF" offset="76%"></stop>
+            <stop stop-color="#C8D5DD" offset="80%"></stop>
+            <stop stop-color="#CCD6DE" offset="83%"></stop>
+            <stop stop-color="#D8DBE2" offset="85%"></stop>
+            <stop stop-color="#EDE3E9" offset="88%"></stop>
+            <stop stop-color="#FFEBEF" offset="90%"></stop>
+        </radialGradient>
+        <radialGradient cx="51.0763889%" cy="10.0305556%" fx="51.0763889%" fy="10.0305556%" r="142.388889%" gradientTransform="translate(0.5108, 0.1003), scale(0.75, 1), translate(-0.5108, -0.1003)" id="radialGradient-3">
+            <stop stop-color="#FEFFFF" offset="0%"></stop>
+            <stop stop-color="#FEFFFF" offset="40%"></stop>
+            <stop stop-color="#F9FCFC" offset="51%"></stop>
+            <stop stop-color="#EDF3F5" offset="62%"></stop>
+            <stop stop-color="#DEE9EC" offset="70%"></stop>
+            <stop stop-color="#D8E4E8" offset="72%"></stop>
+            <stop stop-color="#CCD8DF" offset="76%"></stop>
+            <stop stop-color="#C8D5DD" offset="80%"></stop>
+            <stop stop-color="#CCD6DE" offset="83%"></stop>
+            <stop stop-color="#D8DBE2" offset="85%"></stop>
+            <stop stop-color="#EDE3E9" offset="88%"></stop>
+            <stop stop-color="#FFEBEF" offset="90%"></stop>
+        </radialGradient>
+        <radialGradient cx="52.6097698%" cy="71.2504306%" fx="52.6097698%" fy="71.2504306%" r="53.6127747%" gradientTransform="translate(0.5261, 0.7125), scale(1, 0.8834), translate(-0.5261, -0.7125)" id="radialGradient-4">
+            <stop stop-color="#FF6600" offset="0%"></stop>
+            <stop stop-color="#FF4500" offset="50%"></stop>
+            <stop stop-color="#FC4301" offset="70%"></stop>
+            <stop stop-color="#F43F07" offset="82%"></stop>
+            <stop stop-color="#E53812" offset="92%"></stop>
+            <stop stop-color="#D4301F" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="47.7325846%" cy="71.2504306%" fx="47.7325846%" fy="71.2504306%" r="53.6127747%" gradientTransform="translate(0.4773, 0.7125), scale(1, 0.8834), rotate(180), translate(-0.4773, -0.7125)" id="radialGradient-5">
+            <stop stop-color="#FF6600" offset="0%"></stop>
+            <stop stop-color="#FF4500" offset="50%"></stop>
+            <stop stop-color="#FC4301" offset="70%"></stop>
+            <stop stop-color="#F43F07" offset="82%"></stop>
+            <stop stop-color="#E53812" offset="92%"></stop>
+            <stop stop-color="#D4301F" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="49.7577144%" cy="113.96582%" fx="49.7577144%" fy="113.96582%" r="209.237875%" gradientTransform="translate(0.4976, 1.1397), scale(0.405, 1), translate(-0.4976, -1.1397)" id="radialGradient-6">
+            <stop stop-color="#172E35" offset="0%"></stop>
+            <stop stop-color="#0E1C21" offset="29%"></stop>
+            <stop stop-color="#030708" offset="73%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="51.0912143%" cy="3.52881925%" fx="51.0912143%" fy="3.52881925%" r="111.275881%" id="radialGradient-7">
+            <stop stop-color="#FEFFFF" offset="0%"></stop>
+            <stop stop-color="#FEFFFF" offset="40%"></stop>
+            <stop stop-color="#F9FCFC" offset="51%"></stop>
+            <stop stop-color="#EDF3F5" offset="62%"></stop>
+            <stop stop-color="#DEE9EC" offset="70%"></stop>
+            <stop stop-color="#D8E4E8" offset="72%"></stop>
+            <stop stop-color="#CCD8DF" offset="76%"></stop>
+            <stop stop-color="#C8D5DD" offset="80%"></stop>
+            <stop stop-color="#CCD6DE" offset="83%"></stop>
+            <stop stop-color="#D8DBE2" offset="85%"></stop>
+            <stop stop-color="#EDE3E9" offset="88%"></stop>
+            <stop stop-color="#FFEBEF" offset="90%"></stop>
+        </radialGradient>
+        <radialGradient cx="83.1965968%" cy="87.7355477%" fx="83.1965968%" fy="87.7355477%" r="104.120089%" gradientTransform="translate(0.832, 0.8774), scale(0.9514, 1), translate(-0.832, -0.8774)" id="radialGradient-8">
+            <stop stop-color="#7A9299" offset="48%"></stop>
+            <stop stop-color="#172E35" offset="67%"></stop>
+            <stop stop-color="#000000" offset="75%"></stop>
+            <stop stop-color="#172E35" offset="82%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Reddit" transform="translate(0, -0.0008)">
+            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
+            <g id="编组" transform="translate(142, 142.0008)" fill-rule="nonzero">
+                <path d="M370,0 C165.643519,0 0,165.643519 0,370 C0,472.161111 41.4194444,564.661111 108.362037,631.637963 L37.8907407,702.109259 C23.912963,716.087037 33.8138889,740 53.5814815,740 L370,740 C574.356481,740 740,574.356481 740,370 C740,165.643519 574.356481,0 370,0 Z" id="路径" fill="#FF4500"></path>
+                <circle id="椭圆形" fill="url(#radialGradient-1)" cx="579.735185" cy="366.505556" r="86.4018519"></circle>
+                <circle id="椭圆形" fill="url(#radialGradient-2)" cx="160.264815" cy="366.505556" r="86.4018519"></circle>
+                <ellipse id="椭圆形" fill="url(#radialGradient-3)" cx="370.205556" cy="440.711111" rx="246.666667" ry="185"></ellipse>
+                <path d="M297.301852,423.033333 C295.862963,454.140741 275.067593,465.446296 250.846296,465.446296 C226.625,465.446296 208.159259,448.556481 209.598148,417.449074 C211.037037,386.341667 231.832407,365.991667 256.053704,365.991667 C280.275,365.991667 298.740741,391.960185 297.301852,423.067593 L297.301852,423.033333 Z" id="路径" fill="url(#radialGradient-4)"></path>
+                <path d="M443.143519,423.033333 C444.582407,454.140741 465.377778,465.446296 489.599074,465.446296 C513.82037,465.446296 532.286111,448.556481 530.847222,417.449074 C529.408333,386.341667 508.612963,365.991667 484.391667,365.991667 C460.17037,365.991667 441.70463,391.960185 443.143519,423.067593 L443.143519,423.033333 Z" id="路径" fill="url(#radialGradient-5)"></path>
+                <ellipse id="椭圆形" fill="#FFC49C" cx="272.806481" cy="398.675" rx="9.59259259" ry="10.4490741"></ellipse>
+                <ellipse id="椭圆形" fill="#FFC49C" cx="500.90463" cy="398.675" rx="9.59259259" ry="10.4490741"></ellipse>
+                <path d="M370.205556,489.633333 C340.194444,489.633333 311.416667,491.106481 284.831481,493.812963 C280.275,494.258333 277.397222,498.986111 279.178704,503.2 C294.081481,538.79537 329.231481,563.80463 370.205556,563.80463 C411.17963,563.80463 446.363889,538.79537 461.232407,503.2 C463.013889,498.986111 460.101852,494.258333 455.57963,493.812963 C428.960185,491.106481 400.216667,489.633333 370.205556,489.633333 L370.205556,489.633333 Z" id="路径" fill="url(#radialGradient-6)"></path>
+                <circle id="椭圆形" fill="url(#radialGradient-7)" cx="505.289815" cy="169.343519" r="61.2212963"></circle>
+                <path d="M369.314815,263.522222 C361.983333,263.522222 356.056481,260.473148 356.056481,255.74537 C356.056481,200.896296 400.696296,156.256481 455.54537,156.256481 C462.876852,156.256481 468.803704,162.183333 468.803704,169.514815 C468.803704,176.846296 462.876852,182.773148 455.54537,182.773148 C415.325,182.773148 382.607407,215.490741 382.607407,255.711111 C382.607407,260.438889 376.680556,263.487963 369.349074,263.487963 L369.314815,263.522222 Z" id="路径" fill="url(#radialGradient-8)"></path>
+                <path d="M215.216667,420.189815 C216.552778,390.863889 236.046296,371.678704 258.691667,371.678704 C280.137963,371.678704 296.719444,393.57037 297.336111,420.772222 C297.918519,390.35 279.761111,365.991667 256.053704,365.991667 C232.346296,365.991667 211.037037,386.718519 209.598148,418.065741 C208.159259,449.412963 226.625,465.446296 250.846296,465.446296 L252.627778,465.446296 C230.564815,464.898148 213.914815,449.036111 215.250926,420.224074 L215.216667,420.189815 Z M525.194444,420.189815 C523.858333,390.863889 504.364815,371.678704 481.719444,371.678704 C460.273148,371.678704 443.691667,393.57037 443.075,420.772222 C442.492593,390.35 460.65,365.991667 484.357407,365.991667 C508.578704,365.991667 529.374074,386.718519 530.812963,418.065741 C532.251852,449.412963 513.786111,465.446296 489.564815,465.446296 L487.783333,465.446296 C509.846296,464.898148 526.496296,449.036111 525.160185,420.224074 L525.194444,420.189815 Z" id="形状" fill="#842123"></path>
+            </g>
+        </g>
+    </g>
+</svg>

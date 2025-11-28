@@ -536,6 +536,11 @@
       "course": ""
     },
     {
+      "name": "Kuwo",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Last.fm",
       "type": "png",
       "course": ""
@@ -806,6 +811,11 @@
       "course": ""
     },
     {
+      "name": "Reddit",
+      "type": "png",
+      "course": ""
+    },
+    {
       "name": "Rsshub",
       "type": "png",
       "course": ""
@@ -852,6 +862,11 @@
     },
     {
       "name": "Spotify",
+      "type": "png",
+      "course": ""
+    },
+    {
+      "name": "Sspai",
       "type": "png",
       "course": ""
     },
@@ -1730,6 +1745,11 @@
       "course": ""
     },
     {
+      "name": "Kuwo",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Last.fm",
       "type": "svg",
       "course": ""
@@ -2000,6 +2020,11 @@
       "course": ""
     },
     {
+      "name": "Reddit",
+      "type": "svg",
+      "course": ""
+    },
+    {
       "name": "Rsshub",
       "type": "svg",
       "course": ""
@@ -2046,6 +2071,11 @@
     },
     {
       "name": "Spotify",
+      "type": "svg",
+      "course": ""
+    },
+    {
+      "name": "Sspai",
       "type": "svg",
       "course": ""
     },
