@@ -502,7 +502,7 @@ const uniqueCategories = computed(() => Object.keys(rawData.value));
 const totalCategories = computed(() => Object.keys(rawData.value).length);
 const totalIcons = computed(() => {
 	return Object.entries(rawData.value).reduce((total: number, [key, items]) => {
-		if (key === 'Z_all_png') {
+		if (key === 'png') {
 			return total;
 		}
 		return total + (items as any[]).length;
