@@ -1,5 +1,5 @@
 {
-  "Z_all_png": [
+  "png": [
     {
       "name": "115",
       "type": "png"
@@ -961,7 +961,7 @@
       "type": "png"
     }
   ],
-  "Z_all_png_other": [
+  "png_other": [
     {
       "name": "3xui",
       "type": "png"
@@ -1015,7 +1015,7 @@
       "type": "png"
     }
   ],
-  "Z_all_svg": [
+  "svg": [
     {
       "name": "115",
       "type": "svg"
