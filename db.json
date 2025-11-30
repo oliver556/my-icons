@@ -929,6 +929,10 @@
       "type": "png"
     },
     {
+      "name": "Yxvm",
+      "type": "png"
+    },
+    {
       "name": "Z.OS",
       "type": "png"
     },
@@ -1008,10 +1012,6 @@
     },
     {
       "name": "Yema.pt",
-      "type": "png"
-    },
-    {
-      "name": "Yxvm",
       "type": "png"
     }
   ],
@@ -1942,6 +1942,10 @@
     },
     {
       "name": "Youtube",
+      "type": "svg"
+    },
+    {
+      "name": "Yxvm",
       "type": "svg"
     },
     {
