@@ -61,7 +61,7 @@
       "type": "png"
     },
     {
-      "name": "Audiences",
+      "name": "Audiences.pt",
       "type": "png"
     },
     {
@@ -109,7 +109,7 @@
       "type": "png"
     },
     {
-      "name": "Btschool",
+      "name": "Btschool.pt",
       "type": "png"
     },
     {
@@ -385,7 +385,7 @@
       "type": "png"
     },
     {
-      "name": "Hhclub",
+      "name": "Hhclub.pt",
       "type": "png"
     },
     {
@@ -489,10 +489,6 @@
       "type": "png"
     },
     {
-      "name": "M.team",
-      "type": "png"
-    },
-    {
       "name": "Mac.OS",
       "type": "png"
     },
@@ -545,6 +541,10 @@
       "type": "png"
     },
     {
+      "name": "Mteam.pt",
+      "type": "png"
+    },
+    {
       "name": "Musicbrainz",
       "type": "png"
     },
@@ -585,7 +585,7 @@
       "type": "png"
     },
     {
-      "name": "Nicept",
+      "name": "Nice.pt",
       "type": "png"
     },
     {
@@ -625,7 +625,7 @@
       "type": "png"
     },
     {
-      "name": "Piggo",
+      "name": "Piggo.pt",
       "type": "png"
     },
     {
@@ -645,15 +645,15 @@
       "type": "png"
     },
     {
-      "name": "Pter.club",
+      "name": "Pterclub.pt",
       "type": "png"
     },
     {
-      "name": "Pthome",
+      "name": "Pthome.pt",
       "type": "png"
     },
     {
-      "name": "Pttime",
+      "name": "Pttime.pt",
       "type": "png"
     },
     {
@@ -673,7 +673,7 @@
       "type": "png"
     },
     {
-      "name": "Qingwa",
+      "name": "Qingwa.pt",
       "type": "png"
     },
     {
@@ -765,7 +765,7 @@
       "type": "png"
     },
     {
-      "name": "TTG",
+      "name": "TTG.pt",
       "type": "png"
     },
     {
@@ -967,11 +967,15 @@
       "type": "png"
     },
     {
-      "name": "Carpt",
+      "name": "Cafe.pt",
       "type": "png"
     },
     {
-      "name": "Hdarea",
+      "name": "Carpt.pt",
+      "type": "png"
+    },
+    {
+      "name": "Hdarea.pt",
       "type": "png"
     },
     {
@@ -979,7 +983,7 @@
       "type": "png"
     },
     {
-      "name": "Icc2022",
+      "name": "Icc2022.pt",
       "type": "png"
     },
     {
@@ -995,10 +999,6 @@
       "type": "png"
     },
     {
-      "name": "Ptcafe",
-      "type": "png"
-    },
-    {
       "name": "Redia",
       "type": "png"
     },
@@ -1007,7 +1007,7 @@
       "type": "png"
     },
     {
-      "name": "Yemapt",
+      "name": "Yema.pt",
       "type": "png"
     },
     {
@@ -1077,7 +1077,7 @@
       "type": "svg"
     },
     {
-      "name": "Audiences",
+      "name": "Audiences.pt",
       "type": "svg"
     },
     {
@@ -1125,7 +1125,7 @@
       "type": "svg"
     },
     {
-      "name": "Btschool",
+      "name": "Btschool.pt",
       "type": "svg"
     },
     {
@@ -1401,7 +1401,7 @@
       "type": "svg"
     },
     {
-      "name": "Hhclub",
+      "name": "Hhclub.pt",
       "type": "svg"
     },
     {
@@ -1505,10 +1505,6 @@
       "type": "svg"
     },
     {
-      "name": "M.team",
-      "type": "svg"
-    },
-    {
       "name": "Mac.OS",
       "type": "svg"
     },
@@ -1561,6 +1557,10 @@
       "type": "svg"
     },
     {
+      "name": "Mteam.pt",
+      "type": "svg"
+    },
+    {
       "name": "Musicbrainz",
       "type": "svg"
     },
@@ -1601,7 +1601,7 @@
       "type": "svg"
     },
     {
-      "name": "Nicept",
+      "name": "Nice.pt",
       "type": "svg"
     },
     {
@@ -1641,7 +1641,7 @@
       "type": "svg"
     },
     {
-      "name": "Piggo",
+      "name": "Piggo.pt",
       "type": "svg"
     },
     {
@@ -1661,15 +1661,15 @@
       "type": "svg"
     },
     {
-      "name": "Pter.club",
+      "name": "Pterclub.pt",
       "type": "svg"
     },
     {
-      "name": "Pthome",
+      "name": "Pthome.pt",
       "type": "svg"
     },
     {
-      "name": "Pttime",
+      "name": "Pttime.pt",
       "type": "svg"
     },
     {
@@ -1689,7 +1689,7 @@
       "type": "svg"
     },
     {
-      "name": "Qingwa",
+      "name": "Qingwa.pt",
       "type": "svg"
     },
     {
@@ -1781,7 +1781,7 @@
       "type": "svg"
     },
     {
-      "name": "TTG",
+      "name": "TTG.pt",
       "type": "svg"
     },
     {

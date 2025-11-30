@@ -546,9 +546,9 @@ const reloadPage = () => window.location.reload();
 
 const formatCategoryTitle = (category: string) => {
 	const titles: Record<string, string> = {
-		'Z_all_png': 'Z_all_png -【SVG → PNG】',
-		'Z_all_png_other': 'Z_all_png_other【其它图】',
-		'Z_all_svg': 'Z_all_svg -【SVG】'
+		// 'png': '【SVG → PNG】',
+		// 'png_other': '【其它图】',
+		// 'svg': '【SVG】'
 	};
 	return titles[category] || category;
 };
