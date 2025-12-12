@@ -373,6 +373,10 @@
       "type": "png"
     },
     {
+      "name": "Hdarea.pt",
+      "type": "png"
+    },
+    {
       "name": "Hetzner_A",
       "type": "png"
     },
@@ -858,6 +862,10 @@
     },
     {
       "name": "Vue",
+      "type": "png"
+    },
+    {
+      "name": "Vuetify",
       "type": "png"
     },
     {
@@ -1389,6 +1397,10 @@
       "type": "svg"
     },
     {
+      "name": "Hdarea.pt",
+      "type": "svg"
+    },
+    {
       "name": "Hetzner_A",
       "type": "svg"
     },
@@ -1874,6 +1886,10 @@
     },
     {
       "name": "Vue",
+      "type": "svg"
+    },
+    {
+      "name": "Vuetify",
       "type": "svg"
     },
     {
