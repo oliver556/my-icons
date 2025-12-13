@@ -773,6 +773,10 @@
       "type": "png"
     },
     {
+      "name": "Tailwindcss",
+      "type": "png"
+    },
+    {
       "name": "Tampermonkey",
       "type": "png"
     },
@@ -1794,6 +1798,10 @@
     },
     {
       "name": "TTG.pt",
+      "type": "svg"
+    },
+    {
+      "name": "Tailwindcss",
       "type": "svg"
     },
     {
