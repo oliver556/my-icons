@@ -189,6 +189,10 @@
       "type": "png"
     },
     {
+      "name": "DockTer",
+      "type": "png"
+    },
+    {
       "name": "Docker.copilot",
       "type": "png"
     },
@@ -457,6 +461,10 @@
       "type": "png"
     },
     {
+      "name": "Ku.geci",
+      "type": "png"
+    },
+    {
       "name": "Kubernetes",
       "type": "png"
     },
@@ -534,6 +542,14 @@
     },
     {
       "name": "Minio",
+      "type": "png"
+    },
+    {
+      "name": "Moji.geci",
+      "type": "png"
+    },
+    {
+      "name": "Mojigeci",
       "type": "png"
     },
     {
@@ -1217,6 +1233,10 @@
       "type": "svg"
     },
     {
+      "name": "DockTer",
+      "type": "svg"
+    },
+    {
       "name": "Docker.copilot",
       "type": "svg"
     },
@@ -1485,6 +1505,10 @@
       "type": "svg"
     },
     {
+      "name": "Ku.geci",
+      "type": "svg"
+    },
+    {
       "name": "Kubernetes",
       "type": "svg"
     },
@@ -1562,6 +1586,10 @@
     },
     {
       "name": "Mindline",
+      "type": "svg"
+    },
+    {
+      "name": "Moji.geci",
       "type": "svg"
     },
     {
