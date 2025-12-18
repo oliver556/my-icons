@@ -65,6 +65,10 @@
       "type": "png"
     },
     {
+      "name": "Audiobookshelf",
+      "type": "png"
+    },
+    {
       "name": "Auto.symlink",
       "type": "png"
     },
@@ -546,10 +550,6 @@
     },
     {
       "name": "Moji.geci",
-      "type": "png"
-    },
-    {
-      "name": "Mojigeci",
       "type": "png"
     },
     {
@@ -1106,6 +1106,10 @@
     },
     {
       "name": "Audiences.pt",
+      "type": "svg"
+    },
+    {
+      "name": "Audiobookshelf",
       "type": "svg"
     },
     {
