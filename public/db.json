@@ -405,6 +405,10 @@
       "type": "png"
     },
     {
+      "name": "Home.page",
+      "type": "png"
+    },
+    {
       "name": "Huaban",
       "type": "png"
     },
@@ -458,6 +462,10 @@
     },
     {
       "name": "Juejin",
+      "type": "png"
+    },
+    {
+      "name": "Jump.server",
       "type": "png"
     },
     {
@@ -597,6 +605,10 @@
       "type": "png"
     },
     {
+      "name": "Nextcloud",
+      "type": "png"
+    },
+    {
       "name": "Nezha",
       "type": "png"
     },
@@ -626,6 +638,10 @@
     },
     {
       "name": "Open.list",
+      "type": "png"
+    },
+    {
+      "name": "Open.resty",
       "type": "png"
     },
     {
@@ -714,6 +730,10 @@
     },
     {
       "name": "Reddit",
+      "type": "png"
+    },
+    {
+      "name": "Redis",
       "type": "png"
     },
     {
@@ -1449,6 +1469,10 @@
       "type": "svg"
     },
     {
+      "name": "Home.page",
+      "type": "svg"
+    },
+    {
       "name": "Huaban",
       "type": "svg"
     },
@@ -1502,6 +1526,10 @@
     },
     {
       "name": "Juejin",
+      "type": "svg"
+    },
+    {
+      "name": "Jump.server",
       "type": "svg"
     },
     {
@@ -1641,6 +1669,10 @@
       "type": "svg"
     },
     {
+      "name": "Nextcloud",
+      "type": "svg"
+    },
+    {
       "name": "Nezha",
       "type": "svg"
     },
@@ -1670,6 +1702,10 @@
     },
     {
       "name": "Open.list",
+      "type": "svg"
+    },
+    {
+      "name": "Open.resty",
       "type": "svg"
     },
     {
@@ -1758,6 +1794,10 @@
     },
     {
       "name": "Reddit",
+      "type": "svg"
+    },
+    {
+      "name": "Redis",
       "type": "svg"
     },
     {
