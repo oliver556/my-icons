@@ -789,6 +789,10 @@
       "type": "png"
     },
     {
+      "name": "Sublink.x",
+      "type": "png"
+    },
+    {
       "name": "Sun.panel.helper",
       "type": "png"
     },
@@ -1854,6 +1858,10 @@
     },
     {
       "name": "Sub.store",
+      "type": "svg"
+    },
+    {
+      "name": "Sublink.x",
       "type": "svg"
     },
     {
