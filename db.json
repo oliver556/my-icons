@@ -789,6 +789,10 @@
       "type": "png"
     },
     {
+      "name": "Sun.panel.helper",
+      "type": "png"
+    },
+    {
       "name": "Sun.panel",
       "type": "png"
     },
@@ -1850,6 +1854,10 @@
     },
     {
       "name": "Sub.store",
+      "type": "svg"
+    },
+    {
+      "name": "Sun.panel.helper",
       "type": "svg"
     },
     {
