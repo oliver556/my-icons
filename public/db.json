@@ -813,6 +813,10 @@
       "type": "png"
     },
     {
+      "name": "Synology.OS",
+      "type": "png"
+    },
+    {
       "name": "TTG.pt",
       "type": "png"
     },
@@ -1882,6 +1886,10 @@
     },
     {
       "name": "Symedia_A",
+      "type": "svg"
+    },
+    {
+      "name": "Synology.OS",
       "type": "svg"
     },
     {
