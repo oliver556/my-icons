@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Synology.OS</title>
+    <g id="Icon-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Synology.OS" transform="translate(0, -0.0008)">
+            <rect id="蒙版路径" fill="#5D6EF1" x="0" y="0" width="1024" height="1024"></rect>
+            <path d="M277,237.000808 L747,237.000808 C776.271092,237.000808 800,260.729716 800,290.000808 L800,722.750808 C800,748.846262 778.845454,770.000808 752.75,770.000808 L752.75,770.000808 L752.75,770.000808 L752.75,813.500808 L676.75,813.500808 L676.75,770.000808 L347,770.000808 L347,813.500808 L271,813.500808 L271,770.000808 C245.042617,770.000808 224,748.958191 224,723.000808 L224,290.000808 C224,260.729716 247.728908,237.000808 277,237.000808 Z" id="矩形" fill="#FFFFFF"></path>
+            <polygon id="矩形" fill="#5D6FEF" points="272 284.000808 557 284.000808 560 724.000808 272 724.000808"></polygon>
+            <polygon id="矩形" fill="#5D6FEF" points="589 284.000808 750.302083 284.000808 752 724.000808 589 724.000808"></polygon>
+            <rect id="矩形" fill="#FFFFFF" x="649" y="348.000808" width="55" height="28" rx="14"></rect>
+            <rect id="矩形" fill="#FFFFFF" x="649" y="421.000808" width="55" height="28" rx="14"></rect>
+        </g>
+    </g>
+</svg>
