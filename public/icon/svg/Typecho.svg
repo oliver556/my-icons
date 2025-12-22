@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Typecho</title>
-    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Typecho">
-            <rect id="蒙版路径" fill="#000000" x="0" y="0" width="1024" height="1024"></rect>
-            <path d="M241,472.34 L241.05683,552.935 L627.757377,552.935 L628,472.864785 L241,472.34 Z M241.063083,665.154 L241,745.539554 L702,745.749 L702,665.154 L241.063083,665.154 Z M241.052261,279.113 L241.052261,359.708 L782.052261,359.708 L782.052261,279.113" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#000" d="M0 0h1024v1024H0z"/><path fill="#FFF" fill-rule="nonzero" d="m241 472.34.057 80.595h386.7l.243-80.07zm.063 192.814L241 745.54l461 .209v-80.595H241.063m-.01-386.041v80.595h541v-80.595"/></g></svg>

@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Clouddrive2</title>
-    <defs>
-        <rect id="path-1" x="0" y="0" width="1024" height="1024"></rect>
-    </defs>
-    <g id="Icon-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Clouddrive2" transform="translate(0.6332, 0)">
-            <mask id="mask-2" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-            <use id="蒙版路径" fill="#1778B2" xlink:href="#path-1"></use>
-            <polygon id="矩形" fill="#FFFFFF" mask="url(#mask-2)" points="380 254 772 254 772 645 550 645 554 470 380 470"></polygon>
-            <rect id="矩形" fill="#FFFFFF" mask="url(#mask-2)" x="248" y="512" width="264" height="265"></rect>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1025" height="1024"><defs><path id="a" d="M0 0h1024v1024H0z"/></defs><g fill="none" fill-rule="evenodd" transform="translate(.633)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use xlink:href="#a" fill="#1778B2"/><path fill="#FFF" d="M380 254h392v391H550l4-175H380z" mask="url(#b)"/><path fill="#FFF" d="M248 512h264v265H248z" mask="url(#b)"/></g></svg>

@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Zerotier</title>
-    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Zerotier">
-            <rect id="蒙版路径" fill="#FDB25D" x="0" y="0" width="1024" height="1024"></rect>
-            <rect id="矩形" fill="#000000" x="177" y="192" width="663" height="29"></rect>
-            <rect id="矩形" fill="#000000" transform="translate(508.5, 552.5) rotate(90) translate(-508.5, -552.5)" x="177" y="538" width="663" height="29"></rect>
-            <circle id="椭圆形" stroke="#000000" stroke-width="30" cx="512" cy="521" r="217"></circle>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FDB25D" d="M0 0h1024v1024H0z"/><path fill="#000" d="M177 192h663v29H177zM523 221v663h-29V221z"/><circle cx="512" cy="521" r="217" stroke="#000" stroke-width="30"/></g></svg>

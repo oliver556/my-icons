@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Vuetify</title>
-    <g id="Icon-SVG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Vuetify" transform="translate(0, -0.0008)">
-            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
-            <g id="编组" transform="translate(112, 106.0008)"></g>
-            <g id="编组-59" transform="translate(168, 256.0008)" fill-rule="nonzero">
-                <polygon id="路径" fill="#1697F6" points="350.916861 135.999 214 376.852349 343.646995 605 515.361727 303.000478 687 1 427.626366 1"></polygon>
-                <polygon id="路径" fill="#AEDDFF" points="171.518443 302.112012 180.500477 318 308.435356 92.5468938 361 0 342.957653 0 0 0"></polygon>
-                <path d="M426.617394,1 C491.517809,217.871662 342.641551,605 342.641551,605 L213,376.852349 L426.617394,1 Z" id="路径" fill="#1867C0"></path>
-                <path d="M361,0 C87.35285,0 180.159191,318 180.159191,318 L361,0 Z" id="路径" fill="#7BC6FF"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M0 0h1024v1024H0z"/><g fill-rule="nonzero"><path fill="#1697F6" d="M518.917 391.999 382 632.852 511.647 861l171.715-302L855 257H595.626z"/><path fill="#AEDDFF" d="M339.518 558.112 348.5 574l127.935-225.453L529 256H168z"/><path fill="#1867C0" d="M594.617 257c64.9 216.872-83.975 604-83.975 604L381 632.852 594.617 257"/><path fill="#7BC6FF" d="M529 256c-273.647 0-180.84 318-180.84 318z"/></g></g></svg>

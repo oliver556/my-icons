@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Gaode.map</title>
-    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Gaode.map" transform="translate(-0, -0.0008)">
-            <rect id="蒙版路径" fill="#FFFFFF" x="9.09494702e-13" y="0" width="1024" height="1024"></rect>
-            <g id="编组" transform="translate(0, 0.0008)" fill-rule="nonzero">
-                <polygon id="路径" fill="#C2F89D" points="426.666666 -1.86288347e-15 426.666666 631.466667 9.09494702e-13 631.466667 9.58344515e-13 1.38305124e-11"></polygon>
-                <path d="M426.666666,733.866667 L426.666666,1024 L0,1024 L0,733.866667 L426.666666,733.866667 Z M529.066667,5.82076609e-11 L1024,1 L1024,631.466667 L529.066667,631.466667 L529.066667,5.82076609e-11 Z" id="形状" fill="#EDF1F4"></path>
-                <polygon id="路径" fill="#82E4FC" points="529.066667 733.866667 1024 733.866667 1024 1024 529.066667 1024"></polygon>
-                <polygon id="路径" fill="#0085FE" points="360.772266 677.666134 102.4 532.753066 912.878934 119.466666 757.947733 906.888534 445.2352 726.391467 420.5568 855.330134"></polygon>
-                <polygon id="路径" fill="#0355ED" points="864.9216 174.3872 360.772266 677.6832 418.286933 856.183467 442.9312 724.838401"></polygon>
-                <polygon id="路径" fill="#0E24C0" points="497.032533 756.172801 418.304 856.183467 442.9312 724.838401"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M0 0h1024v1024H0z"/><g fill-rule="nonzero"><path fill="#C2F89D" d="M426.667 0v631.467H0V0z"/><path fill="#EDF1F4" d="M426.667 733.867V1024H0V733.867h426.667M529.067 0 1024 1v630.467H529.067V0"/><path fill="#82E4FC" d="M529.067 733.867H1024V1024H529.067z"/><path fill="#0085FE" d="M360.772 677.666 102.4 532.753l810.479-413.286-154.931 787.422L445.235 726.39l-24.678 128.94z"/><path fill="#0355ED" d="m864.922 174.387-504.15 503.296 57.515 178.5 24.644-131.345z"/><path fill="#0E24C0" d="m497.033 756.173-78.729 100.01 24.627-131.345z"/></g></g></svg>
