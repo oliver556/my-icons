@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>编组 50</title>
-    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="编组-50" transform="translate(0, -0.0008)">
-            <rect id="蒙版路径" fill="#FFFFFF" x="0.260426069" y="-7.27595761e-12" width="1024" height="1024"></rect>
-            <g id="npm" transform="translate(0, 0.0008)" fill="#D14748" fill-rule="nonzero">
-                <path d="M0,0 L0,1024 L1024,1024 L1024,0 L0,0 M170.666667,170.666667 L853.333333,170.666667 L853.333333,853.333333 L682.666667,853.333333 L682.666667,341.333333 L512,341.333333 L512,853.333333 L170.666667,853.333333 L170.666667,170.666667 Z" id="形状"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M.26 0h1024v1024H.26z"/><path fill="#D14748" fill-rule="nonzero" d="M0 0v1024h1024V0zm170.667 170.667h682.666v682.666H682.667v-512H512v512H170.667V170.667Z"/></g></svg>

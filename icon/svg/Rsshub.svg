@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Rsshub</title>
-    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Rsshub">
-            <rect id="矩形" fill="#FFD0A0" x="0" y="0" width="1024" height="1024"></rect>
-            <path d="M0,209 C70.8984071,183.666667 140.898407,171 210,171 C263.652717,171 392.86616,176.641706 512,242 C623.022393,302.908253 691,374 761,479 C836,598 848.840401,754.177549 846,812 C842.477095,883.716275 828.477095,954.382942 804,1024 L0,1024 L0,209 Z" id="矩形" fill="#FF894C"></path>
-            <circle id="椭圆形" fill="#FF2900" cx="225" cy="799" r="225"></circle>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFD0A0" d="M0 0h1024v1024H0z"/><path fill="#FF894C" d="M0 209c70.898-25.333 140.898-38 210-38 53.653 0 182.866 5.642 302 71 111.022 60.908 179 132 249 237 75 119 87.84 275.178 85 333-3.523 71.716-17.523 142.383-42 212H0z"/><circle cx="225" cy="799" r="225" fill="#FF2900"/></g></svg>

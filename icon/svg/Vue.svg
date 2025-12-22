@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Vue</title>
-    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Vue" transform="translate(0.2604, -0.0008)">
-            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
-            <g id="路径" transform="translate(161.7396, 255.0008)" fill-rule="nonzero">
-                <polygon fill="#41B883" points="430.847269 0.0780616664 560 0.0780616664 350 363.923489 140 0.0780616664 0 0.0780616664 350 606.461087 700 0"></polygon>
-                <polygon fill="#34495E" points="560.20558 0 430.926414 0 350 140.054648 269.073586 0 139.79442 0 350 363.876652"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M.26 0h1024v1024H.26z"/><g fill-rule="nonzero"><path fill="#41B883" d="M592.847 255.078H722L512 618.923 302 255.078H162l350 606.383L862 255z"/><path fill="#34495E" d="M722.206 255h-129.28L512 395.055 431.074 255h-129.28L512 618.877z"/></g></g></svg>

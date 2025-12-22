@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Truenas</title>
-    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Truenas">
-            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
-            <g id="编组" transform="translate(140, 218)" fill-rule="nonzero">
-                <polygon id="路径" fill="#31BEEC" points="744 234 744 392.278846 405 588 405 429.721154 744 234"></polygon>
-                <polygon id="路径" fill="#0095D5" points="340 429.721154 340 588 0 392.278846 0 234 153.642267 322.399887 154.244392 322.399887"></polygon>
-                <polygon id="路径" fill="#AEADAE" points="510 294.550221 372.5 374 235 294.550221 372.5 215"></polygon>
-                <polygon id="路径" fill="#0095D5" points="712 177.521671 574.586679 257 405 158.755954 405 0 712 177.521671"></polygon>
-                <polygon id="路径" fill="#31BEEC" points="340 0 340 158.880031 170.323655 257 33 177.660414"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M0 0h1024v1024H0z"/><g fill-rule="nonzero"><path fill="#31BEEC" d="M884 452v158.279L545 806V647.721z"/><path fill="#0095D5" d="M480 647.721V806L140 610.279V452l153.642 88.4h.602z"/><path fill="#AEADAE" d="M650 512.55 512.5 592 375 512.55 512.5 433z"/><path fill="#0095D5" d="M852 395.522 714.587 475 545 376.756V218l307 177.522"/><path fill="#31BEEC" d="M480 218v158.88L310.324 475 173 395.66z"/></g></g></svg>

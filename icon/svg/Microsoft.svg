@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Windows</title>
-    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Windows" transform="translate(0.6332, 0)">
-            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
-            <polygon id="路径" fill="#F25425" fill-rule="nonzero" points="494.167183 192 494.167183 494.167183 192 494.167183 192 192"></polygon>
-            <polygon id="路径" fill="#06A7F0" fill-rule="nonzero" points="494.167183 832 192 832 192 529.832817 494.167183 529.832817"></polygon>
-            <polygon id="路径" fill="#81BD07" fill-rule="nonzero" points="529.832817 192 832 192 832 494.167183 529.832817 494.167183"></polygon>
-            <polygon id="路径" fill="#FFBA09" fill-rule="nonzero" points="832 529.832817 832 832 529.832817 832 529.832817 529.832817"></polygon>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M.633 0h1024v1024H.633z"/><path fill="#F25425" fill-rule="nonzero" d="M494.8 192v302.167H192.633V192z"/><path fill="#06A7F0" fill-rule="nonzero" d="M494.8 832H192.633V529.833H494.8z"/><path fill="#81BD07" fill-rule="nonzero" d="M530.466 192h302.167v302.167H530.466z"/><path fill="#FFBA09" fill-rule="nonzero" d="M832.633 529.833V832H530.466V529.833z"/></g></svg>

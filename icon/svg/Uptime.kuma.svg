@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Uptime.kuma</title>
-    <defs>
-        <linearGradient x1="35.7077165%" y1="37.6979154%" x2="84.141573%" y2="78.5319487%" id="linearGradient-1">
-            <stop stop-color="#5CDD8B" offset="0%"></stop>
-            <stop stop-color="#86E6A9" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Uptime.kuma" transform="translate(0.061, 0)">
-            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
-            <path d="M795.100543,372.114635 C884.299819,576.031922 884.299819,703.891417 795.100543,755.659893 C661.276708,833.312606 312.570505,856.987213 212.190168,737.61735 C145.269944,658.03744 145.269944,536.192126 212.190168,372.114635 C280.240128,260.038212 376.948824,204 502.316255,204 C627.7003,204 725.289524,260.038212 795.100543,372.114635 Z" id="路径" stroke-opacity="0.51" stroke="#F2F2F2" stroke-width="200" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><defs><linearGradient id="a" x1="35.708%" x2="84.142%" y1="37.698%" y2="78.532%"><stop offset="0%" stop-color="#5CDD8B"/><stop offset="100%" stop-color="#86E6A9"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M.061 0h1024v1024H.061z"/><path fill="url(#a)" fill-rule="nonzero" stroke="#F2F2F2" stroke-opacity=".51" stroke-width="200" d="M795.1 372.115c89.2 203.917 89.2 331.776 0 383.545-133.823 77.653-482.53 101.327-582.91-18.043-66.92-79.58-66.92-201.425 0-365.502C280.24 260.038 376.95 204 502.316 204c125.384 0 222.974 56.038 292.785 168.115Z" transform="translate(.061)"/></g></svg>

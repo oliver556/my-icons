@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1025px" height="1024px" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Gemini</title>
-    <defs>
-        <linearGradient x1="0%" y1="100%" x2="68.73%" y2="30.395%" id="linearGradient-1">
-            <stop stop-color="#1C7DFF" offset="0%"></stop>
-            <stop stop-color="#1C69FF" offset="52.021%"></stop>
-            <stop stop-color="#F0DCD6" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="ICON-新版方图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Gemini" transform="translate(0.6332, 0)">
-            <rect id="蒙版路径" fill="#FFFFFF" x="0" y="0" width="1024" height="1024"></rect>
-            <path d="M139,514 C332.65943,484.660455 484.660455,332.65943 514,139 C543.349024,332.654641 695.345359,484.650976 889,514 C695.345359,543.349024 543.349024,695.345359 514,889 C484.660455,695.34057 332.65943,543.339545 139,514 Z" id="编组" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1025" height="1024"><defs><linearGradient id="a" x1="0%" x2="68.73%" y1="100%" y2="30.395%"><stop offset="0%" stop-color="#1C7DFF"/><stop offset="52.021%" stop-color="#1C69FF"/><stop offset="100%" stop-color="#F0DCD6"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M.633 0h1024v1024H.633z"/><path fill="url(#a)" fill-rule="nonzero" d="M139 514c193.66-29.34 345.66-181.34 375-375 29.349 193.655 181.345 345.651 375 375-193.655 29.349-345.651 181.345-375 375-29.34-193.66-181.34-345.66-375-375" transform="translate(.633)"/></g></svg>
