@@ -989,6 +989,10 @@
       "type": "png"
     },
     {
+      "name": "Youtube.music",
+      "type": "png"
+    },
+    {
       "name": "Youtube",
       "type": "png"
     },
@@ -2066,6 +2070,10 @@
     },
     {
       "name": "Youku",
+      "type": "svg"
+    },
+    {
+      "name": "Youtube.music",
       "type": "svg"
     },
     {
