@@ -741,10 +741,6 @@
       "type": "png"
     },
     {
-      "name": "Rss",
-      "type": "png"
-    },
-    {
       "name": "Rsshub",
       "type": "png"
     },
@@ -1830,10 +1826,6 @@
     },
     {
       "name": "Redis",
-      "type": "svg"
-    },
-    {
-      "name": "Rss",
       "type": "svg"
     },
     {
