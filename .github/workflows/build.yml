@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: '18'
 
+      # PWA 相关文件（service-worker.js, manifest.json, workbox-*.js）会在构建时自动生成
       - name: Install dependencies and build
         run: |
           npm ci
@@ -31,3 +32,4 @@ jobs:
           # 添加以下配置，确保部署到 gh-pages 分支
           publish_branch: gh-pages  # 明确指定分支
           commit_message: 'Auto deploy from main'
+          # PWA 文件会随 dist 目录一起部署，GitHub Pages 的 HTTPS 支持 PWA 功能
