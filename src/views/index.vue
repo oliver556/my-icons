@@ -252,7 +252,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from "vue";
+import { ref, computed, onMounted, onUnmounted, nextTick } from "vue";
 import { ElMessage, ElImageViewer, ElBacktop } from "element-plus";
 import useClipboard from "vue-clipboard3";
 
@@ -361,28 +361,24 @@ const applyTheme = () => {
 	updateThemeColor();
 };
 
-// 更新 PWA theme-color meta 标签
+// 更新 PWA theme-color meta 标签，从 CSS 变量中读取当前主题的背景色
 const updateThemeColor = () => {
-	let themeColor = '#f8fafc'; // 默认明亮模式背景色
-	
-	if (themeMode.value === 'dark') {
-		themeColor = '#0f172a'; // 暗黑模式背景色
-	} else if (themeMode.value === 'light') {
-		themeColor = '#f8fafc'; // 明亮模式背景色
-	} else {
-		// auto 模式：跟随系统偏好
-		const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-		themeColor = isDark ? '#0f172a' : '#f8fafc';
-	}
-	
-	// 更新或创建 theme-color meta 标签
-	let themeColorMeta = document.querySelector('meta[name="theme-color"]') as HTMLMetaElement;
-	if (!themeColorMeta) {
-		themeColorMeta = document.createElement('meta');
-		themeColorMeta.name = 'theme-color';
-		document.head.appendChild(themeColorMeta);
-	}
-	themeColorMeta.content = themeColor;
+	// 使用 nextTick 确保 CSS 变量已经更新
+	nextTick(() => {
+		const root = document.documentElement;
+		const computedStyle = getComputedStyle(root);
+		// 从 CSS 变量 --color-bg 中读取当前主题的背景色
+		const themeColor = computedStyle.getPropertyValue('--color-bg').trim();
+		
+		// 更新或创建 theme-color meta 标签
+		let themeColorMeta = document.querySelector('meta[name="theme-color"]') as HTMLMetaElement;
+		if (!themeColorMeta) {
+			themeColorMeta = document.createElement('meta');
+			themeColorMeta.name = 'theme-color';
+			document.head.appendChild(themeColorMeta);
+		}
+		themeColorMeta.content = themeColor;
+	});
 };
 
 const themeTitle = computed(() => {
