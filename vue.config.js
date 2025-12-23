@@ -1,4 +1,36 @@
 const { defineConfig } = require('@vue/cli-service')
+import { VitePWA } from 'vite-plugin-pwa';
+
+const pwaConfig = {
+  strategies: 'generate',
+  srcDir: 'src',
+  filename: 'service-worker.js',
+  injectRegister: true,
+  registerType: 'autoUpdate',
+  includeAssets: ['Myicon.svg', 'robots.txt', 'sitemap.xml'],
+  manifest: {
+    name: 'Icon Hub',
+    short_name: 'IconHub',
+    description: "个人 NAS 设备图标库",
+    theme_color: '#ffffff',
+    background_color: '#ffffff',
+    display: 'standalone',
+    scope: '/',
+    start_url: '/',
+    icons: [
+      {
+        "src": "icons/pwa-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/pwa-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+}
 module.exports = defineConfig({
   //打包配置文件
   publicPath:  './',// 基本路径
@@ -25,5 +57,8 @@ module.exports = defineConfig({
       maskIcon: "Myicon.svg",
       msTileImage: "Myicon.svg",
     },
-  }
+  },
+  plugin: [
+    VitePWA(pwaConfig)
+  ]
 })
