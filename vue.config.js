@@ -18,14 +18,14 @@ module.exports = defineConfig({
     },
   }, //修改favicon.ico
   pwa: {
-    name: 'My Icon',
+    name: 'Icon Hub',
     themeColor: '#409EFF',
     msTileColor: '#409EFF',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
     manifestOptions: {
-      name: 'My Icon 图标库',
-      short_name: 'My Icon',
+      name: 'Icon Hub',
+      short_name: 'IconHub',
       description: '提供在线图标链接，用于个人NAS设备显示使用',
       start_url: './',
       display: 'standalone',
@@ -33,23 +33,23 @@ module.exports = defineConfig({
       theme_color: '#409EFF',
       icons: [
         {
-          src: './Myicon.svg',
+          src: './icon/png/Myicon.png',
           sizes: '192x192',
-          type: 'image/svg+xml'
+          type: 'image/png'
         },
         {
-          src: './Myicon.svg',
+          src: './icon/png/Myicon.png',
           sizes: '512x512',
-          type: 'image/svg+xml'
+          type: 'image/png'
         }
       ]
     },
     iconPaths: {
-      favicon32: "Myicon.svg",
-      favicon16: "Myicon.svg",
-      appleTouchIcon: "Myicon.svg",
+      favicon32: "icon/png/Myicon.png",
+      favicon16: "icon/png/Myicon.png",
+      appleTouchIcon: "icon/png/Myicon.png",
       maskIcon: "Myicon.svg",
-      msTileImage: "Myicon.svg",
+      msTileImage: "icon/png/Myicon.png",
     },
     // 配置 workbox
     workboxPluginMode: 'GenerateSW',

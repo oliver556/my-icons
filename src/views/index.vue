@@ -275,6 +275,9 @@ const headerRef = ref<HTMLElement | null>(null); // 获取 Header 元素
 // 主题模式: 'auto' | 'light' | 'dark'
 const themeMode = ref<'auto' | 'light' | 'dark'>('auto');
 
+// 系统主题变化监听器（用于 auto 模式）
+let systemThemeListener: ((e: MediaQueryListEvent) => void) | null = null;
+
 // 记录正在刷新的图标 ID 集合 (避免全局 loading，实现单个图标 loading)
 const refreshingItems = ref(new Set<string>());
 
@@ -308,10 +311,24 @@ onMounted(() => {
 	
 	// 2. 应用主题
 	applyTheme();
+	
+	// 监听系统主题变化（仅在 auto 模式）
+	const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+	systemThemeListener = () => {
+		if (themeMode.value === 'auto') {
+			updateThemeColor();
+		}
+	};
+	mediaQuery.addEventListener('change', systemThemeListener);
 });
 
 onUnmounted(() => {
 	window.removeEventListener('scroll', handleScroll);
+	// 清理系统主题监听器
+	if (systemThemeListener) {
+		const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+		mediaQuery.removeEventListener('change', systemThemeListener);
+	}
 });
 
 // 切换主题模式: Auto -> Light -> Dark -> Auto
@@ -331,7 +348,7 @@ const cycleTheme = () => {
 	ElMessage.success(`${themeTitle.value}`);
 };
 
-// 执行主题切换：通过在 html 标签上设置 data-theme 属性
+// 执行主题切换：通过在 html 标签上设置 data-theme 属性，并更新 PWA theme-color
 const applyTheme = () => {
 	const root = document.documentElement;
 	if (themeMode.value === 'auto') {
@@ -339,6 +356,33 @@ const applyTheme = () => {
 	} else {
 		root.setAttribute('data-theme', themeMode.value); // 强制设置 light 或 dark
 	}
+	
+	// 更新 PWA theme-color meta 标签，跟随页面主题
+	updateThemeColor();
+};
+
+// 更新 PWA theme-color meta 标签
+const updateThemeColor = () => {
+	let themeColor = '#f8fafc'; // 默认明亮模式背景色
+	
+	if (themeMode.value === 'dark') {
+		themeColor = '#0f172a'; // 暗黑模式背景色
+	} else if (themeMode.value === 'light') {
+		themeColor = '#f8fafc'; // 明亮模式背景色
+	} else {
+		// auto 模式：跟随系统偏好
+		const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		themeColor = isDark ? '#0f172a' : '#f8fafc';
+	}
+	
+	// 更新或创建 theme-color meta 标签
+	let themeColorMeta = document.querySelector('meta[name="theme-color"]') as HTMLMetaElement;
+	if (!themeColorMeta) {
+		themeColorMeta = document.createElement('meta');
+		themeColorMeta.name = 'theme-color';
+		document.head.appendChild(themeColorMeta);
+	}
+	themeColorMeta.content = themeColor;
 };
 
 const themeTitle = computed(() => {
