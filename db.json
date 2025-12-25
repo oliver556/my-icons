@@ -45,6 +45,10 @@
       "type": "png"
     },
     {
+      "name": "Annas",
+      "type": "png"
+    },
+    {
       "name": "Apifox",
       "type": "png"
     },
@@ -1134,6 +1138,10 @@
     },
     {
       "name": "Aliyun.drive",
+      "type": "svg"
+    },
+    {
+      "name": "Annas",
       "type": "svg"
     },
     {
