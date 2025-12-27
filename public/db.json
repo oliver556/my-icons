@@ -925,6 +925,10 @@
       "type": "png"
     },
     {
+      "name": "Vite",
+      "type": "png"
+    },
+    {
       "name": "Vue",
       "type": "png"
     },
@@ -2018,6 +2022,10 @@
     },
     {
       "name": "Verysync",
+      "type": "svg"
+    },
+    {
+      "name": "Vite",
       "type": "svg"
     },
     {
