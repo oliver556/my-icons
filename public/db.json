@@ -721,6 +721,10 @@
       "type": "png"
     },
     {
+      "name": "Qiankun.umijs",
+      "type": "png"
+    },
+    {
       "name": "Qingwa.pt",
       "type": "png"
     },
@@ -1830,6 +1834,10 @@
     },
     {
       "name": "Qbittorrent",
+      "type": "svg"
+    },
+    {
+      "name": "Qiankun.umijs",
       "type": "svg"
     },
     {
