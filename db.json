@@ -49,6 +49,10 @@
       "type": "png"
     },
     {
+      "name": "Ant.design",
+      "type": "png"
+    },
+    {
       "name": "Apifox",
       "type": "png"
     },
@@ -925,6 +929,10 @@
       "type": "png"
     },
     {
+      "name": "View.design",
+      "type": "png"
+    },
+    {
       "name": "Vite",
       "type": "png"
     },
@@ -1146,6 +1154,10 @@
     },
     {
       "name": "Annas",
+      "type": "svg"
+    },
+    {
+      "name": "Ant.design",
       "type": "svg"
     },
     {
@@ -2022,6 +2034,10 @@
     },
     {
       "name": "Verysync",
+      "type": "svg"
+    },
+    {
+      "name": "View.design",
       "type": "svg"
     },
     {
