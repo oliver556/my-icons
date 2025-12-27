@@ -1059,6 +1059,10 @@
     {
       "name": "ikuai",
       "type": "png"
+    },
+    {
+      "name": "netease.cloud.music.api",
+      "type": "png"
     }
   ],
   "png_other": [
@@ -2174,6 +2178,10 @@
     },
     {
       "name": "immich",
+      "type": "svg"
+    },
+    {
+      "name": "netease.cloud.music.api",
       "type": "svg"
     }
   ]
