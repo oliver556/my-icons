@@ -19,8 +19,8 @@ module.exports = defineConfig({
   }, //修改favicon.ico
   pwa: {
     name: 'Icon Hub',
-    themeColor: '#409EFF',
-    msTileColor: '#409EFF',
+    themeColor: '#0f172a',
+    msTileColor: '#0f172a',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
     manifestOptions: {
@@ -30,7 +30,7 @@ module.exports = defineConfig({
       start_url: './',
       display: 'standalone',
       background_color: '#ffffff',
-      theme_color: '#409EFF',
+      theme_color: '#0f172a',
       icons: [
         {
           src: './icon/png/Myicon.png',
