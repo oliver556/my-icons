@@ -913,6 +913,10 @@
       "type": "png"
     },
     {
+      "name": "Unlock.music",
+      "type": "png"
+    },
+    {
       "name": "Unraid",
       "type": "png"
     },
@@ -2034,6 +2038,10 @@
     },
     {
       "name": "Umami",
+      "type": "svg"
+    },
+    {
+      "name": "Unlock.music",
       "type": "svg"
     },
     {
