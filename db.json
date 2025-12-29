@@ -805,6 +805,10 @@
       "type": "png"
     },
     {
+      "name": "Steam",
+      "type": "png"
+    },
+    {
       "name": "Stirling.pdf",
       "type": "png"
     },
@@ -1930,6 +1934,10 @@
     },
     {
       "name": "Sspai",
+      "type": "svg"
+    },
+    {
+      "name": "Steam",
       "type": "svg"
     },
     {
