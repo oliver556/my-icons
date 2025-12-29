@@ -149,6 +149,10 @@
       "type": "png"
     },
     {
+      "name": "Chinaz",
+      "type": "png"
+    },
+    {
       "name": "Clash",
       "type": "png"
     },
@@ -1278,6 +1282,10 @@
     },
     {
       "name": "Chdbits",
+      "type": "svg"
+    },
+    {
+      "name": "Chinaz",
       "type": "svg"
     },
     {
