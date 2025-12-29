@@ -781,6 +781,10 @@
       "type": "png"
     },
     {
+      "name": "Sound.cloud",
+      "type": "png"
+    },
+    {
       "name": "Speed.do",
       "type": "png"
     },
@@ -1898,6 +1902,10 @@
     },
     {
       "name": "Siyuan",
+      "type": "svg"
+    },
+    {
+      "name": "Sound.cloud",
       "type": "svg"
     },
     {
