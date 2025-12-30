@@ -65,6 +65,10 @@
       "type": "png"
     },
     {
+      "name": "Appstorrent",
+      "type": "png"
+    },
+    {
       "name": "Aria2pro",
       "type": "png"
     },
@@ -1206,6 +1210,10 @@
     },
     {
       "name": "Apple.music",
+      "type": "svg"
+    },
+    {
+      "name": "Appstorrent",
       "type": "svg"
     },
     {
