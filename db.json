@@ -881,6 +881,10 @@
       "type": "png"
     },
     {
+      "name": "Tencent.docs",
+      "type": "png"
+    },
+    {
       "name": "Tencent.video",
       "type": "png"
     },
@@ -2046,6 +2050,10 @@
     },
     {
       "name": "Tencent.cloud",
+      "type": "svg"
+    },
+    {
+      "name": "Tencent.docs",
       "type": "svg"
     },
     {
