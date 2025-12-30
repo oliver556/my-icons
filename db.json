@@ -25,6 +25,10 @@
       "type": "png"
     },
     {
+      "name": "1ms.run",
+      "type": "png"
+    },
+    {
       "name": "Acfun",
       "type": "png"
     },
@@ -1077,6 +1081,10 @@
       "type": "png"
     },
     {
+      "name": "macwk",
+      "type": "png"
+    },
+    {
       "name": "netease.cloud.music.api",
       "type": "png"
     }
@@ -1158,6 +1166,10 @@
     },
     {
       "name": "1Panel",
+      "type": "svg"
+    },
+    {
+      "name": "1ms.run",
       "type": "svg"
     },
     {
@@ -2210,6 +2222,10 @@
     },
     {
       "name": "immich",
+      "type": "svg"
+    },
+    {
+      "name": "macwk",
       "type": "svg"
     },
     {
