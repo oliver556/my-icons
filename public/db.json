@@ -1115,6 +1115,10 @@
       "type": "png"
     },
     {
+      "name": "DockTer.bot",
+      "type": "png"
+    },
+    {
       "name": "Hdarea.pt",
       "type": "png"
     },
@@ -1144,6 +1148,18 @@
     },
     {
       "name": "Redia.wiki",
+      "type": "png"
+    },
+    {
+      "name": "Symedia.bot",
+      "type": "png"
+    },
+    {
+      "name": "Symedia.bot_A",
+      "type": "png"
+    },
+    {
+      "name": "Telexfer.bot",
       "type": "png"
     },
     {
