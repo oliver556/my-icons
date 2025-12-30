@@ -73,6 +73,10 @@
       "type": "png"
     },
     {
+      "name": "Arirang",
+      "type": "png"
+    },
+    {
       "name": "Asus",
       "type": "png"
     },
@@ -1242,6 +1246,10 @@
     },
     {
       "name": "Aria2pro",
+      "type": "svg"
+    },
+    {
+      "name": "Arirang",
       "type": "svg"
     },
     {
