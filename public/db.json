@@ -1049,6 +1049,10 @@
       "type": "png"
     },
     {
+      "name": "Yuque",
+      "type": "png"
+    },
+    {
       "name": "Yxvm",
       "type": "png"
     },
@@ -2194,6 +2198,10 @@
     },
     {
       "name": "Youtube",
+      "type": "svg"
+    },
+    {
+      "name": "Yuque",
       "type": "svg"
     },
     {
