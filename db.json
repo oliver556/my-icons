@@ -37,6 +37,10 @@
       "type": "png"
     },
     {
+      "name": "Algolia",
+      "type": "png"
+    },
+    {
       "name": "Alist",
       "type": "png"
     },
@@ -1210,6 +1214,10 @@
     },
     {
       "name": "Ad.guard",
+      "type": "svg"
+    },
+    {
+      "name": "Algolia",
       "type": "svg"
     },
     {
