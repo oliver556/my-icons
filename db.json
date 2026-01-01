@@ -877,6 +877,10 @@
       "type": "png"
     },
     {
+      "name": "Tcp.ping",
+      "type": "png"
+    },
+    {
       "name": "Telegram",
       "type": "png"
     },
@@ -2054,6 +2058,10 @@
     },
     {
       "name": "Tampermonkey",
+      "type": "svg"
+    },
+    {
+      "name": "Tcp.ping",
       "type": "svg"
     },
     {
