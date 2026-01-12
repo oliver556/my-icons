@@ -525,11 +525,11 @@
       "type": "png"
     },
     {
-      "name": "Linux",
+      "name": "Linux.mirrors",
       "type": "png"
     },
     {
-      "name": "LinuxMirrors",
+      "name": "Linux",
       "type": "png"
     },
     {
@@ -653,7 +653,7 @@
       "type": "png"
     },
     {
-      "name": "NodeSeek",
+      "name": "Node.seek",
       "type": "png"
     },
     {
@@ -765,7 +765,7 @@
       "type": "png"
     },
     {
-      "name": "RackNerd",
+      "name": "Rack.nerd",
       "type": "png"
     },
     {
@@ -1721,11 +1721,11 @@
       "type": "svg"
     },
     {
-      "name": "Linux",
+      "name": "Linux.mirrors",
       "type": "svg"
     },
     {
-      "name": "LinuxMirrors",
+      "name": "Linux",
       "type": "svg"
     },
     {
@@ -1849,7 +1849,7 @@
       "type": "svg"
     },
     {
-      "name": "NodeSeek",
+      "name": "Node.seek",
       "type": "svg"
     },
     {
@@ -1961,7 +1961,7 @@
       "type": "svg"
     },
     {
-      "name": "RackNerd",
+      "name": "Rack.nerd",
       "type": "svg"
     },
     {
