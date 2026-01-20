@@ -237,6 +237,22 @@
       "type": "png"
     },
     {
+      "name": "Dockter.agent",
+      "type": "png"
+    },
+    {
+      "name": "Dockter.compose",
+      "type": "png"
+    },
+    {
+      "name": "Dockter.containers",
+      "type": "png"
+    },
+    {
+      "name": "Dockter.images",
+      "type": "png"
+    },
+    {
       "name": "Douban.movie",
       "type": "png"
     },
@@ -1430,6 +1446,22 @@
     },
     {
       "name": "Dockge",
+      "type": "svg"
+    },
+    {
+      "name": "Dockter.agent",
+      "type": "svg"
+    },
+    {
+      "name": "Dockter.compose",
+      "type": "svg"
+    },
+    {
+      "name": "Dockter.containers",
+      "type": "svg"
+    },
+    {
+      "name": "Dockter.images",
       "type": "svg"
     },
     {
