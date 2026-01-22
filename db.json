@@ -993,6 +993,10 @@
       "type": "png"
     },
     {
+      "name": "V2ex",
+      "type": "png"
+    },
+    {
       "name": "V2raya",
       "type": "png"
     },
@@ -2214,6 +2218,10 @@
     },
     {
       "name": "Uptime.kuma",
+      "type": "svg"
+    },
+    {
+      "name": "V2ex",
       "type": "svg"
     },
     {
