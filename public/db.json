@@ -425,6 +425,10 @@
       "type": "png"
     },
     {
+      "name": "Haowallpaper",
+      "type": "png"
+    },
+    {
       "name": "Hdarea.pt",
       "type": "png"
     },
@@ -1638,6 +1642,10 @@
     },
     {
       "name": "Halo_B",
+      "type": "svg"
+    },
+    {
+      "name": "Haowallpaper",
       "type": "svg"
     },
     {
