@@ -1045,6 +1045,10 @@
       "type": "png"
     },
     {
+      "name": "What.is.my.viewport",
+      "type": "png"
+    },
+    {
       "name": "Wikijs",
       "type": "png"
     },
@@ -2254,6 +2258,10 @@
     },
     {
       "name": "Wechat",
+      "type": "svg"
+    },
+    {
+      "name": "What.is.my.viewport",
       "type": "svg"
     },
     {
