@@ -457,6 +457,10 @@
       "type": "png"
     },
     {
+      "name": "Hostloc",
+      "type": "png"
+    },
+    {
       "name": "Huaban",
       "type": "png"
     },
@@ -1682,6 +1686,10 @@
     },
     {
       "name": "Home.page",
+      "type": "svg"
+    },
+    {
+      "name": "Hostloc",
       "type": "svg"
     },
     {
