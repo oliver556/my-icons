@@ -545,6 +545,10 @@
       "type": "png"
     },
     {
+      "name": "Linux.do",
+      "type": "png"
+    },
+    {
       "name": "Linux.mirrors",
       "type": "png"
     },
@@ -1762,6 +1766,10 @@
     },
     {
       "name": "Libre.speed",
+      "type": "svg"
+    },
+    {
+      "name": "Linux.do",
       "type": "svg"
     },
     {
