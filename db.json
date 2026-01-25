@@ -1163,6 +1163,10 @@
   ],
   "png_other": [
     {
+      "name": "115.open.mitm",
+      "type": "png"
+    },
+    {
       "name": "3xui",
       "type": "png"
     },
