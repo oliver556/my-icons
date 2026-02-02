@@ -669,6 +669,10 @@
       "type": "png"
     },
     {
+      "name": "Next.dir",
+      "type": "png"
+    },
+    {
       "name": "Nezha",
       "type": "png"
     },
@@ -1902,6 +1906,10 @@
     },
     {
       "name": "Next.cloud",
+      "type": "svg"
+    },
+    {
+      "name": "Next.dir",
       "type": "svg"
     },
     {
