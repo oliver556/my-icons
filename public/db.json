@@ -537,6 +537,10 @@
       "type": "png"
     },
     {
+      "name": "Lamborghini",
+      "type": "png"
+    },
+    {
       "name": "Last.fm",
       "type": "png"
     },
@@ -590,6 +594,10 @@
     },
     {
       "name": "Mdc.x",
+      "type": "png"
+    },
+    {
+      "name": "Mercedes.benz",
       "type": "png"
     },
     {
@@ -738,6 +746,10 @@
     },
     {
       "name": "Plex",
+      "type": "png"
+    },
+    {
+      "name": "Porsche",
       "type": "png"
     },
     {
@@ -1777,6 +1789,10 @@
       "type": "svg"
     },
     {
+      "name": "Lamborghini",
+      "type": "svg"
+    },
+    {
       "name": "Last.fm",
       "type": "svg"
     },
@@ -1830,6 +1846,10 @@
     },
     {
       "name": "Mdc.x",
+      "type": "svg"
+    },
+    {
+      "name": "Mercedes.benz",
       "type": "svg"
     },
     {
@@ -1978,6 +1998,10 @@
     },
     {
       "name": "Plex",
+      "type": "svg"
+    },
+    {
+      "name": "Porsche",
       "type": "svg"
     },
     {
