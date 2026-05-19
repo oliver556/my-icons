@@ -1081,6 +1081,10 @@
       "type": "png"
     },
     {
+      "name": "Whats.app",
+      "type": "png"
+    },
+    {
       "name": "Wikijs",
       "type": "png"
     },
@@ -2330,6 +2334,10 @@
     },
     {
       "name": "What.is.my.viewport",
+      "type": "svg"
+    },
+    {
+      "name": "Whats.app",
       "type": "svg"
     },
     {
