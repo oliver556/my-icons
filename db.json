@@ -1117,6 +1117,10 @@
       "type": "png"
     },
     {
+      "name": "YemaPT",
+      "type": "png"
+    },
+    {
       "name": "Youdao",
       "type": "png"
     },
@@ -1248,10 +1252,6 @@
     },
     {
       "name": "Telexfer.bot",
-      "type": "png"
-    },
-    {
-      "name": "Yema.pt",
       "type": "png"
     }
   ],
@@ -2370,6 +2370,10 @@
     },
     {
       "name": "Yacd",
+      "type": "svg"
+    },
+    {
+      "name": "YemaPT",
       "type": "svg"
     },
     {
