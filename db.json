@@ -849,6 +849,10 @@
       "type": "png"
     },
     {
+      "name": "Saily",
+      "type": "png"
+    },
+    {
       "name": "Sehuatang",
       "type": "png"
     },
@@ -2110,6 +2114,10 @@
     },
     {
       "name": "Safeline",
+      "type": "svg"
+    },
+    {
+      "name": "Saily",
       "type": "svg"
     },
     {
