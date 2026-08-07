@@ -745,6 +745,10 @@
       "type": "png"
     },
     {
+      "name": "Paypal",
+      "type": "png"
+    },
+    {
       "name": "Piggo.pt",
       "type": "png"
     },
@@ -2002,6 +2006,10 @@
     },
     {
       "name": "Outlook",
+      "type": "svg"
+    },
+    {
+      "name": "Paypal",
       "type": "svg"
     },
     {
