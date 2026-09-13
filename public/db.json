@@ -29,6 +29,10 @@
       "type": "png"
     },
     {
+      "name": "2FA",
+      "type": "png"
+    },
+    {
       "name": "Acfun",
       "type": "png"
     },
@@ -1298,6 +1302,10 @@
     },
     {
       "name": "1ms.run",
+      "type": "svg"
+    },
+    {
+      "name": "2FA",
       "type": "svg"
     },
     {
