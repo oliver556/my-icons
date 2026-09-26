@@ -437,6 +437,10 @@
       "type": "png"
     },
     {
+      "name": "Hero.sms",
+      "type": "png"
+    },
+    {
       "name": "Hetzner_A",
       "type": "png"
     },
@@ -574,6 +578,10 @@
     },
     {
       "name": "Lodash.js",
+      "type": "png"
+    },
+    {
+      "name": "Long.sms",
       "type": "png"
     },
     {
@@ -906,6 +914,10 @@
     },
     {
       "name": "Sub.store",
+      "type": "png"
+    },
+    {
+      "name": "Sub2api",
       "type": "png"
     },
     {
@@ -1713,6 +1725,10 @@
       "type": "svg"
     },
     {
+      "name": "Hero.sms",
+      "type": "svg"
+    },
+    {
       "name": "Hetzner_A",
       "type": "svg"
     },
@@ -1850,6 +1866,10 @@
     },
     {
       "name": "Lodash.js",
+      "type": "svg"
+    },
+    {
+      "name": "Long.sms",
       "type": "svg"
     },
     {
@@ -2182,6 +2202,10 @@
     },
     {
       "name": "Sub.store",
+      "type": "svg"
+    },
+    {
+      "name": "Sub2api",
       "type": "svg"
     },
     {
