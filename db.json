@@ -593,6 +593,10 @@
       "type": "png"
     },
     {
+      "name": "Lx.music",
+      "type": "png"
+    },
+    {
       "name": "Mac.OS",
       "type": "png"
     },
@@ -1878,6 +1882,10 @@
     },
     {
       "name": "Lucky",
+      "type": "svg"
+    },
+    {
+      "name": "Lx.music",
       "type": "svg"
     },
     {
