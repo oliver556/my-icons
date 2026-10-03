@@ -593,6 +593,10 @@
       "type": "png"
     },
     {
+      "name": "Lx.music",
+      "type": "png"
+    },
+    {
       "name": "Mac.OS",
       "type": "png"
     },
@@ -1202,10 +1206,6 @@
     },
     {
       "name": "ikuai",
-      "type": "png"
-    },
-    {
-      "name": "lx.music",
       "type": "png"
     },
     {
@@ -1885,6 +1885,10 @@
       "type": "svg"
     },
     {
+      "name": "Lx.music",
+      "type": "svg"
+    },
+    {
       "name": "Mac.OS",
       "type": "svg"
     },
@@ -2494,10 +2498,6 @@
     },
     {
       "name": "immich",
-      "type": "svg"
-    },
-    {
-      "name": "lx.music",
       "type": "svg"
     },
     {
