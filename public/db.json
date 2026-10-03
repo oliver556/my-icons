@@ -1205,6 +1205,10 @@
       "type": "png"
     },
     {
+      "name": "lx.music",
+      "type": "png"
+    },
+    {
       "name": "macwk",
       "type": "png"
     },
@@ -2490,6 +2494,10 @@
     },
     {
       "name": "immich",
+      "type": "svg"
+    },
+    {
+      "name": "lx.music",
       "type": "svg"
     },
     {
