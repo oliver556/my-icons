@@ -545,6 +545,10 @@
       "type": "png"
     },
     {
+      "name": "Kugou.music",
+      "type": "png"
+    },
+    {
       "name": "Kuwo",
       "type": "png"
     },
@@ -1834,6 +1838,10 @@
     },
     {
       "name": "Kubernetes",
+      "type": "svg"
+    },
+    {
+      "name": "Kugou.music",
       "type": "svg"
     },
     {
