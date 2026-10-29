@@ -549,6 +549,10 @@
       "type": "png"
     },
     {
+      "name": "Kuwo.music",
+      "type": "png"
+    },
+    {
       "name": "Kuwo",
       "type": "png"
     },
@@ -634,6 +638,10 @@
     },
     {
       "name": "Microsoft",
+      "type": "png"
+    },
+    {
+      "name": "Migu.music",
       "type": "png"
     },
     {
@@ -1845,6 +1853,10 @@
       "type": "svg"
     },
     {
+      "name": "Kuwo.music",
+      "type": "svg"
+    },
+    {
       "name": "Kuwo",
       "type": "svg"
     },
@@ -1930,6 +1942,10 @@
     },
     {
       "name": "Microsoft",
+      "type": "svg"
+    },
+    {
+      "name": "Migu.music",
       "type": "svg"
     },
     {
