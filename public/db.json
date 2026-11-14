@@ -905,6 +905,10 @@
       "type": "png"
     },
     {
+      "name": "Spaceship",
+      "type": "png"
+    },
+    {
       "name": "Speed.do",
       "type": "png"
     },
@@ -2210,6 +2214,10 @@
     },
     {
       "name": "Sound.cloud",
+      "type": "svg"
+    },
+    {
+      "name": "Spaceship",
       "type": "svg"
     },
     {
