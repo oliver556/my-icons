@@ -613,6 +613,10 @@
       "type": "png"
     },
     {
+      "name": "Mangguotv",
+      "type": "png"
+    },
+    {
       "name": "MariaDB",
       "type": "png"
     },
@@ -1922,6 +1926,10 @@
     },
     {
       "name": "Magnet",
+      "type": "svg"
+    },
+    {
+      "name": "Mangguotv",
       "type": "svg"
     },
     {
